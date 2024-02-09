@@ -2,16 +2,20 @@ project:
   type: website
 
 website:
-  title: "lnsc-cell-browser"
+  title: "LNSC Browser"
   navbar:
+    search: true
     left:
-      - href: index.qmd
-        text: Home
+      - atlases.qmd
+      - investigators.qmd
       - about.qmd
+  search:
+    location: navbar
+    type: textbox
 
 format:
   html:
-    theme: cosmo
+    theme: darkly
     css: styles.css
     toc: true
 

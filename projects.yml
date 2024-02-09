@@ -1,0 +1,60 @@
+2014-tamburini:
+  title: Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection
+  authors:
+    - Beth A Jirón Tamburini
+    - Matthew A Burchill
+    - Ross M Kedl
+  abstract: Antigen derived from viral infections with influenza and vesicular stomatitis virus can persist after resolution of infection. Here we show that antigen can similarly persist for weeks following viral challenge and vaccination. Antigen is captured by lymphatic endothelial cells (LECs) under conditions that induce LEC proliferation. Consistent with published data showing that viral antigen persistence impacts the function of circulating memory T cells, we find that vaccine-elicited antigen persistence, found on LECs, positively influences the degree of protective immunity provided by circulating memory CD8+ T cells. The coupling of LEC proliferation and antigen capture identifies a mechanism by which the LECs store, or ‘archive’, antigens for extended periods of time after antigen challenge, thereby increasing IFNγ/IL-2 production and enhancing protection against infection. These findings therefore have the potential to have an impact on future vaccination strategies and our understanding of the role for persisting antigen in both vaccine and infectious settings.
+  publication: https://www.nature.com/articles/ncomms4989
+
+2017-kedl:
+  title: Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction
+  authors:
+    - Ross M Kedl
+    - Robin S Lindsay
+    - Jeffrey M Finlon
+    - Erin D Lucas
+    - Rachel S Friedman
+    - Beth A Jirón Tamburini
+  abstract: Antigens derived from viral infection or vaccination can persist within a host for many weeks after resolution of the infection or vaccine responses. We previously identified lymphatic endothelial cells (LEC) as the repository for this antigen archival, yet LECs are unable to present their archived antigens to CD8+ T cells, and instead transfer their antigens to CD11c+ antigen-presenting cells (APC). Here we show that the exchange of archived antigens between LECs and APCs is mediated by migratory dendritic cells (DC). After vaccination, both migratory basic leucine zipper ATF-like transcription factor 3 (BatF3)-dependent and BatF3-independent DCs are responsible for antigen exchange and cross-presentation. However, exchange of archived viral antigens is mediated only by BatF3-dependent migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived antigens are exchanged with migratory DCs, both directly and through LEC apoptosis, to cross-present archived antigens to circulating T cells.
+  publication: https://www.nature.com/articles/s41467-017-02247-z
+
+2021-carpentier:
+  title: MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination
+  authors:
+    - Kathryn S Carpentier
+    - Ryan M Sheridan
+    - Cormac J Lucas
+    - Bennett J Davenport
+    - Frances S Li
+    - Erin D Lucas
+    - Mary K McCarthy
+    - Glennys V Reynoso
+    - Nicholas A May
+    - Beth A Jirón Tamburini
+    - Jay R Hesselberth
+    - Heather D Hickman
+    - Thomas E Morrison
+  abstract: Viremia in the vertebrate host is a major determinant of arboviral reservoir competency, transmission efficiency, and disease severity. However, immune mechanisms that control arboviral viremia are poorly defined. Here, we identify critical roles for the scavenger receptor MARCO in controlling viremia during arthritogenic alphavirus infections in mice. Following subcutaneous inoculation, arthritogenic alphavirus particles drain via the lymph and are rapidly captured by MARCO+ lymphatic endothelial cells (LECs) in the draining lymph node (dLN), limiting viral spread to the bloodstream. Upon reaching the bloodstream, alphavirus particles are cleared from the circulation by MARCO‐expressing Kupffer cells in the liver, limiting viremia and further viral dissemination. MARCO‐mediated accumulation of alphavirus particles in the draining lymph node and liver is an important host defense mechanism as viremia and viral tissue burdens are elevated in MARCO−/− mice and disease is more severe. In contrast to prior studies implicating a key role for lymph node macrophages in limiting viral dissemination, these findings exemplify a previously unrecognized arbovirus‐scavenging role for lymphatic endothelial cells and improve our mechanistic understanding of viremia control during arthritogenic alphavirus infection.
+  publication: https://www.embopress.org/doi/full/10.15252/embj.2021108966
+  github: https://github.com/rnabioco/morrison-chikv
+  geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
+
+2021-walsh:
+  title: Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node
+  authors:
+    - Shannon M Walsh
+    - Ryan M Sheridan
+    - Erin D Lucas
+    - Thu A Doan
+    - Brian C Ware
+    - Johnathon Schafer
+    - Rui Fu
+    - Matthew A Burchill
+    - Jay R Hesselberth
+    - Beth A Jirón Tamburini
+  abstract: The detection of foreign antigens in vivo has relied on fluorescent conjugation or indirect read-outs such as antigen presentation. In our studies, we found that these widely used techniques had several technical limitations that have precluded a complete picture of antigen trafficking or retention across lymph node cell types. To address these limitations, we developed a ‘molecular tracking device’ to follow the distribution, acquisition, and retention of antigen in the lymph node. Utilizing an antigen conjugated to a nuclease-resistant DNA tag, acting as a combined antigen-adjuvant conjugate, and single-cell mRNA sequencing, we quantified antigen abundance in the lymph node. Variable antigen levels enabled the identification of caveolar endocytosis as a mechanism of antigen acquisition or retention in lymphatic endothelial cells. Thus, these molecular tracking devices enable new approaches to study dynamic tissue dissemination of antigen-adjuvant conjugates and identify new mechanisms of antigen acquisition and retention at cellular resolution in vivo.
+  publication: https://elifesciences.org/articles/62781
+  github: https://github.com/rnabioco/antigen-tracking
+  cellbrowser: https://d3898ys7yh3545.cloudfront.net/
+  geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150719

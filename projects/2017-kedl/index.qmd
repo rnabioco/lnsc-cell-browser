@@ -1,0 +1,15 @@
+---
+title: Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction
+image: 2017-kedl.webp
+about:
+  id: about
+  template: jolla
+  links:
+  - text: Publication
+    icon: file-earmark
+    href: https://www.nature.com/articles/s41467-017-02247-z
+---
+
+Ross M Kedl, Robin S Lindsay, Jeffrey M Finlon, [Erin D Lucas](http://orcid.org/0000-0001-7705-2069), Rachel S Friedman, Beth A Jirón Tamburini
+
+Antigens derived from viral infection or vaccination can persist within a host for many weeks after resolution of the infection or vaccine responses. We previously identified lymphatic endothelial cells (LEC) as the repository for this antigen archival, yet LECs are unable to present their archived antigens to CD8+ T cells, and instead transfer their antigens to CD11c+ antigen-presenting cells (APC). Here we show that the exchange of archived antigens between LECs and APCs is mediated by migratory dendritic cells (DC). After vaccination, both migratory basic leucine zipper ATF-like transcription factor 3 (BatF3)-dependent and BatF3-independent DCs are responsible for antigen exchange and cross-presentation. However, exchange of archived viral antigens is mediated only by BatF3-dependent migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived antigens are exchanged with migratory DCs, both directly and through LEC apoptosis, to cross-present archived antigens to circulating T cells.
