@@ -2,9 +2,24 @@
 title: "Projects"
 ---
 
+```{r, echo = FALSE, include = FALSE}
+library(yaml)
+library(tidyverse)
+library(here)
+library(glue)
+
+source(here("funs.R"))
+
+athr_info <- read_yaml(here("authors.yml"))
+pub_info  <- read_yaml(here("pubs.yml"))
+lnk_cls   <- "{.link-box}"
+
+links <- .create_project_links(athr_info, pub_info, lnk_cls)
+```
+
 ## Define protective and pathogenic roles of LNSCs during viral infection
 
-[Thomas E Morrison, PhD](investigators.qmd#thomas-e-morrison-pdh){.link-box} [Publications](pubs.qmd#category=project-1){.link-box} [Atlases](atlases.qmd#category=project-1){.link-box}
+`r links["Thomas E Morrison"]`
 
 *We hypothesize that inflammatory responses, cell trafficking, and development of protective adaptive immune responses are regulated by discrete populations of LNSCs during viral infection*
 
@@ -18,7 +33,7 @@ how viruses manipulate LNSCs to evade immunity.
 
 ## Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity
 
-[Beth A Jirón Tamburini, PhD](investigators.qmd#beth-a-jirón-tamburini-phd){.link-box} [Publications](pubs.qmd#category=project-2){.link-box} [Atlases](atlases.qmd#category=project-2){.link-box}
+`r links["Beth A Jirón Tamburini"]`
 
 *We hypothesize that LNSC targeting improves and extends the cellular and humoral responses required for vaccine mediated immunity*
 
@@ -34,7 +49,7 @@ consequences of viral infection of LNSCs to vaccine immunity.
 
 ## Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity
 
-[Jenna Guthmiller, PhD](investigators.qmd#jenna-guthmiller-phd){.link-box} [Publications](pubs.qmd#category=project-3){.link-box} [Atlases](atlases.qmd#category=project-3){.link-box}
+`r links["Jenna Guthmiller"]`
 
 *We hypothesize that antibody isotype in an IC regulates protective immunity by determining which LNSC populations acquire and retain antigen via isotype-specific interactions with complement and Fc receptors (FcRs)*
 

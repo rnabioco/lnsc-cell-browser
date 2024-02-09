@@ -4,6 +4,21 @@ page-layout: full
 title-block-banner: true
 ---
 
+```{r, echo = FALSE, include = FALSE}
+library(yaml)
+library(tidyverse)
+library(here)
+library(glue)
+
+source(here("funs.R"))
+
+athr_info <- read_yaml(here("authors.yml"))
+pub_info  <- read_yaml(here("pubs.yml"))
+lnk_cls   <- "{.link-box}"
+
+links <- .create_project_links(athr_info, pub_info, lnk_cls)
+```
+
 The theme uniting our program is that lymph node stromal cells (LNSC)s are an
 understudied and untapped source of immunomodulatory control.
 LNSCs are comprised of diverse populations of fibroblasts and endothelial cells.
@@ -18,15 +33,15 @@ can be manipulated by pathogens and vaccines to guide immune outcomes.
 
 * [Define protective and pathogenic roles of LNSCs during viral infection](projects.qmd#define-protective-and-pathogenic-roles-of-lnscs-during-viral-infection){.bold-link}  
 Project 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity  
-[Thomas E Morrison, PhD](investigators.qmd#thomas-e-morrison-pdh){.link-box} [Publications](pubs.qmd#category=project-1){.link-box} [Atlases](atlases.qmd#category=project-1){.link-box}
+`r links["Thomas E Morrison"]`
 
 * [Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity](projects.qmd#identify-mechanisms-of-vaccine-antigen-localization-and-retention-by-lnscs-that-drive-and-enhance-cellular-and-humoral-immunity){.bold-link}  
 Project 2 will define mechanisms of vaccine antigen acquisition and retention by different LNSCs  
-[Beth A Jirón Tamburini, PhD](investigators.qmd#beth-a-jirón-tamburini-phd){.link-box} [Publications](pubs.qmd#category=project-2){.link-box} [Atlases](atlases.qmd#category=project-2){.link-box}
+`r links["Beth A Jirón Tamburini"]`
 
 * [Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity](projects.qmd#investigate-the-role-of-immune-complexes-in-antigen-acquisition-and-retention-by-lnscs-to-modulate-cellular-and-humoral-immunity){.bold-link}  
 Project 3 will use stabilized DNA conjugates to track antibody:antigen complexes to determine the spatial and cellular localization of immune complexes  
-[Jenna Guthmiller, PhD](investigators.qmd#jenna-guthmiller-phd){.link-box} [Publications](pubs.qmd#category=project-3){.link-box} [Atlases](atlases.qmd#category=project-3){.link-box}
+`r links["Jenna Guthmiller"]`
 
 ## Impact
 

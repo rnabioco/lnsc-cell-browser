@@ -8,19 +8,18 @@ library(tidyverse)
 library(here)
 library(glue)
 
+# Read info and set links to include
 athr_info <- read_yaml(here("authors.yml"))
+lnks      <- c("publications", "website", "email")
+lnk_cls   <- "{.link-box}"
 
 links <- athr_info %>%
   map(~ {
-    .x %>%
-      imap(~ {
-        str_c(
-          "[", str_to_title(.y),
-          "]({.x$", .y, "}){{.link-box}}"
-        )
-      }) %>%
-      str_c(collapse = " ") %>%
-      glue()
+    lnks <- .x[names(.x) %in% lnks]
+    
+    lnks %>%
+      imap(~ str_c("[", str_to_title(.y), "](", lnks[.y], ")", lnk_cls)) %>%
+      str_c(collapse = " ")
   })
 ```
 
