@@ -1,6 +1,7 @@
 ---
 title: Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection
 image: 2014-tamburini.webp
+categories: [project-2]
 about:
   id: about
   template: jolla

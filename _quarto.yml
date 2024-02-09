@@ -6,9 +6,10 @@ website:
   navbar:
     search: true
     left:
+      - projects.qmd
       - atlases.qmd
+      - pubs.qmd
       - investigators.qmd
-      - about.qmd
   search:
     location: navbar
     type: textbox

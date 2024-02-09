@@ -6,16 +6,20 @@ library(here)
 library(cli)
 
 # Directories
-proj_info <- read_yaml("projects.yml")
+pub_info  <- read_yaml("pubs.yml")
 athr_info <- read_yaml("authors.yml")
-proj_dir  <- here("projects")
+pub_dir   <- here("pubs")
+atlas_dir <- here("atlases")
 img_dir   <- here("images")
 template  <- "jolla"
+
+if (!dir.exists(pub_dir))   dir.create(pub_dir)
+if (!dir.exists(atlas_dir)) dir.create(atlas_dir)
 
 # Info for each link
 link_info <- list(
   publication = list(text = "Publication", icon = "file-earmark"),
-  cellbrowser = list(text = "Cellbrowser", icon = "compass"),
+  atlas       = list(text = "Atlas", icon = "compass"),
   github      = list(text = "GitHub", icon = "github"),
   geo         = list(text = "NCBI GEO")
 )
@@ -23,21 +27,22 @@ link_info <- list(
 # Template to write index.qmd
 index_qmd <- "---\ntitle: {ttl}\n"
 
-# Create index.qmd for each project entry
-proj_info %>%
+# Create index.qmd for each pub entry
+pub_info %>%
   iwalk(~ {
     info  <- .x
     links <- names(info)
     links <- links[links %in% names(link_info)]
     links <- link_info[links]
-    proj  <- here(proj_dir, .y)
+    pub   <- here(pub_dir, .y)
     ttl   <- info$title
+    cats  <- str_c(info$categories, collapse = ", ")
     
-    # Create project directory
-    if (!dir.exists(proj)) dir.create(proj)
+    # Create pub directory
+    if (!dir.exists(pub)) dir.create(pub)
     
     # Pull image
-    # image name must match project directory name
+    # image name must match pub directory name
     # conditionally add image field
     img <- dir(img_dir, str_c("^", .y, "\\."), full.names = TRUE)
     
@@ -48,7 +53,7 @@ proj_info %>%
     }
     
     img_nm  <- basename(img)
-    img_lnk <- here(proj, img_nm)
+    img_lnk <- here(pub, img_nm)
     
     if (length(img_lnk) > 0) {
       index_qmd <- str_c(index_qmd, "image: {img_nm}\n")
@@ -58,6 +63,7 @@ proj_info %>%
     
     index_qmd <- str_c(
       index_qmd,
+      "categories: [{cats}]\n",
       "about:\n",
       "  id: about\n",
       "  template: {template}\n",
@@ -67,14 +73,14 @@ proj_info %>%
     # Parse author link info
     athrs <- info$authors %>%
       map_chr(~ {
-        if (.x %in% names(athr_info)) {
-          .x <- str_c("[", .x, "](", athr_info[.x], ")")
-        }
+        lnk <- athr_info[[.x]]$publications
+        
+        if (!is.null(lnk)) .x <- str_c("[", .x, "](", lnk, ")")
         .x
       }) %>%
       str_c(collapse = ", ")
 
-    # Parse project link info
+    # Parse pub link info
     links <- links %>%
       imap(~ {
         vals <- list()
@@ -93,5 +99,13 @@ proj_info %>%
       info$abstract
     )
     
-    write_lines(index_qmd, here(proj, "index.qmd"))
+    # Copy files for atlases
+    # symbolic links do not seem to work
+    atlas_lnk <- here(atlas_dir, .y)
+    
+    if (!is.null(info$atlas) && !file.exists(atlas_lnk)) {
+      file.copy(pub, atlas_dir, recursive = TRUE)
+    }
+    
+    write_lines(index_qmd, here(pub, "index.qmd"))
   })

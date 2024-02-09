@@ -1,8 +1,8 @@
 ---
-title: "Atlases"
+title: "Publications"
 listing:
-  contents: "atlases/*/index.qmd"
-  type: default
+  contents: "pubs/*/index.qmd"
+  type: grid
   categories: numbered
   feed: false
   fields: [image, title]
