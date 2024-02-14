@@ -1,11 +1,17 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/atlases.html",
     "items": [
-      "/projects/2014-tamburini/index.html",
-      "/projects/2021-carpentier/index.html",
-      "/projects/2017-kedl/index.html",
-      "/projects/2021-walsh/index.html"
+      "/atlases/2021-walsh/index.html"
+    ]
+  },
+  {
+    "listing": "/pubs.html",
+    "items": [
+      "/pubs/2014-tamburini/index.html",
+      "/pubs/2021-carpentier/index.html",
+      "/pubs/2017-kedl/index.html",
+      "/pubs/2021-walsh/index.html"
     ]
   }
 ]

@@ -1,38 +1,80 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Lymph Node Stromal Cell Browser",
+    "objectID": "atlases.html",
+    "href": "atlases.html",
+    "title": "Atlases",
     "section": "",
-    "text": "Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection\n\n\n\n\n\n\n\n\n\n\n\n\n\nMARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination\n\n\n\n\n\n\n\n\n\n\n\n\n\nMigratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction\n\n\n\n\n\n\n\n\n\n\n\n\n\nMolecular tracking devices quantify antigen distribution and archiving in the murine lymph node\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/2017-kedl/index.html",
-    "href": "projects/2017-kedl/index.html",
-    "title": "Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Ross M Kedl, Robin S Lindsay, Jeffrey M Finlon, Erin D Lucas, Rachel S Friedman, Beth A Jirón Tamburini\nAntigens derived from viral infection or vaccination can persist within a host for many weeks after resolution of the infection or vaccine responses. We previously identified lymphatic endothelial cells (LEC) as the repository for this antigen archival, yet LECs are unable to present their archived antigens to CD8+ T cells, and instead transfer their antigens to CD11c+ antigen-presenting cells (APC). Here we show that the exchange of archived antigens between LECs and APCs is mediated by migratory dendritic cells (DC). After vaccination, both migratory basic leucine zipper ATF-like transcription factor 3 (BatF3)-dependent and BatF3-independent DCs are responsible for antigen exchange and cross-presentation. However, exchange of archived viral antigens is mediated only by BatF3-dependent migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived antigens are exchanged with migratory DCs, both directly and through LEC apoptosis, to cross-present archived antigens to circulating T cells."
+    "text": "Thomas E Morrison, PhD Publications\nWe hypothesize that inflammatory responses, cell trafficking, and development of protective adaptive immune responses are regulated by discrete populations of LNSCs during viral infection\nProject 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity. Project 1 and Project 2 will establish how viral targeting of LNSCs impacts antigen archiving and immune memory to archived antigens. Finally, Project 1 coordinates with Project 3 to study how isotype-specific immune complexes (ICs) promote chronic viral infection of follicular dendritic cells (FDCs). This Aim will use novel mouse models and human tissues and advanced spatial and single-cell RNA approaches. This Aim addresses the Program hypothesis by defining how LNSCs shape antiviral immune responses and how viruses manipulate LNSCs to evade immunity."
   },
   {
-    "objectID": "projects/2021-carpentier/index.html",
-    "href": "projects/2021-carpentier/index.html",
+    "objectID": "projects.html#define-protective-and-pathogenic-roles-of-lnscs-during-viral-infection",
+    "href": "projects.html#define-protective-and-pathogenic-roles-of-lnscs-during-viral-infection",
+    "title": "Projects",
+    "section": "",
+    "text": "Thomas E Morrison, PhD Publications\nWe hypothesize that inflammatory responses, cell trafficking, and development of protective adaptive immune responses are regulated by discrete populations of LNSCs during viral infection\nProject 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity. Project 1 and Project 2 will establish how viral targeting of LNSCs impacts antigen archiving and immune memory to archived antigens. Finally, Project 1 coordinates with Project 3 to study how isotype-specific immune complexes (ICs) promote chronic viral infection of follicular dendritic cells (FDCs). This Aim will use novel mouse models and human tissues and advanced spatial and single-cell RNA approaches. This Aim addresses the Program hypothesis by defining how LNSCs shape antiviral immune responses and how viruses manipulate LNSCs to evade immunity."
+  },
+  {
+    "objectID": "projects.html#identify-mechanisms-of-vaccine-antigen-localization-and-retention-by-lnscs-that-drive-and-enhance-cellular-and-humoral-immunity",
+    "href": "projects.html#identify-mechanisms-of-vaccine-antigen-localization-and-retention-by-lnscs-that-drive-and-enhance-cellular-and-humoral-immunity",
+    "title": "Projects",
+    "section": "Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity",
+    "text": "Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity\nBeth A Jirón Tamburini, PhD Publications Atlases\nWe hypothesize that LNSC targeting improves and extends the cellular and humoral responses required for vaccine mediated immunity\nProject 2 will work with Project 3 to define mechanisms of vaccine antigen acquisition and retention by different LNSCs. Project 2 will work with Projects 1 and 3 to determine if manipulation of antigen duration in LNSCs improves vaccine protection against arboviruses and influenza virus. Finally, Project 2 will work with Project 1 to define the consequences of virus induced cell death on LEC “training” and the impact on vaccine immunity. This Aim will distinguish functions of specific LNSC populations and create novel vaccine strategies (e.g., mRNA, virus-like particles, and lipid nanoparticles) and apply sophisticated spatial and single-cell transcriptomic approaches to evaluate antigen levels within infrequent and transcriptionally defined LNSC subsets. This Aim addresses the Program hypothesis by determining how specific LNSC subsets shape vaccine immunity and the consequences of viral infection of LNSCs to vaccine immunity."
+  },
+  {
+    "objectID": "projects.html#investigate-the-role-of-immune-complexes-in-antigen-acquisition-and-retention-by-lnscs-to-modulate-cellular-and-humoral-immunity",
+    "href": "projects.html#investigate-the-role-of-immune-complexes-in-antigen-acquisition-and-retention-by-lnscs-to-modulate-cellular-and-humoral-immunity",
+    "title": "Projects",
+    "section": "Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity",
+    "text": "Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity\nJenna Guthmiller, PhD\nWe hypothesize that antibody isotype in an IC regulates protective immunity by determining which LNSC populations acquire and retain antigen via isotype-specific interactions with complement and Fc receptors (FcRs)\nProject 3 will engineer monoclonal antibodies (mAbs) with fixed antigen specificity on discrete antibody isotypes and subclasses. Using stabilized DNA conjugates, Projects 2 and 3 will track antibody:antigen complexes to determine the spatial and cellular localization of ICs in comparison with free antigen. Project 3 also investigates how FcR expression by LNSCs impacts IC acquisition and will work with Project 1 to determine viral antigen retention and define consequences to protective humoral and cellular immunity. This project uses mouse models engineered to manipulate complement receptor and FcR expression by discrete LNSC populations (Core B) and addresses the Program hypothesis by defining how different LNSC populations use antibody to determine antigen uptake and localization,"
+  },
+  {
+    "objectID": "pubs/2021-carpentier/index.html",
+    "href": "pubs/2021-carpentier/index.html",
     "title": "MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination",
     "section": "",
     "text": "Kathryn S Carpentier, Ryan M Sheridan, Cormac J Lucas, Bennett J Davenport, Frances S Li, Erin D Lucas, Mary K McCarthy, Glennys V Reynoso, Nicholas A May, Beth A Jirón Tamburini, Jay R Hesselberth, Heather D Hickman, Thomas E Morrison\nViremia in the vertebrate host is a major determinant of arboviral reservoir competency, transmission efficiency, and disease severity. However, immune mechanisms that control arboviral viremia are poorly defined. Here, we identify critical roles for the scavenger receptor MARCO in controlling viremia during arthritogenic alphavirus infections in mice. Following subcutaneous inoculation, arthritogenic alphavirus particles drain via the lymph and are rapidly captured by MARCO+ lymphatic endothelial cells (LECs) in the draining lymph node (dLN), limiting viral spread to the bloodstream. Upon reaching the bloodstream, alphavirus particles are cleared from the circulation by MARCO‐expressing Kupffer cells in the liver, limiting viremia and further viral dissemination. MARCO‐mediated accumulation of alphavirus particles in the draining lymph node and liver is an important host defense mechanism as viremia and viral tissue burdens are elevated in MARCO−/− mice and disease is more severe. In contrast to prior studies implicating a key role for lymph node macrophages in limiting viral dissemination, these findings exemplify a previously unrecognized arbovirus‐scavenging role for lymphatic endothelial cells and improve our mechanistic understanding of viremia control during arthritogenic alphavirus infection."
   },
   {
-    "objectID": "projects/2021-walsh/index.html",
-    "href": "projects/2021-walsh/index.html",
-    "title": "Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node",
-    "section": "",
-    "text": "Shannon M Walsh, Ryan M Sheridan, Erin D Lucas, Thu A Doan, Brian C Ware, Johnathon Schafer, Rui Fu, Matthew A Burchill, Jay R Hesselberth, Beth A Jirón Tamburini\nThe detection of foreign antigens in vivo has relied on fluorescent conjugation or indirect read-outs such as antigen presentation. In our studies, we found that these widely used techniques had several technical limitations that have precluded a complete picture of antigen trafficking or retention across lymph node cell types. To address these limitations, we developed a ‘molecular tracking device’ to follow the distribution, acquisition, and retention of antigen in the lymph node. Utilizing an antigen conjugated to a nuclease-resistant DNA tag, acting as a combined antigen-adjuvant conjugate, and single-cell mRNA sequencing, we quantified antigen abundance in the lymph node. Variable antigen levels enabled the identification of caveolar endocytosis as a mechanism of antigen acquisition or retention in lymphatic endothelial cells. Thus, these molecular tracking devices enable new approaches to study dynamic tissue dissemination of antigen-adjuvant conjugates and identify new mechanisms of antigen acquisition and retention at cellular resolution in vivo."
-  },
-  {
-    "objectID": "projects/2014-tamburini/index.html",
-    "href": "projects/2014-tamburini/index.html",
+    "objectID": "pubs/2014-tamburini/index.html",
+    "href": "pubs/2014-tamburini/index.html",
     "title": "Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection",
     "section": "",
     "text": "Beth A Jirón Tamburini, Matthew A Burchill, Ross M Kedl\nAntigen derived from viral infections with influenza and vesicular stomatitis virus can persist after resolution of infection. Here we show that antigen can similarly persist for weeks following viral challenge and vaccination. Antigen is captured by lymphatic endothelial cells (LECs) under conditions that induce LEC proliferation. Consistent with published data showing that viral antigen persistence impacts the function of circulating memory T cells, we find that vaccine-elicited antigen persistence, found on LECs, positively influences the degree of protective immunity provided by circulating memory CD8+ T cells. The coupling of LEC proliferation and antigen capture identifies a mechanism by which the LECs store, or ‘archive’, antigens for extended periods of time after antigen challenge, thereby increasing IFNγ/IL-2 production and enhancing protection against infection. These findings therefore have the potential to have an impact on future vaccination strategies and our understanding of the role for persisting antigen in both vaccine and infectious settings."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mechanisms of immune protection and pathology by lymph node stromal cells",
+    "section": "",
+    "text": "The theme uniting our program is that lymph node stromal cells (LNSC)s are an understudied and untapped source of immunomodulatory control. LNSCs are comprised of diverse populations of fibroblasts and endothelial cells. LNSCs coordinate lymphocyte entry into the lymph node (LN), facilitate lymphocyte trafficking into distinct LN niches, regulate lymphocyte survival, and promote LN expansion. Our overall hypothesis is that viral and antigen acquisition by LNSCs shapes immunity by programming pathogen and vaccine specific responses, and that LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes."
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Mechanisms of immune protection and pathology by lymph node stromal cells",
+    "section": "Projects",
+    "text": "Projects\n\nDefine protective and pathogenic roles of LNSCs during viral infection\nProject 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity\nThomas E Morrison, PhD Publications\nIdentify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity\nProject 2 will define mechanisms of vaccine antigen acquisition and retention by different LNSCs\nBeth A Jirón Tamburini, PhD Publications Atlases\nInvestigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity\nProject 3 will use stabilized DNA conjugates to track antibody:antigen complexes to determine the spatial and cellular localization of immune complexes\nJenna Guthmiller, PhD"
+  },
+  {
+    "objectID": "index.html#impact",
+    "href": "index.html#impact",
+    "title": "Mechanisms of immune protection and pathology by lymph node stromal cells",
+    "section": "Impact",
+    "text": "Impact\nOur multidisciplinary team nucleates a program for the study of LNSC biology during infection and vaccination. Key scientific outcomes include:\n\nNew vaccine strategies and therapies to target LNSCs to combat pathogens\nA mechanistic understanding of how viral targeting of LNSCs leads to protection or pathology\nInsights into how LNSCs regulate antigen-antibody acquisition through complement and FcRs\nMolecular approaches that overcome difficulties in evaluating LNSC contributions to immunity and infection\nGeneration of new mouse models and human tissues systems to redefine LNSC function in immunity"
+  },
+  {
+    "objectID": "atlases/2021-walsh/index.html",
+    "href": "atlases/2021-walsh/index.html",
+    "title": "Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node",
+    "section": "",
+    "text": "Shannon M Walsh, Ryan M Sheridan, Erin D Lucas, Thu A Doan, Brian C Ware, Johnathon Schafer, Rui Fu, Matthew A Burchill, Jay R Hesselberth, Beth A Jirón Tamburini\nThe detection of foreign antigens in vivo has relied on fluorescent conjugation or indirect read-outs such as antigen presentation. In our studies, we found that these widely used techniques had several technical limitations that have precluded a complete picture of antigen trafficking or retention across lymph node cell types. To address these limitations, we developed a ‘molecular tracking device’ to follow the distribution, acquisition, and retention of antigen in the lymph node. Utilizing an antigen conjugated to a nuclease-resistant DNA tag, acting as a combined antigen-adjuvant conjugate, and single-cell mRNA sequencing, we quantified antigen abundance in the lymph node. Variable antigen levels enabled the identification of caveolar endocytosis as a mechanism of antigen acquisition or retention in lymphatic endothelial cells. Thus, these molecular tracking devices enable new approaches to study dynamic tissue dissemination of antigen-adjuvant conjugates and identify new mechanisms of antigen acquisition and retention at cellular resolution in vivo."
   },
   {
     "objectID": "about.html",
@@ -40,5 +82,68 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection\n\n\n\n\n\n\n\n\n\n\n\n\n\nMARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination\n\n\n\n\n\n\n\n\n\n\n\n\n\nMigratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction\n\n\n\n\n\n\n\n\n\n\n\n\n\nMolecular tracking devices quantify antigen distribution and archiving in the murine lymph node\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "pubs/2021-walsh/index.html",
+    "href": "pubs/2021-walsh/index.html",
+    "title": "Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node",
+    "section": "",
+    "text": "Shannon M Walsh, Ryan M Sheridan, Erin D Lucas, Thu A Doan, Brian C Ware, Johnathon Schafer, Rui Fu, Matthew A Burchill, Jay R Hesselberth, Beth A Jirón Tamburini\nThe detection of foreign antigens in vivo has relied on fluorescent conjugation or indirect read-outs such as antigen presentation. In our studies, we found that these widely used techniques had several technical limitations that have precluded a complete picture of antigen trafficking or retention across lymph node cell types. To address these limitations, we developed a ‘molecular tracking device’ to follow the distribution, acquisition, and retention of antigen in the lymph node. Utilizing an antigen conjugated to a nuclease-resistant DNA tag, acting as a combined antigen-adjuvant conjugate, and single-cell mRNA sequencing, we quantified antigen abundance in the lymph node. Variable antigen levels enabled the identification of caveolar endocytosis as a mechanism of antigen acquisition or retention in lymphatic endothelial cells. Thus, these molecular tracking devices enable new approaches to study dynamic tissue dissemination of antigen-adjuvant conjugates and identify new mechanisms of antigen acquisition and retention at cellular resolution in vivo."
+  },
+  {
+    "objectID": "pubs/2017-kedl/index.html",
+    "href": "pubs/2017-kedl/index.html",
+    "title": "Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction",
+    "section": "",
+    "text": "Ross M Kedl, Robin S Lindsay, Jeffrey M Finlon, Erin D Lucas, Rachel S Friedman, Beth A Jirón Tamburini\nAntigens derived from viral infection or vaccination can persist within a host for many weeks after resolution of the infection or vaccine responses. We previously identified lymphatic endothelial cells (LEC) as the repository for this antigen archival, yet LECs are unable to present their archived antigens to CD8+ T cells, and instead transfer their antigens to CD11c+ antigen-presenting cells (APC). Here we show that the exchange of archived antigens between LECs and APCs is mediated by migratory dendritic cells (DC). After vaccination, both migratory basic leucine zipper ATF-like transcription factor 3 (BatF3)-dependent and BatF3-independent DCs are responsible for antigen exchange and cross-presentation. However, exchange of archived viral antigens is mediated only by BatF3-dependent migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived antigens are exchanged with migratory DCs, both directly and through LEC apoptosis, to cross-present archived antigens to circulating T cells."
+  },
+  {
+    "objectID": "investigators.html",
+    "href": "investigators.html",
+    "title": "Investigators",
+    "section": "",
+    "text": "Publications Website Email\nMy laboratory investigates mechanisms of infectious disease pathogenesis and immunity. We use genetic, molecular, cellular, and immunological approaches to define molecular mechanisms of pathogenesis, to elucidate immunological mechanisms that dictate viral clearance, including antibodies and B cells, and to evaluate novel therapeutic interventions. My laboratory has developed mouse models of chikungunya virus (CHIKV) and Ross River virus (RRV)-induced rheumatic disease that recapitulate important aspects of acute and chronic CHIKV and RRV disease in humans. In addition, we also investigate mechanisms of neurological disease associated with neurotropic viruses such as Venezuelan equine encephalitis virus (VEEV), West Nile virus, and Zika virus. I also have extensive experience working with human coronaviruses and other highly pathogenic respiratory viruses. Together with my long-term collaborator Dr. Beth Tamburini, I will serve as a principal investigator for this MPI NIH P01 Program Project grant. Additionally, I will serve as the Lead for Core A (Administrative Core) and the Lead for Research Project 1. The primary goals of this collaborative and interdisciplinary program are to test the hypothesis that viral and antigen acquisition by lymph node stromal cells (LNSCs) actively shapes immunity by programming both pathogen and vaccine specific responses, and that LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes. Within Research Project 1, we will define mechanistically how discrete LNSCs contribute to the development of antiviral immune responses to infection, regulate viral dissemination to distal sites, and how viral targeting of LNSCs influences the development of immunity to infection and vaccination."
+  },
+  {
+    "objectID": "investigators.html#thomas-e-morrison-phd",
+    "href": "investigators.html#thomas-e-morrison-phd",
+    "title": "Investigators",
+    "section": "",
+    "text": "Publications Website Email\nMy laboratory investigates mechanisms of infectious disease pathogenesis and immunity. We use genetic, molecular, cellular, and immunological approaches to define molecular mechanisms of pathogenesis, to elucidate immunological mechanisms that dictate viral clearance, including antibodies and B cells, and to evaluate novel therapeutic interventions. My laboratory has developed mouse models of chikungunya virus (CHIKV) and Ross River virus (RRV)-induced rheumatic disease that recapitulate important aspects of acute and chronic CHIKV and RRV disease in humans. In addition, we also investigate mechanisms of neurological disease associated with neurotropic viruses such as Venezuelan equine encephalitis virus (VEEV), West Nile virus, and Zika virus. I also have extensive experience working with human coronaviruses and other highly pathogenic respiratory viruses. Together with my long-term collaborator Dr. Beth Tamburini, I will serve as a principal investigator for this MPI NIH P01 Program Project grant. Additionally, I will serve as the Lead for Core A (Administrative Core) and the Lead for Research Project 1. The primary goals of this collaborative and interdisciplinary program are to test the hypothesis that viral and antigen acquisition by lymph node stromal cells (LNSCs) actively shapes immunity by programming both pathogen and vaccine specific responses, and that LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes. Within Research Project 1, we will define mechanistically how discrete LNSCs contribute to the development of antiviral immune responses to infection, regulate viral dissemination to distal sites, and how viral targeting of LNSCs influences the development of immunity to infection and vaccination."
+  },
+  {
+    "objectID": "investigators.html#beth-a-jirón-tamburini-phd",
+    "href": "investigators.html#beth-a-jirón-tamburini-phd",
+    "title": "Investigators",
+    "section": "Beth A Jirón Tamburini, PhD",
+    "text": "Beth A Jirón Tamburini, PhD\nWebsite Email\nThe overarching goal of my research program is to understand how the lymphatic stroma recognize and react to stimuli within the lymph to guide the immune response. My initial studies of lymphatic stroma were focused on understanding the mechanisms by which lymphatic endothelial cells acquire and retain antigens as well as recruit and interact with immune cells in different organs. Currently my research program is focused on understanding the immunologic consequence of interaction between lymphatic stroma and components of the immune system within different organ systems. We have been working to dissect how the lymphatics respond to stimuli such as proteins, small molecules, fat, cholesterol, alcohol, infectious material and cytokine. We have experience with a number of techniques including flow cytometry, immunohistochemistry, immunofluorescence, live molecular imaging, and a number of therapeutic treatments to target and identify lymphatic endothelial cells as well as experience in several mouse models and assays. In addition, my expertise and the expertise of a wide range of collaborators at the University of Colorado in the fields of Gastroenterology, Hepatology and Immunology have been critical in developing this research program. This collaborative research program as proven to be well suited for the training and success of the graduate students and post-docs in my laboratory."
+  },
+  {
+    "objectID": "investigators.html#jenna-guthmiller-phd",
+    "href": "investigators.html#jenna-guthmiller-phd",
+    "title": "Investigators",
+    "section": "Jenna Guthmiller, PhD",
+    "text": "Jenna Guthmiller, PhD\nPublications Website Email\nA. Personal Statement My long-term scientific goals are to understand the complex interactions between pathogens and the immune response mounted against them, with the objective of identifying and developing interventions to limit global infectious disease burdens. Fitting within these goals, my independent laboratory studies how preexisting immunity influences future immune responses against rapidly evolving viruses. My major contributions to science are understanding how protective humoral immunity is generated following infection and vaccination and how vaccination can harness broadly protective humoral immunity. During my postdoctoral studies, I investigated how preexisting immunity against influenza viruses shapes the recall of memory B cells in humans. I found that in the absence of preexisting immunity against the variable epitopes of the hemagglutinin (HA) head domain, humans could recall memory B cells against broadly protective epitopes of HA. These studies identified several novel classes of broadly neutralizing antibodies and a new highly conserved epitope where HA “anchors” itself into the viral membrane. My research also identified that the first in-human universal influenza vaccine, which is intended to circumvent preexisting antibodies, robustly induced antibodies against broadly protective epitopes, including the anchor epitope. Lastly, I identified influenza vaccination and infection in humans differentially recalled discrete memory B cell specificities, with infection recalling memory B cells primed during childhood against highly conserved, albeit non-protective antigens. Together, these studies highlight the importance of understanding how preexisting antibodies influence the generation of broadly protective immunity."
+  },
+  {
+    "objectID": "investigators.html#jay-r-hesselberth-phd",
+    "href": "investigators.html#jay-r-hesselberth-phd",
+    "title": "Investigators",
+    "section": "Jay R Hesselberth, PhD",
+    "text": "Jay R Hesselberth, PhD\nPublications Website Email\nA. Personal Statement I am an RNA biochemist and computational biologist with extensive experience in developing new high- throughput methods and associated bioinformatic analysis software. My RNA biology program spans classical and modern approaches to address outstanding questions in RNA damage and repair. Over the past ten years my group has developed new sequencing approaches to identify damaged RNAs and new model systems with which to understand the causes and consequences of RNA damage. Our studies have led to new concepts in post-transcriptional regulation that have broad implications for understanding the role of RNA damage in biology. Recently we have been focused on understanding how RNA damage and repair events are coupled to control RNA fate after stress-induced RNA cleavage (Ancar et al. and Cherry et al.). More recently, we have applied nanopore RNA sequencing to characterize the landscape of RNA repair events in budding yeast."
+  },
+  {
+    "objectID": "investigators.html#jennifer-l-matsuda-phd",
+    "href": "investigators.html#jennifer-l-matsuda-phd",
+    "title": "Investigators",
+    "section": "Jennifer L Matsuda, PhD",
+    "text": "Jennifer L Matsuda, PhD\nPublications Email\nIn 2008, following my graduate studies and post-doctoral training, I became the Director of the Mouse Genetics Core Facility at National Jewish Health. Given my years at the bench, it was critical to me that the facility I established enabled all investigators, regardless of prior experience, with the support necessary to make mouse models. To this end, in addition to classic services like ES cell targeting, blastocyst and pronuclear microinjections, embryo and sperm cryopreservation, in vitro fertilization, and rederivation, we have developed additional areas of expertise. We generate complex DNA constructs, using BAC recombineering, markerless recombineering, and classic cloning methodologies. We also train graduate students and post-doctoral fellows in our laboratory to make their own constructs. We have also gained the expertise to identify homologous recombinant ES cell clones by Loss of Allele (LOA). In addition, we successfully use engineered nucleases (ZFNs, TALENs, and more recently CRISPR/Cas9) to generate knockout mice by NHEJ as well as relying upon homology directed repair (HDR) to introduce genetic modifications. This technology has been further improved upon by our capacity to make mouse models directly on a variety of backgrounds by using IVF, including but not limited to: C57BL/6, FVB, NOD, 129S4, and NSGS backgrounds as well genetically modified strains of mice. Due to the core’s consistently high quality of work, we have recently been designated as the Regional Mouse Genetics Core Facility to support investigators at the University of Colorado Denver, in addition to the investigators at NJH."
   }
 ]

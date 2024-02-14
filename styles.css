@@ -1,1 +1,49 @@
 /* css styles */
+.plain-link {
+  text-decoration: none; /* Removes the underline */
+  color: white;
+}
+
+.bold-link {
+  text-decoration: none; /* Removes the underline */
+  font-weight: bold;     /* Makes the text bold */
+}
+
+.link-box {
+  border: 1px solid white; /* Blue border */
+  padding: 0px 3px; /* Padding around the text */
+  display: inline-block; /* Ensures the box wraps the content */
+  text-decoration: none; /* Removes the underline from the link */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners; adjust radius as needed */
+}
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+<p class="text-primary">.text-primary</p>
+<p class="text-primary-emphasis">.text-primary-emphasis</p>
+<p class="text-secondary">.text-secondary</p>
+<p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+<p class="text-success">.text-success</p>
+<p class="text-success-emphasis">.text-success-emphasis</p>
+<p class="text-danger">.text-danger</p>
+<p class="text-danger-emphasis">.text-danger-emphasis</p>
+<p class="text-warning">.text-warning</p>
+<p class="text-warning-emphasis">.text-warning-emphasis</p>
+<p class="text-info">.text-info</p>
+<p class="text-info">.text-info-emphasis</p>
+<p class="text-light">.text-light</p>
+<p class="text-light">.text-light-emphasis</p>
+<p class="text-dark">.text-dark</p>
+<p class="text-dark">.text-dark-emphasis</p>
+<p class="text-body">.text-body</p>
+<p class="text-body">.text-body-emphasis</p>
+<p class="text-body-secondary">.text-body-secondary</p>
+<p class="text-body-tertiary">.text-body-tertiary</p>
