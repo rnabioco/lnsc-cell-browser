@@ -37,4 +37,5 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
-          
+        permissions:
+          contents: write  # Elevated permission for this step
