@@ -6,57 +6,31 @@ title: "Projects"
 library(yaml)
 library(tidyverse)
 library(here)
-library(glue)
 
 source(here("funs.R"))
 
-athr_info <- read_yaml(here("authors.yml"))
-pub_info  <- read_yaml(here("pubs.yml"))
+proj_yml <- read_yaml(here("projects.yml"))
+athr_yml <- read_yaml(here("authors.yml"))
+pub_yml  <- read_yaml(here("pubs.yml"))
 lnk_cls   <- "{.link-box}"
 
-links <- .create_project_links(athr_info, pub_info, lnk_cls)
+links <- .create_project_links(proj_yml, athr_yml, pub_yml, lnk_cls)
+
+text <- proj_yml %>%
+  imap(~ {
+    ttl_lnk <- .x$title %>%
+      str_to_lower() %>%
+      str_replace_all("( |, )", "-") %>%
+      str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
+    
+    str_c(
+      "## ", .x$title,    "\n\n",
+      links[[.y]],        "\n\n",
+      "*", .x$hypothesis, "*\n\n",
+      .x$abstract,        "\n\n"
+    )
+  }) %>%
+  str_c(collapse = "")
 ```
 
-## Define protective and pathogenic roles of LNSCs during viral infection
-
-`r links["Thomas E Morrison"]`
-
-*We hypothesize that inflammatory responses, cell trafficking, and development of protective adaptive immune responses are regulated by discrete populations of LNSCs during viral infection*
-
-Project 1 will define how viral targeting of
-distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive
-immunity. Project 1 and Project 2 will establish how viral targeting of LNSCs impacts antigen archiving and
-immune memory to archived antigens. Finally, Project 1 coordinates with Project 3 to study how isotype-specific
-immune complexes (ICs) promote chronic viral infection of follicular dendritic cells (FDCs). This Aim will use
-novel mouse models and human tissues and advanced spatial and single-cell RNA approaches. This Aim addresses the Program hypothesis by defining how LNSCs shape antiviral immune responses and
-how viruses manipulate LNSCs to evade immunity.
-
-## Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity
-
-`r links["Beth A Jirón Tamburini"]`
-
-*We hypothesize that LNSC targeting improves and extends the cellular and humoral responses required for vaccine mediated immunity*
-
-Project 2 will work with Project 3 to
-define mechanisms of vaccine antigen acquisition and retention by different LNSCs. Project 2 will work with
-Projects 1 and 3 to determine if manipulation of antigen duration in LNSCs improves vaccine protection against
-arboviruses and influenza virus. Finally, Project 2 will work with Project 1 to define the consequences of virus
-induced cell death on LEC “training” and the impact on vaccine immunity. This Aim will distinguish functions of specific LNSC populations and create novel vaccine strategies (e.g., mRNA,
-virus-like particles, and lipid nanoparticles) and apply sophisticated spatial and single-cell transcriptomic
-approaches to evaluate antigen levels within infrequent and transcriptionally defined LNSC subsets. This Aim
-addresses the Program hypothesis by determining how specific LNSC subsets shape vaccine immunity and the
-consequences of viral infection of LNSCs to vaccine immunity.
-
-## Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity
-
-`r links["Jenna Guthmiller"]`
-
-*We hypothesize that antibody isotype in an IC regulates protective immunity by determining which LNSC populations acquire and retain antigen via isotype-specific interactions with complement and Fc receptors (FcRs)*
-
-Project 3 will engineer monoclonal antibodies (mAbs)
-with fixed antigen specificity on discrete antibody isotypes and subclasses. Using stabilized DNA conjugates, Projects 2 and 3 will track antibody:antigen complexes to determine the spatial and cellular
-localization of ICs in comparison with free antigen. Project 3 also investigates how FcR expression by LNSCs
-impacts IC acquisition and will work with Project 1 to determine viral antigen retention and define consequences
-to protective humoral and cellular immunity. This project uses mouse models engineered to manipulate complement
-receptor and FcR expression by discrete LNSC populations (Core B) and addresses the Program hypothesis by
-defining how different LNSC populations use antibody to determine antigen uptake and localization,
+`r text`

@@ -1,0 +1,15 @@
+---
+title: Trafficking and retention of protein antigens across systems and immune cell types
+categories: [project-2]
+about:
+  id: about
+  template: jolla
+  links:
+  - text: Publication
+    icon: file-earmark
+    href: https://pubmed.ncbi.nlm.nih.gov/35505125/
+---
+
+Thu Doan, Tadg Forward, Beth Tamburini
+
+In response to infection or vaccination, the immune system initially responds non-specifically to the foreign insult (innate) and then develops a specific response to the foreign antigen (adaptive). The programming of the immune response is shaped by the dispersal and delivery of antigens. The antigen size, innate immune activation and location of the insult all determine how antigens are handled. In this review we outline which specific cell types are required for antigen trafficking, which processes require active compared to passive transport, the ability of specific cell types to retain antigens and the viruses (human immunodeficiency virus, influenza and Sendai virus, vesicular stomatitis virus, vaccinia virus) and pattern recognition receptor activation that can initiate antigen retention. Both where the protein antigen is localized and how long it remains are critically important in shaping protective immune responses. Therefore, understanding antigen trafficking and retention is necessary to understand the type and magnitude of the immune response and essential for the development of novel vaccine and therapeutic targets.

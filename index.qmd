@@ -2,21 +2,40 @@
 title: Mechanisms of immune protection and pathology by lymph node stromal cells
 page-layout: full
 title-block-banner: true
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, echo = FALSE, include = FALSE}
+library(markdown)
 library(yaml)
 library(tidyverse)
 library(here)
-library(glue)
 
 source(here("funs.R"))
+source(here("build_pubs.R"))
 
-athr_info <- read_yaml(here("authors.yml"))
-pub_info  <- read_yaml(here("pubs.yml"))
-lnk_cls   <- "{.link-box}"
+proj_yml <- read_yaml(here("projects.yml"))
+pub_yml  <- read_yaml(here("pubs.yml"))
+athr_yml <- read_yaml(here("authors.yml"))
+lnk_cls  <- "{.link-box}"
 
-links <- .create_project_links(athr_info, pub_info, lnk_cls)
+links <- .create_project_links(proj_yml, athr_yml, pub_yml, lnk_cls)
+
+text <- proj_yml %>%
+  imap(~ {
+    ttl_lnk <- .x$title %>%
+      str_to_lower() %>%
+      str_replace_all("( |, )", "-") %>%
+      str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
+    
+    str_c(
+      "* ", ttl_lnk, "  \n",
+      links[[.y]],   "  \n",
+      .x$short,      "\n\n"
+    )
+  }) %>%
+  str_c(collapse = "")
 ```
 
 The theme uniting our program is that lymph node stromal cells (LNSC)s are an
@@ -29,24 +48,7 @@ Our overall hypothesis is that viral and antigen acquisition by LNSCs shapes
 immunity by programming pathogen and vaccine specific responses, and that LNSCs
 can be manipulated by pathogens and vaccines to guide immune outcomes.
 
-## Projects
-
-* [Define protective and pathogenic roles of LNSCs during viral infection](projects.qmd#define-protective-and-pathogenic-roles-of-lnscs-during-viral-infection){.bold-link}  
-Project 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity  
-`r links["Thomas E Morrison"]`
-
-* [Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity](projects.qmd#identify-mechanisms-of-vaccine-antigen-localization-and-retention-by-lnscs-that-drive-and-enhance-cellular-and-humoral-immunity){.bold-link}  
-Project 2 will define mechanisms of vaccine antigen acquisition and retention by different LNSCs  
-`r links["Beth A Jirón Tamburini"]`
-
-* [Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity](projects.qmd#investigate-the-role-of-immune-complexes-in-antigen-acquisition-and-retention-by-lnscs-to-modulate-cellular-and-humoral-immunity){.bold-link}  
-Project 3 will use stabilized DNA conjugates to track antibody:antigen complexes to determine the spatial and cellular localization of immune complexes  
-`r links["Jenna Guthmiller"]`
-
-## Impact
-
-Our multidisciplinary team nucleates a program for the study of LNSC biology
-during infection and vaccination. Key scientific outcomes include:
+Key scientific outcomes include:
 
 1. New vaccine strategies and therapies to target LNSCs to combat pathogens
 2. A mechanistic understanding of how viral targeting of LNSCs leads to
@@ -57,3 +59,7 @@ complement and FcRs
 contributions to immunity and infection
 5. Generation of new mouse models and human tissues systems to redefine LNSC
 function in immunity
+
+## Projects
+
+`r text`
