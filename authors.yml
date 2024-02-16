@@ -93,7 +93,9 @@ Jay Hesselberth:
     publications: https://scholar.google.com/citations?user=EnOmNEYAAAAJ
     website: https://hesselberthlab.org/
     email: mailto:jay.hesselberth@cuanschutz.edu
-  project: core-c
+  project:
+  - core-c
+  - core-d
   bio: I am an RNA biochemist and computational biologist with extensive experience
     in developing new high- throughput methods and associated bioinformatic analysis
     software. My RNA biology program spans classical and modern approaches to address
@@ -108,8 +110,9 @@ Jay Hesselberth:
     the landscape of RNA repair events in budding yeast.
 Jennifer Matsuda:
   suffix: PhD
-  publications: https://scholar.google.com/citations?user=xNd-F7YAAAAJ
-  email: mailto:jennifer.matsuda@cuanschutz.edu
+  links:
+    publications: https://scholar.google.com/citations?user=xNd-F7YAAAAJ
+    email: mailto:jennifer.matsuda@cuanschutz.edu
   project: core-b
   bio: 'In 2008, following my graduate studies and post-doctoral training, I became
     the Director of the Mouse Genetics Core Facility at National Jewish Health. Given
@@ -132,9 +135,11 @@ Jennifer Matsuda:
     been designated as the Regional Mouse Genetics Core Facility to support investigators
     at the University of Colorado Denver, in addition to the investigators at NJH.'
 Frances Li:
-  publications: https://orcid.org/0000-0001-8798-8290
+  links:
+    publications: https://orcid.org/0000-0001-8798-8290
 Erin Lucas:
-  publications: http://orcid.org/0000-0001-7705-2069
+  links:
+    publications: http://orcid.org/0000-0001-7705-2069
 Cormac Lucas: .na
 Glennys Reynoso: .na
 Bennett Davenport: .na

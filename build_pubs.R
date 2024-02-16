@@ -102,7 +102,7 @@ pub_yml <- pub_yml %>%
     athrs <- pub_info$authors %>%
       map_chr(~ {
         lnk <- athr_yml %>%
-          pluck(.x, "publications")
+          pluck(.x, "links", "publications")
         
         if (!is.null(lnk)) .x <- str_c("[", .x, "](", lnk, ")")
         .x
