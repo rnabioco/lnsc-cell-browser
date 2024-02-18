@@ -32,6 +32,7 @@
     enable new approaches to study dynamic tissue dissemination of antigen-adjuvant
     conjugates and identify new mechanisms of antigen acquisition and retention at
     cellular resolution in vivo.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/pubs/2021-walsh/2021-walsh.jpg
   project:
   - project-2
   - core-c
@@ -61,6 +62,7 @@
     migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived
     antigens are exchanged with migratory DCs, both directly and through LEC apoptosis,
     to cross-present archived antigens to circulating T cells.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/pubs/2017-kedl/2017-kedl.jpg
   project: project-2
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/34618370/
   links:
@@ -101,6 +103,7 @@
     unrecognized arbovirus-scavenging role for lymphatic endothelial cells and improve
     our mechanistic understanding of viremia control during arthritogenic alphavirus
     infection.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/pubs/2021-carpentier/2021-carpentier.jpg
   project:
   - project-1
   - project-2
@@ -140,6 +143,7 @@
     enable new approaches to study dynamic tissue dissemination of antigen-adjuvant
     conjugates and identify new mechanisms of antigen acquisition and retention at
     cellular resolution in vivo.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/pubs/2021-walsh/2021-walsh.jpg
   project:
   - project-2
   - core-c
@@ -167,6 +171,7 @@
     protective immune responses. Therefore, understanding antigen trafficking and
     retention is necessary to understand the type and magnitude of the immune response
     and essential for the development of novel vaccine and therapeutic targets.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/pubs/2022-doan/2022-doan.jpg
   project: project-2
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/38194268/
   key: 2024-lucas

@@ -13,7 +13,6 @@ library(tidyverse)
 library(here)
 
 source(here("funs.R"))
-source(here("build_pubs.R"))
 
 proj_yml <- read_yaml(here("projects.yml"))
 pub_yml  <- read_yaml(here("pubs.yml"))
@@ -38,27 +37,7 @@ text <- proj_yml %>%
   str_c(collapse = "")
 ```
 
-The theme uniting our program is that lymph node stromal cells (LNSC)s are an
-understudied and untapped source of immunomodulatory control.
-LNSCs are comprised of diverse populations of fibroblasts and endothelial cells.
-LNSCs coordinate lymphocyte entry into the lymph node (LN), facilitate
-lymphocyte trafficking into distinct LN niches, regulate lymphocyte survival,
-and promote LN expansion.
-Our overall hypothesis is that viral and antigen acquisition by LNSCs shapes
-immunity by programming pathogen and vaccine specific responses, and that LNSCs
-can be manipulated by pathogens and vaccines to guide immune outcomes.
-
-Key scientific outcomes include:
-
-1. New vaccine strategies and therapies to target LNSCs to combat pathogens
-2. A mechanistic understanding of how viral targeting of LNSCs leads to
-protection or pathology
-3. Insights into how LNSCs regulate antigen-antibody acquisition through
-complement and FcRs
-4. Molecular approaches that overcome difficulties in evaluating LNSC
-contributions to immunity and infection
-5. Generation of new mouse models and human tissues systems to redefine LNSC
-function in immunity
+The theme uniting our program is that lymph node stromal cells (LNSC)s are an understudied and untapped source of immunomodulatory control. LNSCs are comprised of diverse populations of fibroblasts and endothelial cells. LNSCs coordinate lymphocyte entry into the lymph node (LN), facilitate lymphocyte trafficking into distinct LN niches, regulate lymphocyte survival, and promote LN expansion. Our overall hypothesis is that viral and antigen acquisition by LNSCs shapes immunity by programming pathogen and vaccine specific responses, and that LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes.
 
 ## Projects
 

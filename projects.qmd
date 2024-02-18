@@ -23,10 +23,15 @@ text <- proj_yml %>%
       str_replace_all("( |, )", "-") %>%
       str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
     
+    # Conditional add hypothesis
+    hyp <- .x$hypothesis
+    
+    if (!is.null(hyp)) str_c("*", hyp, "*\n\n")
+    
     str_c(
       "## ", .x$title,    "\n\n",
       links[[.y]],        "\n\n",
-      "*", .x$hypothesis, "*\n\n",
+      hyp,
       .x$abstract,        "\n\n"
     )
   }) %>%

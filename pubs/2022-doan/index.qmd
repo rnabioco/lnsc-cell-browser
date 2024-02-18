@@ -1,5 +1,6 @@
 ---
 title: Trafficking and retention of protein antigens across systems and immune cell types
+image: 2022-doan.jpg
 categories: [project-2]
 about:
   id: about

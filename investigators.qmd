@@ -13,14 +13,13 @@ proj_yml <- read_yaml(here("projects.yml"))
 athr_yml <- read_yaml(here("authors.yml"))
 lnk_cls  <- "{.link-box}"
 
-# Only include authors with a project listed in projects.yml
+# Only include authors with a bio and a project listed in projects.yml
 projs <- names(proj_yml)
 
 athr_yml <- athr_yml %>%
   keep(~ {
-    is.list(.x) &&
-      !is.null(.x$project) &&
-      .x$project %in% projs &&
+    !is.null(.x$project) &&
+      any(.x$project %in% projs) &&
       !is.null(.x$bio)
   })
 
@@ -34,11 +33,34 @@ text <- athr_yml %>%
     
     if (!is.null(.x$suffix)) sfx <- str_c(", ", .x$suffix)
     
-    str_c(
+    res <- str_c(
       "## ", .y, sfx, "\n\n",
       lnks,           "\n\n",
       .x$bio,         "\n\n"
     )
+    
+    # Add image for each investigator
+    if (!is.null(.x$image)) {
+      img <- str_remove(.x$image, here())
+      
+      html_head <- str_c(
+        "<div class='investigator-image'>\n",
+        "  <img src='", img, "'>\n",
+        "  <p>\n"
+      )
+      
+      html_foot <- str_c(
+        "  </p>\n",
+        "</div>"
+      )
+      
+      res <- str_c(
+        html_head, res,
+        html_foot, "\n\n"
+      )
+    }
+    
+    res
   }) %>%
   str_c(collapse = "")
 ```

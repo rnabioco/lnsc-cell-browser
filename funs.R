@@ -51,7 +51,7 @@
   res
 }
 
-.scrape_pubmed <- function(url) {
+.scrape_pubmed <- function(url, attrs = NULL) {
   html <- read_html(url)
   
   # Scape author list
@@ -67,20 +67,23 @@
   
   # Scrap title and abstract
   ttl <- html %>%
-    html_elements("h1.heading-title") %>%
-    map_chr(html_text2) %>%
-    pluck(1)
+    html_element("h1.heading-title") %>%
+    html_text2()
   
   abst <- html %>%
     html_elements("p") %>%
     map_chr(html_text2) %>%
     pluck(4)
   
+  # Scrape image link
+  img <- html %>%
+    html_element("a.figure-link") %>%
+    html_attr("href")
+  
   # Set publication key based on first author and key
   # this is used to create page directories
   yr <- html %>%
-    html_elements("span.cit") %>%
-    pluck(1) %>%
+    html_element("span.cit") %>%
     html_text2() %>%
     str_extract("^[0-9]{4}(?= )")
   
@@ -100,6 +103,13 @@
     authors  = athrs,
     abstract = abst
   )
+  
+  if (!is.na(img)) res$image <- img
+  
+  if (!is.null(attrs)) {
+    attrs <- attrs[attrs %in% names(res)]
+    res   <- res[attrs]
+  }
   
   res
 }
