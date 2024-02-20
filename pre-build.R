@@ -222,6 +222,8 @@ athr_yml_new <- athr_yml %>%
       
       if (length(img) > 1) img <- img[[1]]
       
+      img <- str_remove(img, here())
+      
       if (!is_empty(img)) .x$image <- img
       
     # Remove image path if it does not exist
@@ -278,27 +280,24 @@ tl <- tl_dat %>%
     linewidth = 3
   ) +
   geom_point(
-    # shape = 25,
-    size  = 6,
+    size  = 8,
     fill  = "black"
   ) +
   geom_text(
-    aes(y = 0.35, label = year),
-    size     = 24 / .pt,
-    color    = "white"
-    # fontface = "bold"
+    aes(y = 0.5, label = year),
+    size  = 24 / .pt,
+    color = "white"
   ) +
   geom_text(
-    aes(y = -0.25, label = lab),
-    hjust    = 0,
-    vjust    = 1,
-    size     = 12 / .pt,
-    color    = "white"
-    # fontface = "italic"
+    aes(y = -0.4, label = lab),
+    hjust = 0,
+    vjust = 1,
+    size  = 12 / .pt,
+    color = "white"
   ) +
   coord_cartesian(
     xlim = c(min(tl_dat$date), max(tl_dat$date) + years(1)),
-    ylim = c(-3, 0.6)
+    ylim = c(-3, 1)
   ) +
   theme_void() +
   theme(
@@ -309,7 +308,7 @@ ggsave(
   tl,
   filename = here(img_dir, "pub_tl.png"),
   width    = 18,
-  height   = 5,
+  height   = 4,
   dpi      = 300,
   device   = "png"
 )
