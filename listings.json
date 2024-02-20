@@ -8,12 +8,18 @@
   {
     "listing": "/pubs.html",
     "items": [
+      "/pubs/2024-kim/index.html",
       "/pubs/2024-lucas/index.html",
+      "/pubs/2023-tamburini/index.html",
+      "/pubs/2022-doan/index.html",
       "/pubs/2021-carpentier/index.html",
-      "/pubs/2017-kedl/index.html",
       "/pubs/2021-walsh/index.html",
-      "/pubs/2023-li/index.html",
-      "/pubs/2022-doan/index.html"
+      "/pubs/2020-lucas/index.html",
+      "/pubs/2019-tamburini/index.html",
+      "/pubs/2018-lucas/index.html",
+      "/pubs/2018-mccarthy/index.html",
+      "/pubs/2017-kedl/index.html",
+      "/pubs/2014-tamburini/index.html"
     ]
   }
 ]

@@ -77,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -176,7 +176,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="core-c">core-c <span class="quarto-category-count">(3)</span></div><div class="category" data-category="core-d">core-d <span class="quarto-category-count">(3)</span></div><div class="category" data-category="project-1">project-1 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="project-2">project-2 <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="core-b">core-b <span class="quarto-category-count">(12)</span></div><div class="category" data-category="core-c">core-c <span class="quarto-category-count">(5)</span></div><div class="category" data-category="core-d">core-d <span class="quarto-category-count">(5)</span></div><div class="category" data-category="project-1">project-1 <span class="quarto-category-count">(6)</span></div><div class="category" data-category="project-2">project-2 <span class="quarto-category-count">(11)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -185,6 +185,11 @@ window.Quarto = {
 <h1 class="title">Publications</h1>
 </div>
 
+<div>
+  <div class="description">
+    <p><img src="./images/pub_tl.png" class="img-fluid"></p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -205,7 +210,24 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="project-1,project-2,core-c,core-d" data-listing-file-modified-sort="1708063007758" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="g-col-1" data-index="0" data-categories="project-1,core-b" data-listing-date-sort="1706054400000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
+<a href="./pubs/2024-kim/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Anaerobic respiration of host-derived methionine sulfoxide protects intracellular Salmonella from the phagocyte NADPH oxidase
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan 24, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="project-1,project-2,core-b,core-c,core-d" data-listing-date-sort="1704758400000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
 <a href="./pubs/2024-lucas/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -213,72 +235,201 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Chikungunya virus infection disrupts lymph node lymphatic endothelial cell composition and function via MARCO
 </h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan 9, 2024
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="project-1,project-2,core-c,core-d" data-listing-file-modified-sort="1708063007746" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
+<div class="g-col-1" data-index="2" data-categories="project-1,project-2,core-b,core-c,core-d" data-listing-date-sort="1695600000000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
+<a href="./pubs/2023-tamburini/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/2023-tamburini.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Vaccine-induced antigen archiving enhances local memory CD8+ T cell responses following an unrelated viral infection
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 25, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="project-2,core-b" data-listing-date-sort="1651536000000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
+<a href="./pubs/2022-doan/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/2022-doan.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Trafficking and retention of protein antigens across systems and immune cell types
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 3, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="project-1,project-2,core-b,core-c,core-d" data-listing-date-sort="1636934400000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
 <a href="./pubs/2021-carpentier/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./pubs/2021-carpentier/2021-carpentier.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./images/2021-carpentier.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination
 </h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 15, 2021
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="project-2" data-listing-file-modified-sort="1708063007742" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
-<a href="./pubs/2017-kedl/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pubs/2017-kedl/2017-kedl.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="project-2,core-c,core-d" data-listing-file-modified-sort="1708063007750" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<div class="g-col-1" data-index="5" data-categories="project-2,core-b,core-c,core-d" data-listing-date-sort="1618185600000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
 <a href="./pubs/2021-walsh/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./pubs/2021-walsh/2021-walsh.tif.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./images/2021-walsh.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node
 </h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 12, 2021
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="project-1" data-listing-file-modified-sort="1708062940241" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
-<a href="./pubs/2023-li/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="6" data-categories="project-2,core-b" data-listing-date-sort="1602547200000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
+<a href="./pubs/2020-lucas/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img src="./images/2020-lucas.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Species-specific MARCO-alphavirus interactions dictate chikungunya virus viremia
+PD-L1 Reverse Signaling in Dermal Dendritic Cells Promotes Dendritic Cell Migration Required for Skin Immunity
 </h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Oct 13, 2020
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="project-2" data-listing-file-modified-sort="1708063007754" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
-<a href="./pubs/2022-doan/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="7" data-categories="project-2,core-b,core-c,core-d" data-listing-date-sort="1557878400000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+<a href="./pubs/2019-tamburini/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img src="./images/2019-tamburini.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Trafficking and retention of protein antigens across systems and immune cell types
+Chronic Liver Disease in Humans Causes Expansion and Differentiation of Liver Lymphatic Endothelial Cells
 </h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 15, 2019
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="project-1,project-2,core-b" data-listing-date-sort="1536969600000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
+<a href="./pubs/2018-lucas/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/2018-lucas.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and Contraction during an Inflammatory Immune Response
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 15, 2018
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="project-1,project-2,core-b" data-listing-date-sort="1531353600000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="180">
+<a href="./pubs/2018-mccarthy/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/2018-mccarthy.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Chikungunya virus impairs draining lymph node function by inhibiting HEV-mediated lymphocyte recruitment
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 12, 2018
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="project-2,core-b" data-listing-date-sort="1512950400000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
+<a href="./pubs/2017-kedl/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/2017-kedl.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Dec 11, 2017
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="project-2,core-b" data-listing-date-sort="1402012800000" data-listing-file-modified-sort="1708414006105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="156">
+<a href="./pubs/2014-tamburini/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./images/2014-tamburini.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 6, 2014
+</div>
+</div>
 </div>
 </div>
 </a>
