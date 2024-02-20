@@ -1,0 +1,18 @@
+---
+title: Vaccine-induced antigen archiving enhances local memory CD8+ T cell responses following an unrelated viral infection
+image: /images/2023-tamburini.jpg
+date: 'September 25, 2023'
+
+categories: [project-1, project-2, core-b, core-c, core-d]
+about:
+  id: about
+  template: jolla
+  links:
+  - text: Publication
+    icon: file-earmark
+    href: https://pubmed.ncbi.nlm.nih.gov/37841845/
+---
+
+Beth Tamburini, Thu Doan, Tadg Forward, [Erin Lucas](http://orcid.org/0000-0001-7705-2069), Ira Fleming, Aspen Uecker-Martin, [Jay Hesselberth](https://scholar.google.com/citations?user=EnOmNEYAAAAJ), [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao)
+
+Viral and vaccine antigens persist or are archived in lymph node stromal cells (LNSC) such as lymphatic endothelial cells (LEC) and fibroblastic reticular cells (FRC). Here, we find that, during the time frame of antigen archiving, LEC apoptosis caused by a second, but unrelated, innate immune stimulus such as vaccina viral infection or CpG DNA administration boosted memory CD8+ T cells specific to the archived antigen. In contrast to "bystander" activation associated with unrelated infections, the memory CD8+ T cells specific to the vaccine archived antigen were significantly higher than memory CD8+ T cells of a different antigen specificity. Finally, the boosted memory CD8+ T cells resulted in increased protection against Listeria monocytogenes expressing the vaccine antigen, but only for the duration that the vaccine antigen was archived. These findings outline a novel mechanism by which LNSC archived antigens, in addition to bystander activation, can augment memory CD8+ T cell responses during repeated inflammatory insults.

@@ -16,7 +16,17 @@ project-3:
   hypothesis: We hypothesize that antibody isotype in an IC regulates protective immunity by determining which LNSC populations acquire and retain antigen via isotype-specific interactions with complement and Fc receptors (FcRs)
   abstract: Project 3 will engineer monoclonal antibodies (mAbs) with fixed antigen specificity on discrete antibody isotypes and subclasses. Using stabilized DNA conjugates, Projects 2 and 3 will track antibody:antigen complexes to determine the spatial and cellular localization of ICs in comparison with free antigen. Project 3 also investigates how FcR expression by LNSCs impacts IC acquisition and will work with Project 1 to determine viral antigen retention and define consequences to protective humoral and cellular immunity. This project uses mouse models engineered to manipulate complement receptor and FcR expression by discrete LNSC populations (Core B) and addresses the Program hypothesis by defining how different LNSC populations use antibody to determine antigen uptake and localization.
 
+core-b:
+  title: Animal and tissue core
+  short: The goal of the animal and tissue core is to generate novel genetic mouse models and to develop a tissue and cell repository
+  abstract: The goal of the animal and tissue core is to generate novel genetic mouse models and to develop a tissue and cell repository
+
 core-c:
-  title: Core C - Molecular Technologies
-  short: The molecular technologies cores will apply new molecular tools to understand the contributions of lymph node stromal cells (LNSC) to immune responses
+  title: Molecular technologies core
+  short: The molecular technologies core will apply new molecular tools to understand the contributions of lymph node stromal cells (LNSC) to immune responses
   abstract: The molecular technologies cores will apply new molecular tools to understand the contributions of lymph node stromal cells (LNSC) to immune responses
+
+core-d:
+  title: Bioinformatics core
+  short: The bioinformatics core will apply new informatics approaches to understand the contributions of lymph node stromal cells (LN    SC) to immune responses
+  abstract: The bioinformatics core will apply new informatics approaches to understand the contributions of lymph node stromal cells (LN    SC) to immune responses

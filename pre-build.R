@@ -1,7 +1,7 @@
 # Run this script prior to building site to:
 # * Scrape publication information and generate publication pages
 # * Update authors.yml based on publication information
-# * Serach for author images and update authors.yml
+# * Search for author images and update authors.yml
 
 library(yaml)
 library(tidyverse)
@@ -45,8 +45,13 @@ link_info <- list(
 # Template to write index.qmd
 index_qmd <- "---\ntitle: {ttl}\n"
 
+# Check for duplicated publications
+dup_pubs <- pub_yml %>%
+  map_chr(pluck, "pubmed") %>%
+  duplicated()
+
 # Create index.qmd for each pub entry
-pub_yml_new <- pub_yml %>%
+pub_yml_new <- pub_yml[!dup_pubs] %>%
   imap(~ {
     pub_info <- .x
     
@@ -55,7 +60,7 @@ pub_yml_new <- pub_yml %>%
     
     # Scrape missing info from pubmed
     pub_attrs <- c(
-      "key", "title", "year",
+      "key", "title", "date", "year",
       "authors", "abstract", "image"
     )
     
@@ -91,7 +96,7 @@ pub_yml_new <- pub_yml %>%
       
       if (length(img) > 1) img <- img[[1]]
       
-    } else if (file.exists(pub_info$image)) {
+    } else if (file.exists(str_remove(pub_info$image, "^/"))) {
       img <- pub_info$image
       
     } else {
@@ -102,20 +107,18 @@ pub_yml_new <- pub_yml %>%
       download.file(img_dwnld, img)
     }
     
-    img_nm  <- basename(img)
-    img_lnk <- here(pub, img_nm)
+    img <- str_remove(img, here())  # image path should be relative to site
     
     # Conditionally add image field to index.qmd
-    if (!is_empty(img_lnk)) {
-      index_qmd <- str_c(index_qmd, "image: {img_nm}\n")
+    if (!is_empty(img)) {
+      index_qmd <- str_c(index_qmd, "image: {img}\n")
       
-      if (!file.exists(img_lnk)) file.link(img, img_lnk)
-      
-      pub_info$image <- img_lnk
+      pub_info$image <- img
     }
     
     index_qmd <- str_c(
       index_qmd,
+      "date: '{pub_info$date}'\n\n",
       "categories: [{cats_str}]\n",
       "about:\n",
       "  id: about\n",
@@ -198,7 +201,7 @@ pub_yml_new <- pub_yml %>%
 # Write updated pubs.yml
 # this will have info scraped from pubmed
 if (!identical(pub_yml, pub_yml_new)) {
-  pub_yml %>%
+  pub_yml_new %>%
     write_yaml(here("pubs.yml"))
 }
 
@@ -230,6 +233,83 @@ athr_yml_new <- athr_yml %>%
   })
 
 if (!identical(athr_yml, athr_yml_new)) {
-  athr_yml %>%
+  athr_yml_new %>%
     write_yaml(here("authors.yml"))
 }
+
+
+# TIMELINE ----
+
+# Filter for authors to label
+lab_athr <- athr_yml_new %>%
+  keep(~ !is.null(.x$project)) %>%
+  names()
+
+tl_dat <- pub_yml_new %>%
+  map_dfr(~ {
+    athrs <- .x$authors
+    athrs <- athrs[athrs %in% lab_athr]
+    athrs <- str_extract(athrs, "[^ ]+$")
+    
+    tibble(
+      key     = .x$key,
+      date    = as.Date(str_c(.x$year, "-01-01")),
+      authors = str_c(athrs, collapse = ", "),
+      pmid    = str_extract(.x$pubmed, "[0-9]+(/|)$")
+    )
+  })
+
+# Format publication data
+tl_dat <- tl_dat %>%
+  mutate(
+    authors = str_wrap(authors, width = 10),
+    pmid    = str_remove(pmid, "/$"),
+    pmid    = str_c("PMID ", pmid),
+    lab     = str_c(authors, "\n", pmid),
+    year    = as.character(year(date))
+  ) %>%
+  group_by(date, year) %>%
+  summarize(lab = str_c(lab, collapse = "\n\n"), .groups = "drop")
+
+# Create publication timeline
+tl <- tl_dat %>%
+  ggplot(aes(date, 0)) +
+  geom_line(
+    linewidth = 3
+  ) +
+  geom_point(
+    # shape = 25,
+    size  = 6,
+    fill  = "black"
+  ) +
+  geom_text(
+    aes(y = 0.35, label = year),
+    size     = 24 / .pt,
+    color    = "white"
+    # fontface = "bold"
+  ) +
+  geom_text(
+    aes(y = -0.25, label = lab),
+    hjust    = 0,
+    vjust    = 1,
+    size     = 12 / .pt,
+    color    = "white"
+    # fontface = "italic"
+  ) +
+  coord_cartesian(
+    xlim = c(min(tl_dat$date), max(tl_dat$date) + years(1)),
+    ylim = c(-3, 0.6)
+  ) +
+  theme_void() +
+  theme(
+    plot.background = element_rect(fill = "#303030", color = "#303030")
+  )
+
+ggsave(
+  tl,
+  filename = here(img_dir, "pub_tl.png"),
+  width    = 18,
+  height   = 5,
+  dpi      = 300,
+  device   = "png"
+)

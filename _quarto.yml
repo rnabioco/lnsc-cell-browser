@@ -3,13 +3,16 @@ project:
 
 website:
   title: "LNSC Browser"
+  
   navbar:
     search: true
     left:
-      - projects.qmd
+      - text: Projects
+        file: projects.qmd
       - atlases.qmd
       - pubs.qmd
       - investigators.qmd
+      
   search:
     location: navbar
     type: textbox
@@ -19,6 +22,7 @@ format:
     theme: darkly
     css: styles.css
     toc: true
+    toc-depth: 1
 
 editor: visual
 

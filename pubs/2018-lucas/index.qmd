@@ -1,0 +1,18 @@
+---
+title: Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and Contraction during an Inflammatory Immune Response
+image: /images/2018-lucas.jpg
+date: 'September 15, 2018'
+
+categories: [project-1, project-2, core-b]
+about:
+  id: about
+  template: jolla
+  links:
+  - text: Publication
+    icon: file-earmark
+    href: https://pubmed.ncbi.nlm.nih.gov/30045970/
+---
+
+[Erin Lucas](http://orcid.org/0000-0001-7705-2069), Jeffrey Finlon, Matthew Burchill, Mary McCarthy, [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao), Tonya Colpitts, Beth Tamburini
+
+Lymph node (LN) expansion during an immune response is a complex process that involves the relaxation of the fibroblastic network, germinal center formation, and lymphatic vessel growth. These processes require the stromal cell network of the LN to act deliberately to accommodate the influx of immune cells to the LN. The molecular drivers of these processes are not well understood. Therefore, we asked whether the immediate cytokines type 1 IFN produced during viral infection influence the lymphatic network of the LN in mice. We found that following an IFN-inducing stimulus such as viral infection or polyI:C, programmed cell death ligand 1 (PD-L1) expression is dynamically upregulated on lymphatic endothelial cells (LECs). We found that reception of type 1 IFN by LECs is important for the upregulation of PD-L1 of mouse and human LECs and the inhibition of LEC expansion in the LN. Expression of PD-L1 by LECs is also important for the regulation of LN expansion and contraction after an IFN-inducing stimulus. We demonstrate a direct role for both type 1 IFN and PD-L1 in inhibiting LEC division and in promoting LEC survival. Together, these data reveal a novel mechanism for the coordination of type 1 IFN and PD-L1 in manipulating LEC expansion and survival during an inflammatory immune response.

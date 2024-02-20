@@ -2,9 +2,14 @@
 title: "Publications"
 listing:
   contents: "pubs/*/index.qmd"
+  sort:
+    - "date desc"
+    - "title"
   type: grid
   categories: numbered
   feed: false
-  fields: [image, title]
+  fields: [image, title, date]
 page-layout: full
+description: |
+  ![](/images/pub_tl.png)
 ---

@@ -1,10 +1,3 @@
-Ryan Sheridan:
-  suffix: PhD
-  links:
-    publications: https://orcid.org/0000-0003-4012-3147
-    website: https://github.com/sheridar
-    email: mailto:ryan.sheridan@cuanschutz.edu
-  project: core-d
 Thomas Morrison:
   suffix: PhD
   links:
@@ -40,7 +33,9 @@ Beth Tamburini:
   links:
     website: https://medschool.cuanschutz.edu/gastroenterology/research/research-laboratories/beth-jiron-tamburini-lab
     email: mailto:beth.tamburini@cuanschutz.edu
-  project: project-2
+  project:
+  - project-2
+  - core-b
   bio: The overarching goal of my research program is to understand how the lymphatic
     stroma recognize and react to stimuli within the lymph to guide the immune response.
     My initial studies of lymphatic stroma were focused on understanding the mechanisms
@@ -59,6 +54,7 @@ Beth Tamburini:
     in developing this research program. This collaborative research program as proven
     to be well suited for the training and success of the graduate students and post-docs
     in my laboratory.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/images/beth-tamburini.jpg
 Jenna Guthmiller:
   suffix: PhD
   links:
@@ -88,6 +84,7 @@ Jenna Guthmiller:
     conserved, albeit non-protective antigens. Together, these studies highlight the
     importance of understanding how preexisting antibodies influence the generation
     of broadly protective immunity.
+  image: /home/rmsheridan/Projects/lnsc-cell-browser/images/jenna-guthmiller.jpeg
 Jay Hesselberth:
   suffix: PhD
   links:
@@ -110,6 +107,13 @@ Jay Hesselberth:
     et al.). More recently, we have applied nanopore RNA sequencing to characterize
     the landscape of RNA repair events in budding yeast.
   image: /home/rmsheridan/Projects/lnsc-cell-browser/images/jay-hesselberth.png
+Ryan Sheridan:
+  suffix: PhD
+  links:
+    publications: https://orcid.org/0000-0003-4012-3147
+    website: https://github.com/sheridar
+    email: mailto:ryan.sheridan@cuanschutz.edu
+  project: core-d
 Jennifer Matsuda:
   suffix: PhD
   links:
@@ -161,3 +165,22 @@ Nicholas May: []
 Heather Hickman: []
 Tadg Forward: []
 Aspen Martin: []
+Susan Elmore: []
+Tonya Colpitts: []
+Austin Gillen: []
+Michael Kriss: []
+Kent Riemondy: []
+Ronald Schuyler: []
+Hugo Rosen: []
+Madison Kraus: []
+Ira Fleming: []
+Aspen Uecker-Martin: []
+Ju-Sim Kim: []
+Lin Liu: []
+Sashi Kant: []
+David Orlicky: []
+Siva Uppalapati: []
+Alyssa Margolis: []
+Michael McClelland: []
+Jessica Jones-Carson: []
+Andres Vazquez-Torres: []

@@ -34,7 +34,7 @@ text <- athr_yml %>%
     if (!is.null(.x$suffix)) sfx <- str_c(", ", .x$suffix)
     
     res <- str_c(
-      "## ", .y, sfx, "\n\n",
+      "<h2>", .y, sfx, "</h2>\n\n",
       lnks,           "\n\n",
       .x$bio,         "\n\n"
     )
@@ -45,14 +45,10 @@ text <- athr_yml %>%
       
       html_head <- str_c(
         "<div class='investigator-image'>\n",
-        "  <img src='", img, "'>\n",
-        "  <p>\n"
+        "  <img src='", img, "'>\n"
       )
       
-      html_foot <- str_c(
-        "  </p>\n",
-        "</div>"
-      )
+      html_foot <- "</div>"
       
       res <- str_c(
         html_head, res,

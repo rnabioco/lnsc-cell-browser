@@ -82,12 +82,20 @@
   
   # Set publication key based on first author and key
   # this is used to create page directories
-  yr <- html %>%
+  date <- html %>%
     html_element("span.cit") %>%
     html_text2() %>%
-    str_extract("^[0-9]{4}(?= )")
+    str_extract("^[^;]+")
   
-  if (is.na(yr)) cli_abort("Error extracting year from pubmed link")
+  if (is.na(date)) cli_abort("Error extracting date from pubmed link")
+  
+  date <- date %>%
+    as.Date(format = "%Y %b %d")
+  
+  yr <- year(date)
+  
+  date <- date %>%
+    format("%B %d, %Y")
   
   athr1 <- athrs[1] %>%
     str_extract("[^ ]+$") %>%
@@ -99,6 +107,7 @@
   res <- list(
     key      = key,
     title    = ttl,
+    date     = date,
     year     = yr,
     authors  = athrs,
     abstract = abst

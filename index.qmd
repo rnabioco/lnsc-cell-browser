@@ -14,31 +14,51 @@ library(here)
 
 source(here("funs.R"))
 
+# Read yamls
 proj_yml <- read_yaml(here("projects.yml"))
 pub_yml  <- read_yaml(here("pubs.yml"))
 athr_yml <- read_yaml(here("authors.yml"))
 lnk_cls  <- "{.link-box}"
 
+# Create links for each project
 links <- .create_project_links(proj_yml, athr_yml, pub_yml, lnk_cls)
 
+# Split into projects and cores
+# maintain order provided in yaml
+proj_type <- proj_yml %>%
+  names() %>%
+  str_extract("^[^-]+") %>%
+  str_to_title() %>%
+  str_c("s") %>%
+  factor(levels = unique(.))
+
+proj_yml <- proj_yml %>%
+  split(proj_type)
+
+# Create section text
 text <- proj_yml %>%
   imap(~ {
-    ttl_lnk <- .x$title %>%
-      str_to_lower() %>%
-      str_replace_all("( |, )", "-") %>%
-      str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
+    ttl <- str_c("## ", .y, "\n\n")
     
-    str_c(
-      "* ", ttl_lnk, "  \n",
-      links[[.y]],   "  \n",
-      .x$short,      "\n\n"
-    )
+    .x %>%
+      imap(~ {
+        ttl_lnk <- .x$title %>%
+          str_to_lower() %>%
+          str_replace_all("( |, )", "-") %>%
+          str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
+        
+        str_c(
+          "* ", ttl_lnk, "  \n",
+          links[[.y]],   "  \n",
+          .x$short,      "\n\n"
+        )
+      }) %>%
+      str_c(collapse = "") %>%
+      str_c(ttl, .)
   }) %>%
   str_c(collapse = "")
 ```
 
-The theme uniting our program is that lymph node stromal cells (LNSC)s are an understudied and untapped source of immunomodulatory control. LNSCs are comprised of diverse populations of fibroblasts and endothelial cells. LNSCs coordinate lymphocyte entry into the lymph node (LN), facilitate lymphocyte trafficking into distinct LN niches, regulate lymphocyte survival, and promote LN expansion. Our overall hypothesis is that viral and antigen acquisition by LNSCs shapes immunity by programming pathogen and vaccine specific responses, and that LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes.
-
-## Projects
+Lymph node stromal cells (LNSC)s are an understudied and untapped source of immunomodulatory control. LNSCs are comprised of diverse populations of fibroblasts and endothelial cells. LNSCs coordinate lymphocyte entry into the lymph node (LN), facilitate lymphocyte trafficking into distinct LN niches, regulate lymphocyte survival, and promote LN expansion. The goal of this program is to investigate how viral and antigen acquisition by LNSCs shape immunity and how LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes.
 
 `r text`

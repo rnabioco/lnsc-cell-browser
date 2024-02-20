@@ -1,5 +1,7 @@
 ---
-title: "Projects"
+html:
+  toc: false
+  toc-depth: 2
 ---
 
 ```{r, echo = FALSE, include = FALSE}
@@ -9,31 +11,51 @@ library(here)
 
 source(here("funs.R"))
 
+# Read yamls
 proj_yml <- read_yaml(here("projects.yml"))
 athr_yml <- read_yaml(here("authors.yml"))
 pub_yml  <- read_yaml(here("pubs.yml"))
 lnk_cls   <- "{.link-box}"
 
+# Create project links
 links <- .create_project_links(proj_yml, athr_yml, pub_yml, lnk_cls)
+
+# maintain order provided in yaml
+proj_type <- proj_yml %>%
+  names() %>%
+  str_extract("^[^-]+") %>%
+  str_to_title() %>%
+  str_c("s") %>%
+  factor(levels = unique(.))
+
+proj_yml <- proj_yml %>%
+  split(proj_type)
 
 text <- proj_yml %>%
   imap(~ {
-    ttl_lnk <- .x$title %>%
-      str_to_lower() %>%
-      str_replace_all("( |, )", "-") %>%
-      str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
+    ttl <- str_c("# ", .y, "\n\n")
     
-    # Conditional add hypothesis
-    hyp <- .x$hypothesis
-    
-    if (!is.null(hyp)) str_c("*", hyp, "*\n\n")
-    
-    str_c(
-      "## ", .x$title,    "\n\n",
-      links[[.y]],        "\n\n",
-      hyp,
-      .x$abstract,        "\n\n"
-    )
+    .x %>%
+      imap(~ {
+        ttl_lnk <- .x$title %>%
+          str_to_lower() %>%
+          str_replace_all("( |, )", "-") %>%
+          str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
+        
+        # Conditional add hypothesis
+        hyp <- .x$hypothesis
+        
+        if (!is.null(hyp)) str_c("*", hyp, "*\n\n")
+        
+        str_c(
+          "## ", .x$title,    "\n\n",
+          links[[.y]],        "\n\n",
+          hyp,
+          .x$abstract,        "\n\n"
+        )
+      }) %>%
+      str_c(collapse = "") %>%
+      str_c(ttl, .)
   }) %>%
   str_c(collapse = "")
 ```

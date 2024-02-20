@@ -1,7 +1,9 @@
 ---
 title: Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node
-image: 2021-walsh.jpg
-categories: [project-2, core-c, core-d]
+image: /images/2021-walsh.jpg
+date: 'April 12, 2021'
+
+categories: [project-2, core-b, core-c, core-d]
 about:
   id: about
   template: jolla
