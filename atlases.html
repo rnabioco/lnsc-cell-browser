@@ -77,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -176,7 +176,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Core-B">Core-B <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Core-C">Core-C <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Core-D">Core-D <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Project-2">Project-2 <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="2021">2021 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Core-C">Core-C <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Core-D">Core-D <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Project-2">Project-2 <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -203,26 +203,43 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Project-2,Core-B,Core-C,Core-D" data-listing-date-sort="1618185600000" data-listing-file-modified-sort="1708475738264" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
-<div class="thumbnail">
-<p><a href="./atlases/2021-walsh/index.html" class="no-external"></a></p><a href="./atlases/2021-walsh/index.html" class="no-external">
-<p><img src="./images/2021-walsh.jpg" class="thumbnail-image"></p>
-</a><p><a href="./atlases/2021-walsh/index.html" class="no-external"></a></p>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Project-2,Core-C,Core-D,2021" data-listing-date-sort="1618185600000" data-listing-file-modified-sort="1708559265027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<a href="./atlases/2021-walsh-33843587/index.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./atlases/2021-walsh-33843587/index.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img src="./images/2021-walsh-33843587.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+</a><div class="card-body post-contents"><a href="./atlases/2021-walsh-33843587/index.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node
+</h5>
+</a><div class="card-subtitle listing-subtitle"><a href="./atlases/2021-walsh-33843587/index.html" class="quarto-grid-link">
+</a><a href="https://d3898ys7yh3545.cloudfront.net/" class="link-box-large">Atlas</a>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./atlases/2021-walsh/index.html" class="no-external">Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./atlases/2021-walsh/index.html" class="no-external"></a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Project-2'); return false;">
+Project-2
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Core-C'); return false;">
+Core-C
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Core-D'); return false;">
+Core-D
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('2021'); return false;">
+2021
 </div>
 </div>
-<div class="metadata">
-<p><a href="./atlases/2021-walsh/index.html" class="no-external"></a></p><a href="./atlases/2021-walsh/index.html" class="no-external">
-</a>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 12, 2021
 </div>
+</div>
+</div>
+</div>
+
 </div>
 </div>
 <div class="listing-no-matching d-none">
