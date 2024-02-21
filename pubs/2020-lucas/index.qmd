@@ -3,7 +3,7 @@ title: PD-L1 Reverse Signaling in Dermal Dendritic Cells Promotes Dendritic Cell
 image: /images/2020-lucas.jpg
 date: 'October 13, 2020'
 
-categories: [project-2, core-b]
+categories: [Project-2, Core-B]
 about:
   id: about
   template: jolla

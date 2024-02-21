@@ -15,12 +15,12 @@ source(here("funs.R"))
 proj_yml <- read_yaml(here("projects.yml"))
 athr_yml <- read_yaml(here("authors.yml"))
 pub_yml  <- read_yaml(here("pubs.yml"))
-lnk_cls   <- "{.link-box}"
+lnk_cls  <- "{{.link-box}}"  # double brackets to use with glue
 
 # Create project links
 links <- .create_project_links(proj_yml, athr_yml, pub_yml, lnk_cls)
 
-# maintain order provided in yaml
+# Maintain order provided in yaml
 proj_type <- proj_yml %>%
   names() %>%
   str_extract("^[^-]+") %>%
@@ -31,28 +31,41 @@ proj_type <- proj_yml %>%
 proj_yml <- proj_yml %>%
   split(proj_type)
 
+# Create page text
 text <- proj_yml %>%
   imap(~ {
     ttl <- str_c("# ", .y, "\n\n")
     
     .x %>%
       imap(~ {
-        ttl_lnk <- .x$title %>%
-          str_to_lower() %>%
-          str_replace_all("( |, )", "-") %>%
-          str_c("[", .x$title, "](projects.qmd#", ., "){.bold-link}")
-        
         # Conditional add hypothesis
         hyp <- .x$hypothesis
         
-        if (!is.null(hyp)) str_c("*", hyp, "*\n\n")
+        if (!is.null(hyp)) hyp <- str_c("*", hyp, "*\n\n")
         
-        str_c(
-          "## ", .x$title,    "\n\n",
-          links[[.y]],        "\n\n",
-          hyp,
-          .x$abstract,        "\n\n"
+        res <- str_c(
+          "<h2>", .x$title, "</h2>\n\n",
+          links[[.y]], "\n\n",
+          hyp
         )
+        
+        body <- .x$abstract
+        
+        # Add image for each project
+        if (!is.null(.x$image)) {
+          img <- str_remove(.x$image, here())
+          
+          body <- str_c(
+            "<div class='project-image'>\n",
+            "  <img src='", img, "'>\n",
+            .x$abstract, "\n\n",
+            "</div>"
+          )
+        }
+        
+        res <- str_glue(str_c(res, "{body}"))
+        
+        res
       }) %>%
       str_c(collapse = "") %>%
       str_c(ttl, .)

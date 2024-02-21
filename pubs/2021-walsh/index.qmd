@@ -3,7 +3,7 @@ title: Molecular tracking devices quantify antigen distribution and archiving in
 image: /images/2021-walsh.jpg
 date: 'April 12, 2021'
 
-categories: [project-2, core-b, core-c, core-d]
+categories: [Project-2, Core-B, Core-C, Core-D]
 about:
   id: about
   template: jolla

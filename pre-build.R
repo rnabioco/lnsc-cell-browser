@@ -5,7 +5,6 @@
 
 library(yaml)
 library(tidyverse)
-library(glue)
 library(here)
 library(cli)
 library(rvest)
@@ -137,6 +136,7 @@ pub_yml_new <- pub_yml[!dup_pubs] %>%
     )
     
     cats_str <- cats %>%
+      str_to_title() %>%
       str_c(collapse = ", ")
     
     # Parse author link info
@@ -175,7 +175,7 @@ pub_yml_new <- pub_yml[!dup_pubs] %>%
     }
     
     # Write final index.qmd
-    index_qmd <- glue(
+    index_qmd <- str_glue(
       index_qmd, lnk_str, "---\n\n",
       athrs_str, "\n\n",
       pub_info$abstract
@@ -227,7 +227,7 @@ athr_yml_new <- athr_yml %>%
       if (!is_empty(img)) .x$image <- img
       
     # Remove image path if it does not exist
-    } else if (!file.exists(.x$image)) {
+    } else if (!file.exists(str_remove(.x$image, "^/"))) {
       .x$image <- NULL
     }
     
@@ -256,7 +256,7 @@ tl_dat <- pub_yml_new %>%
     tibble(
       key     = .x$key,
       date    = as.Date(str_c(.x$year, "-01-01")),
-      authors = str_c(athrs, collapse = ", "),
+      authors = str_c(athrs, collapse = "\n"),
       pmid    = str_extract(.x$pubmed, "[0-9]+(/|)$")
     )
   })
@@ -264,11 +264,10 @@ tl_dat <- pub_yml_new %>%
 # Format publication data
 tl_dat <- tl_dat %>%
   mutate(
-    authors = str_wrap(authors, width = 10),
-    pmid    = str_remove(pmid, "/$"),
-    pmid    = str_c("PMID ", pmid),
-    lab     = str_c(authors, "\n", pmid),
-    year    = as.character(year(date))
+    pmid = str_remove(pmid, "/$"),
+    pmid = str_c("PMID ", pmid),
+    lab  = str_c(authors, "\n", pmid),
+    year = as.character(year(date))
   ) %>%
   group_by(date, year) %>%
   summarize(lab = str_c(lab, collapse = "\n\n"), .groups = "drop")

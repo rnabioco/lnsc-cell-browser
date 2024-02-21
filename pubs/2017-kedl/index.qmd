@@ -3,7 +3,7 @@ title: Migratory dendritic cells acquire and present lymphatic endothelial cell-
 image: /images/2017-kedl.jpg
 date: 'December 11, 2017'
 
-categories: [project-2, core-b]
+categories: [Project-2, Core-B]
 about:
   id: about
   template: jolla

@@ -3,7 +3,7 @@ title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of L
 image: /images/2019-tamburini.jpg
 date: 'May 15, 2019'
 
-categories: [project-2, core-b, core-c, core-d]
+categories: [Project-2, Core-B, Core-C, Core-D]
 about:
   id: about
   template: jolla

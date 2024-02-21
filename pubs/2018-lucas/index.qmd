@@ -3,7 +3,7 @@ title: Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and 
 image: /images/2018-lucas.jpg
 date: 'September 15, 2018'
 
-categories: [project-1, project-2, core-b]
+categories: [Project-1, Project-2, Core-B]
 about:
   id: about
   template: jolla

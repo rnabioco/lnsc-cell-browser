@@ -1,3 +1,6 @@
+#' Create links for a project
+#' 
+#' links to atlases, publications, investigators
 .create_project_links <- function(proj_yml, athr_yml, pub_yml, lnk_cls) {
   
   # Identify publications and atlases listed for each project
@@ -29,7 +32,7 @@
         
       if (any(pubs)) {
         lnks <- str_c(
-          lnks, " [Publications](pubs.qmd#category=", proj, ")",
+          lnks, " [Publications](pubs.qmd#category=", str_to_title(proj), ")",
           lnk_cls
         )
       }
@@ -51,6 +54,22 @@
   res
 }
 
+#' Create project link
+#' 
+#' links to the project page
+.create_project_link <- function(proj_title, lnk_name = proj_title,
+                                 lnk_cls = "{.bold-link}", max_len = 64) {
+  res <- proj_title %>%
+    str_to_lower() %>%
+    str_replace_all("( |, )", "-") %>%
+    str_trunc(max_len, "right", ellipsis = "") %>%
+    str_remove("-$") %>%
+    str_c("[", lnk_name, "](projects.qmd#", ., ")", lnk_cls)
+  
+  res
+}
+
+#' Scrape pubmed for publication info
 .scrape_pubmed <- function(url, attrs = NULL) {
   html <- read_html(url)
   
@@ -123,6 +142,7 @@
   res
 }
 
+#' Format author names
 .format_name <- function(nm) {
   frst <- first(nm)
   lst  <- last(nm)

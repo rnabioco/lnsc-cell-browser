@@ -3,7 +3,7 @@ title: Trafficking and retention of protein antigens across systems and immune c
 image: /images/2022-doan.jpg
 date: 'May 03, 2022'
 
-categories: [project-2, core-b]
+categories: [Project-2, Core-B]
 about:
   id: about
   template: jolla

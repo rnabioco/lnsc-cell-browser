@@ -3,7 +3,7 @@ title: Antigen capture and archiving by lymphatic endothelial cells following va
 image: /images/2014-tamburini.jpg
 date: 'June 06, 2014'
 
-categories: [project-2, core-b]
+categories: [Project-2, Core-B]
 about:
   id: about
   template: jolla

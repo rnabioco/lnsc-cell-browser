@@ -3,7 +3,7 @@ title: MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses t
 image: /images/2021-carpentier.jpg
 date: 'November 15, 2021'
 
-categories: [project-1, project-2, core-b, core-c, core-d]
+categories: [Project-1, Project-2, Core-B, Core-C, Core-D]
 about:
   id: about
   template: jolla

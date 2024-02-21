@@ -11,12 +11,33 @@
 
 .link-box {
   border: 1px solid white; /* Blue border */
-  padding: 0px 3px;        /* Padding around the text */
+  padding: 0px 8px;        /* Padding inside box around the text */
+  font-size: 0.8rem;
   display: inline-block;   /* Ensures the box wraps the content */
   text-decoration: none;   /* Removes the underline from the link */
   color: white;            /* Text color */
   border-radius: 5px;      /* Rounded corners; adjust radius as needed */
+  margin: 1.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
+.link-box-dark {
+  border: 1px solid #434343; /* Blue border */
+  padding: 0px 8px;          /* Padding around the text */
+  font-size: 0.8rem;
+  display: inline-block;     /* Ensures the box wraps the content */
+  text-decoration: none;     /* Removes the underline from the link */
+  color: #434343;            /* Text color */
+  border-radius: 5px;        /* Rounded corners; adjust radius as needed */
+  margin: 1.5px;
+}
+
+/*
+.link-box-dark:hover {
+  color: #434343;
+}
+*/
 
 /* Investigator image and header styles*/
 .investigator-image {
@@ -32,6 +53,25 @@
 }
 
 .investigator-image h2 {
+  position: relative;
+  width: auto;
+  z-index: -1;  /* Ensures header underline */
+}
+
+/* Project image and header styles*/
+.project-image {
+  position: relative;  /* Allows z-index to work */
+}
+
+.project-image img {
+  float: right;
+  width: 30%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.project-image h2 {
   position: relative;
   width: auto;
   z-index: -1;  /* Ensures header underline */

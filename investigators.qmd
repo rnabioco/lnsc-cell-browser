@@ -6,7 +6,7 @@ title: "Investigators"
 library(yaml)
 library(tidyverse)
 library(here)
-library(glue)
+source(here("funs.R"))
 
 # Read info and set links to include
 proj_yml <- read_yaml(here("projects.yml"))
@@ -23,11 +23,20 @@ athr_yml <- athr_yml %>%
       !is.null(.x$bio)
   })
 
+# Set project links
+proj_lnks <- proj_yml %>%
+  imap(~ .create_project_link(.x$title, str_to_title(.y), "{.link-box-dark}"))
+
+# Create page text
 text <- athr_yml %>%
   imap(~ {
     lnks <- .x$links %>%
       imap(~ str_c("[", str_to_title(.y), "](", .x, ")", lnk_cls)) %>%
       str_c(collapse = " ")
+    
+    lnks <- proj_lnks[.x$project] %>%
+      str_c(collapse = " ") %>%
+      str_c(lnks, " ", .)
     
     sfx <- ""
     
