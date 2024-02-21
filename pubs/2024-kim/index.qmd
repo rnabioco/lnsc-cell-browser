@@ -1,8 +1,10 @@
 ---
 title: Anaerobic respiration of host-derived methionine sulfoxide protects intracellular Salmonella from the phagocyte NADPH oxidase
+subtitle: PMID 38307020
+
 date: 'January 24, 2024'
 
-categories: [Project-1, Core-B]
+categories: [Project-1, Core-B, 2024]
 about:
   id: about
   template: jolla

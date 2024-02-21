@@ -1,9 +1,11 @@
 ---
 title: Migratory dendritic cells acquire and present lymphatic endothelial cell-archived antigens during lymph node contraction
 image: /images/2017-kedl.jpg
+subtitle: PMID 29229919
+
 date: 'December 11, 2017'
 
-categories: [Project-2, Core-B]
+categories: [Project-2, Core-B, 2017]
 about:
   id: about
   template: jolla

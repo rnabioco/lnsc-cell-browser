@@ -1,9 +1,11 @@
 ---
 title: Trafficking and retention of protein antigens across systems and immune cell types
 image: /images/2022-doan.jpg
+subtitle: PMID 35505125
+
 date: 'May 03, 2022'
 
-categories: [Project-2, Core-B]
+categories: [Project-2, Core-B, 2022]
 about:
   id: about
   template: jolla

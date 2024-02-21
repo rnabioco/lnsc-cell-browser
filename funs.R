@@ -73,6 +73,12 @@
 .scrape_pubmed <- function(url, attrs = NULL) {
   html <- read_html(url)
   
+  # Pull PMID from url
+  pmid <- url %>%
+    str_extract("[0-9]+(/|)$") %>%
+    str_remove("/$") %>%
+    str_c("PMID ", .)
+  
   # Scape author list
   # modify to only include middle initials
   athrs <- html %>%
@@ -126,6 +132,7 @@
   res <- list(
     key      = key,
     title    = ttl,
+    pmid     = pmid,
     date     = date,
     year     = yr,
     authors  = athrs,

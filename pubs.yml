@@ -39,6 +39,7 @@
   - core-c
   - core-d
   date: April 12, 2021
+  pmid: PMID 33843587
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/29229919/
   key: 2017-kedl
   title: Migratory dendritic cells acquire and present lymphatic endothelial cell-archived
@@ -69,6 +70,7 @@
   - project-2
   - core-b
   date: December 11, 2017
+  pmid: PMID 29229919
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/34618370/
   links:
     github: https://github.com/rnabioco/morrison-chikv
@@ -116,6 +118,7 @@
   - core-c
   - core-d
   date: November 15, 2021
+  pmid: PMID 34618370
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/35505125/
   key: 2022-doan
   title: Trafficking and retention of protein antigens across systems and immune cell
@@ -144,6 +147,7 @@
   - project-2
   - core-b
   date: May 03, 2022
+  pmid: PMID 35505125
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/38194268/
   key: 2024-lucas
   title: Chikungunya virus infection disrupts lymph node lymphatic endothelial cell
@@ -181,6 +185,7 @@
   - core-c
   - core-d
   date: January 09, 2024
+  pmid: PMID 38194268
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/29997290/
   key: 2018-mccarthy
   title: Chikungunya virus impairs draining lymph node function by inhibiting HEV-mediated
@@ -217,6 +222,7 @@
   - project-2
   - core-b
   date: July 12, 2018
+  pmid: PMID 29997290
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/30045970/
   key: 2018-lucas
   title: Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and
@@ -253,6 +259,7 @@
   - project-2
   - core-b
   date: September 15, 2018
+  pmid: PMID 30045970
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/31156626/
   key: 2019-tamburini
   title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of Liver
@@ -296,6 +303,7 @@
   - core-c
   - core-d
   date: May 15, 2019
+  pmid: PMID 31156626
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/33053342/
   key: 2020-lucas
   title: PD-L1 Reverse Signaling in Dermal Dendritic Cells Promotes Dendritic Cell
@@ -325,6 +333,7 @@
   - project-2
   - core-b
   date: October 13, 2020
+  pmid: PMID 33053342
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/37841845/
   key: 2023-tamburini
   title: Vaccine-induced antigen archiving enhances local memory CD8+ T cell responses
@@ -360,6 +369,7 @@
   - core-c
   - core-d
   date: September 25, 2023
+  pmid: PMID 37841845
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/38307020/
   key: 2024-kim
   title: Anaerobic respiration of host-derived methionine sulfoxide protects intracellular
@@ -397,6 +407,7 @@
   - project-1
   - core-b
   date: January 24, 2024
+  pmid: PMID 38307020
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/24905362/
   key: 2014-tamburini
   title: Antigen capture and archiving by lymphatic endothelial cells following vaccination
@@ -425,3 +436,4 @@
   project:
   - project-2
   - core-b
+  pmid: PMID 24905362

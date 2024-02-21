@@ -8,7 +8,7 @@ listing:
   type: grid
   categories: numbered
   feed: false
-  fields: [image, title, date]
+  fields: [image, title, subtitle, categories, date]
 page-layout: full
 description: |
   ![](/images/pub_tl.png)

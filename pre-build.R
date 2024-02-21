@@ -59,7 +59,7 @@ pub_yml_new <- pub_yml[!dup_pubs] %>%
     
     # Scrape missing info from pubmed
     pub_attrs <- c(
-      "key", "title", "date", "year",
+      "key", "title", "pmid", "date", "year",
       "authors", "abstract", "image"
     )
     
@@ -117,6 +117,7 @@ pub_yml_new <- pub_yml[!dup_pubs] %>%
     
     index_qmd <- str_c(
       index_qmd,
+      "subtitle: {pub_info$pmid}\n\n",
       "date: '{pub_info$date}'\n\n",
       "categories: [{cats_str}]\n",
       "about:\n",
@@ -137,6 +138,7 @@ pub_yml_new <- pub_yml[!dup_pubs] %>%
     
     cats_str <- cats %>%
       str_to_title() %>%
+      c(pub_info$year) %>%
       str_c(collapse = ", ")
     
     # Parse author link info
