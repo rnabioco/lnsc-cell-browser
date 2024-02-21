@@ -1,35 +1,105 @@
 project-1:
   title: Define protective and pathogenic roles of LNSCs during viral infection
-  short: Project 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity
-  hypothesis: We hypothesize that inflammatory responses, cell trafficking, and development of protective adaptive immune responses are regulated by discrete populations of LNSCs during viral infection
-  abstract: Project 1 will define how viral targeting of distinct LNSCs regulates viral dissemination, LN organization and inflammation, and development of adaptive immunity. Project 1 and Project 2 will establish how viral targeting of LNSCs impacts antigen archiving and immune memory to archived antigens. Finally, Project 1 coordinates with Project 3 to study how isotype-specific immune complexes (ICs) promote chronic viral infection of follicular dendritic cells (FDCs). This Aim will use novel mouse models and human tissues and advanced spatial and single-cell RNA approaches. This Aim addresses the Program hypothesis by defining how LNSCs shape antiviral immune responses and how viruses manipulate LNSCs to evade immunity.
+  short: Project 1 will define how viral targeting of distinct LNSCs regulates
+    viral dissemination, LN organization and inflammation, and development of
+    adaptive immunity
+  hypothesis: We hypothesize that inflammatory responses, cell trafficking, and
+    development of protective adaptive immune responses are regulated by
+    discrete populations of LNSCs during viral infection
   image: /images/project-1.png
+  abstract: Project 1 will define how viral targeting of distinct LNSCs
+    regulates viral dissemination, LN organization and inflammation, and
+    development of adaptive immunity. Project 1 and Project 2 will establish
+    how viral targeting of LNSCs impacts antigen archiving and immune memory to
+    archived antigens. Finally, Project 1 coordinates with Project 3 to study
+    how isotype-specific immune complexes (ICs) promote chronic viral infection
+    of follicular dendritic cells (FDCs).
+    This project will use novel mouse models and human tissues and advanced
+    spatial and single-cell RNA approaches. This project will define how LNSCs
+    shape antiviral immune responses and how viruses manipulate LNSCs to evade
+    immunity.
 
 project-2:
-  title: Identify mechanisms of vaccine antigen localization and retention by LNSCs that drive and enhance cellular and humoral immunity
-  short: Project 2 will define mechanisms of vaccine antigen acquisition and retention by different LNSCs
-  hypothesis: We hypothesize that LNSC targeting improves and extends the cellular and humoral responses required for vaccine mediated immunity
-  abstract: Project 2 will work with Project 3 to define mechanisms of vaccine antigen acquisition and retention by different LNSCs. Project 2 will work with Projects 1 and 3 to determine if manipulation of antigen duration in LNSCs improves vaccine protection against arboviruses and influenza virus. Finally, Project 2 will work with Project 1 to define the consequences of virus induced cell death on LEC "training" and the impact on vaccine immunity. This Aim will distinguish functions of specific LNSC populations and create novel vaccine strategies (e.g., mRNA, virus-like particles, and lipid nanoparticles) and apply sophisticated spatial and single-cell transcriptomic approaches to evaluate antigen levels within infrequent and transcriptionally defined LNSC subsets. This Aim addresses the Program hypothesis by determining how specific LNSC subsets shape vaccine immunity and the consequences of viral infection of LNSCs to vaccine immunity.
+  title: Identify mechanisms of vaccine antigen localization and retention by
+    LNSCs that drive and enhance cellular and humoral immunity
+  short: Project 2 will define mechanisms of vaccine antigen acquisition and
+    retention by different LNSCs
+  hypothesis: We hypothesize that LNSC targeting improves and extends the
+    cellular and humoral responses required for vaccine mediated immunity
   image: /images/project-2.png
+  abstract: Project 2 will work with Project 3 to define mechanisms of vaccine
+    antigen acquisition and retention by different LNSCs. Project 2 will work
+    with Projects 1 and 3 to determine if manipulation of antigen duration in
+    LNSCs improves vaccine protection against arboviruses and influenza virus.
+    Finally, Project 2 will work with Project 1 to define the consequences of
+    virus induced cell death on LEC "training" and the impact on vaccine
+    immunity.
+    This project will distinguish functions of specific LNSC populations and
+    create novel vaccine strategies (e.g., mRNA, virus-like particles, and
+    lipid nanoparticles) and apply sophisticated spatial and single-cell
+    transcriptomic approaches to evaluate antigen levels within infrequent and
+    transcriptionally defined LNSC subsets. This project will determine how
+    specific LNSC subsets shape vaccine immunity and the consequences of viral
+    infection of LNSCs to vaccine immunity.
 
 project-3:
-  title: Investigate the role of immune complexes in antigen acquisition and retention by LNSCs to modulate cellular and humoral immunity
-  short: Project 3 will use stabilized DNA conjugates to track antibody:antigen complexes to determine the spatial and cellular localization of immune complexes
-  hypothesis: We hypothesize that antibody isotype in an IC regulates protective immunity by determining which LNSC populations acquire and retain antigen via isotype-specific interactions with complement and Fc receptors (FcRs)
-  abstract: Project 3 will engineer monoclonal antibodies (mAbs) with fixed antigen specificity on discrete antibody isotypes and subclasses. Using stabilized DNA conjugates, Projects 2 and 3 will track antibody:antigen complexes to determine the spatial and cellular localization of ICs in comparison with free antigen. Project 3 also investigates how FcR expression by LNSCs impacts IC acquisition and will work with Project 1 to determine viral antigen retention and define consequences to protective humoral and cellular immunity. This project uses mouse models engineered to manipulate complement receptor and FcR expression by discrete LNSC populations (Core B) and addresses the Program hypothesis by defining how different LNSC populations use antibody to determine antigen uptake and localization.
+  title: Investigate the role of immune complexes in antigen acquisition and
+    retention by LNSCs to modulate cellular and humoral immunity
+  short: Project 3 will use stabilized DNA conjugates to track antibody:antigen
+    complexes to determine the spatial and cellular localization of immune
+    complexes
+  hypothesis: We hypothesize that antibody isotype in an IC regulates protective
+    immunity by determining which LNSC populations acquire and retain antigen
+    via isotype-specific interactions with complement and Fc receptors (FcRs)
   image: /images/project-3.png
+  abstract: Project 3 will engineer monoclonal antibodies (mAbs) with fixed
+    antigen specificity on discrete antibody isotypes and subclasses. Using
+    stabilized DNA conjugates, Projects 2 and 3 will track antibody:antigen
+    complexes to determine the spatial and cellular localization of ICs in
+    comparison with free antigen. Project 3 also investigates how FcR expression
+    by LNSCs impacts IC acquisition and will work with Project 1 to determine
+    viral antigen retention and define consequences to protective humoral and
+    cellular immunity. This project will use mouse models engineered to
+    manipulate complement receptor and FcR expression by discrete LNSC
+    populations and will define how different LNSC populations use antibody to
+    determine antigen uptake and localization.
 
 core-b:
   title: Mouse transgenics and tissue characterization
-  short: The goal of the animal and tissue core is to generate novel genetic mouse models and to develop a tissue and cell repository
-  abstract: "The goal of the mouse transgenics and tissue core is to generate novel genetic mouse models and to develop a tissue and cell repository, this includes the following key tasks.\n\n**Task 1.** Generation of novel mouse lines\n\n**Task 2.** Provide a mouse colony for LNSC biology\n\n**Task 3.** Provide a resource for maintenance and distribution of human and mouse LNSCs and lymphoid tissues"
+  short: The goal of the animal and tissue core is to generate novel genetic
+    mouse models and to develop a tissue and cell repository
+  abstract: "The goal of the mouse transgenics and tissue core is to generate
+    novel genetic mouse models and to develop a tissue and cell repository, this
+    includes the following key tasks.\n\n
+    **Task 1.** Generation of novel mouse lines\n\n
+    **Task 2.** Provide a mouse colony for LNSC biology\n\n
+    **Task 3.** Provide a resource for maintenance and distribution of human and
+    mouse LNSCs and lymphoid tissues"
 
 core-c:
   title: Molecular technologies
-  short: The molecular technologies core will apply new molecular tools to understand the contributions of lymph node stromal cells to immune responses
-  abstract: "The molecular technologies cores will apply new molecular tools to understand the contributions of lymph node stromal cells to immune responses, this includes the following key tasks.\n\n**Task 1.** Generate validated reagents for and execute single-cell and spatial transcriptomic experiments to probe LNSC biology\n\n**Task 2.** Production of customized lipid nanoparticles with mRNA and siRNA cargo\n\n**Task 3.** Expression and purification of antibodies, antigens, and immune complexes"
+  short: The molecular technologies core will apply new molecular tools to
+    understand the contributions of lymph node stromal cells to immune responses
+  abstract: "The molecular technologies cores will apply new molecular tools to
+    understand the contributions of lymph node stromal cells to immune
+    responses, this includes the following key tasks.\n\n
+    **Task 1.** Generate validated reagents for and execute single-cell and
+    spatial transcriptomic experiments to probe LNSC biology\n\n
+    **Task 2.** Production of customized lipid nanoparticles with mRNA and siRNA
+    cargo\n\n
+    **Task 3.** Expression and purification of antibodies, antigens, and immune
+    complexes"
 
 core-d:
   title: Bioinformatics
-  short: The bioinformatics core will apply new informatics approaches to understand the contributions of lymph node stromal cells (LN    SC) to immune responses
-  abstract: "The bioinformatics core will apply new informatics approaches to understand the contributions of LNSCs to immune responses, this includes the following tasks.\n\n**Task 1.** Provide a bioinformatics resource for rigorous and reproducible analysis of sequencing experiments\n\n**Task 2.** Develop pipelines for large scale meta-analysis of single-cell and spatial transcriptomic data\n\n**Task 3.** Curate a public-facing LNSC atlas to allow for interactive exploration of published datasets"
+  short: The bioinformatics core will apply new informatics approaches to
+    understand the contributions of lymph node stromal cells (LN    SC) to immune responses
+  abstract: "The bioinformatics core will apply new informatics approaches to
+    understand the contributions of LNSCs to immune responses, this includes the
+    following tasks.\n\n
+    **Task 1.** Provide a bioinformatics resource for rigorous and reproducible
+    analysis of sequencing experiments\n\n
+    **Task 2.** Develop pipelines for large scale meta-analysis of single-cell
+    and spatial transcriptomic data\n\n
+    **Task 3.** Curate a public-facing LNSC atlas to allow for interactive
+    exploration of published datasets"

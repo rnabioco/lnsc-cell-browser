@@ -29,10 +29,12 @@
       # Link to publications
       pubs <- pub_yml %>%
         map_lgl(~ proj %in% .x$project)
+      
+      proj_lnk <- str_to_title(proj)
         
       if (any(pubs)) {
         lnks <- str_c(
-          lnks, " [Publications](pubs.qmd#category=", str_to_title(proj), ")",
+          lnks, " [Publications](pubs.qmd#category=", proj_lnk, ")",
           lnk_cls
         )
       }
@@ -43,7 +45,7 @@
       
       if (any(atlases)) {
         lnks <- str_c(
-          lnks, " [Atlases](atlases.qmd#category=", proj, ")",
+          lnks, " [Atlases](atlases.qmd#category=", proj_lnk, ")",
           lnk_cls
         )
       }

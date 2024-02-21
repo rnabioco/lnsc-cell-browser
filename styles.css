@@ -1,3 +1,10 @@
+/* root variables */
+:root {
+  --primary-background: rgb(215, 215, 215);
+  /* --primary-background: rgb(213, 234, 255); */
+  /* --primary-background: rgba(222, 226, 230, 1); */
+}
+
 /* Link styles */
 .plain-link {
   text-decoration: none; /* Removes the underline */
@@ -44,6 +51,64 @@
   color: #6c757d;            /* Text color */
   border-radius: 5px;        /* Rounded corners; adjust radius as needed */
   margin: 1.5px;
+}
+
+/* Main page headers */
+.quarto-title-banner {
+	margin-bottom: 1em;
+	color: black;
+	background: var(--primary-background);
+}
+
+/* Navbar text and background
+navbar-brand is the larger link on the far left
+original color: #dee2e6; */
+.navbar-dark .navbar-brand {
+	color: black;
+	background-color: var(--primary-background);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-dark {
+  color: black;
+	background-color: var(--primary-background);
+	opacity: 1;
+}
+
+/* Navbar text hover, focus, active */
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+	color: black;
+}
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+	color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+	color: black;
+}
+
+/* Search bar */
+.aa-Autocomplete .aa-Form, .aa-DetachedFormContainer .aa-Form {
+	align-items: center;
+	background-color: var(--primary-background);
+	border: 1px solid black;
+	border-radius: .25rem;
+	color: #2d2d2d;
+	display: flex;
+	line-height: 1em;
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+
+/* Other headers */
+h1, .h1 {
+	font-size: 2.5rem;
+	margin-top: 5rem;
 }
 
 /* Pub page abstract */

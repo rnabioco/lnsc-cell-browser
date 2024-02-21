@@ -15,27 +15,16 @@ Thomas Morrison:
     we also investigate mechanisms of neurological disease associated with neurotropic
     viruses such as Venezuelan equine encephalitis virus (VEEV), West Nile virus,
     and Zika virus. I also have extensive experience working with human coronaviruses
-    and other highly pathogenic respiratory viruses. Together with my long-term collaborator
-    Dr. Beth Tamburini, I will serve as a principal investigator for this MPI NIH
-    P01 Program Project grant. Additionally, I will serve as the Lead for Core A (Administrative
-    Core) and the Lead for Research Project 1. The primary goals of this collaborative
-    and interdisciplinary program are to test the hypothesis that viral and antigen
-    acquisition by lymph node stromal cells (LNSCs) actively shapes immunity by programming
-    both pathogen and vaccine specific responses, and that LNSCs can be manipulated
-    by pathogens and vaccines to guide immune outcomes. Within Research Project 1,
-    we will define mechanistically how discrete LNSCs contribute to the development
-    of antiviral immune responses to infection, regulate viral dissemination to distal
-    sites, and how viral targeting of LNSCs influences the development of immunity
-    to infection and vaccination.
+    and other highly pathogenic respiratory viruses.
   image: /images/thomas-morrison.png
 Beth Tamburini:
   suffix: PhD
   links:
+    publications: https://orcid.org/0000-0003-1991-231X
     website: https://medschool.cuanschutz.edu/gastroenterology/research/research-laboratories/beth-jiron-tamburini-lab
     email: mailto:beth.tamburini@cuanschutz.edu
   project:
   - project-2
-  - core-b
   bio: The overarching goal of my research program is to understand how the lymphatic
     stroma recognize and react to stimuli within the lymph to guide the immune response.
     My initial studies of lymphatic stroma were focused on understanding the mechanisms
@@ -103,8 +92,8 @@ Jay Hesselberth:
     studies have led to new concepts in post-transcriptional regulation that have
     broad implications for understanding the role of RNA damage in biology. Recently
     we have been focused on understanding how RNA damage and repair events are coupled
-    to control RNA fate after stress-induced RNA cleavage (Ancar et al. and Cherry
-    et al.). More recently, we have applied nanopore RNA sequencing to characterize
+    to control RNA fate after stress-induced RNA cleavage.
+    More recently, we have applied nanopore RNA sequencing to characterize
     the landscape of RNA repair events in budding yeast.
   image: /images/jay-hesselberth.png
 Ryan Sheridan:
@@ -140,6 +129,7 @@ Jennifer Matsuda:
     of mice. Due to the core''s consistently high quality of work, we have recently
     been designated as the Regional Mouse Genetics Core Facility to support investigators
     at the University of Colorado Denver, in addition to the investigators at NJH.'
+  image: /images/jennifer-matsuda.jpeg
 Frances Li:
   links:
     publications: https://orcid.org/0000-0001-8798-8290

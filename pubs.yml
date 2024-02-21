@@ -5,7 +5,6 @@
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150719
   project:
   - project-2
-  - core-b
   - core-c
   - core-d
   fig_number: 7
@@ -42,9 +41,7 @@
     cellular resolution in vivo.
   image: /images/2021-walsh-33843587.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/29229919/
-  project:
-  - project-2
-  - core-b
+  project: project-2
   key: 2017-kedl-29229919
   title: Migratory dendritic cells acquire and present lymphatic endothelial cell-archived
     antigens during lymph node contraction
@@ -79,7 +76,6 @@
   project:
   - project-1
   - project-2
-  - core-b
   - core-c
   - core-d
   key: 2021-carpentier-34618370
@@ -121,9 +117,7 @@
     infection.
   image: /images/2021-carpentier-34618370.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/35505125/
-  project:
-  - project-2
-  - core-b
+  project: project-2
   key: 2022-doan-35505125
   title: Trafficking and retention of protein antigens across systems and immune cell
     types
@@ -153,7 +147,6 @@
   project:
   - project-1
   - project-2
-  - core-b
   - core-c
   - core-d
   key: 2024-lucas-38194268
@@ -191,7 +184,6 @@
   project:
   - project-1
   - project-2
-  - core-b
   key: 2018-mccarthy-29997290
   title: Chikungunya virus impairs draining lymph node function by inhibiting HEV-mediated
     lymphocyte recruitment
@@ -228,7 +220,6 @@
   project:
   - project-1
   - project-2
-  - core-b
   key: 2018-lucas-30045970
   title: Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and
     Contraction during an Inflammatory Immune Response
@@ -264,7 +255,6 @@
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/31156626/
   project:
   - project-2
-  - core-b
   - core-c
   - core-d
   key: 2019-tamburini-31156626
@@ -339,7 +329,6 @@
   project:
   - project-1
   - project-2
-  - core-b
   - core-c
   - core-d
   key: 2023-tamburini-37841845
@@ -410,9 +399,7 @@
     stress exploits the anaerobic metabolism associated with dmsABC gene products,
     a pathway that has accrued inactivating mutations in human-adapted typhoidal serovars.
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/24905362/
-  project:
-  - project-2
-  - core-b
+  project: project-2
   key: 2014-tamburini-24905362
   title: Antigen capture and archiving by lymphatic endothelial cells following vaccination
     or viral infection

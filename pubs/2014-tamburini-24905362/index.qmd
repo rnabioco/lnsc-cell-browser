@@ -4,7 +4,7 @@ title: Antigen capture and archiving by lymphatic endothelial cells following va
 image: /images/2014-tamburini-24905362.jpg
 subtitle: 'PMID 24905362'
 date: 'June 06, 2014'
-categories: [Project-2, Core-B, 2014]
+categories: [Project-2, 2014]
 about:
   id: about
   template: jolla
@@ -14,6 +14,6 @@ about:
     href: https://pubmed.ncbi.nlm.nih.gov/24905362/
 ---
 
-Beth Tamburini, Matthew Burchill, Ross Kedl
+[Beth Tamburini](https://orcid.org/0000-0003-1991-231X), Matthew Burchill, Ross Kedl
 
 Antigen derived from viral infections with influenza and vesicular stomatitis virus can persist after resolution of infection. Here we show that antigen can similarly persist for weeks following viral challenge and vaccination. Antigen is captured by lymphatic endothelial cells (LECs) under conditions that induce LEC proliferation. Consistent with published data showing that viral antigen persistence impacts the function of circulating memory T cells, we find that vaccine-elicited antigen persistence, found on LECs, positively influences the degree of protective immunity provided by circulating memory CD8(+) T cells. The coupling of LEC proliferation and antigen capture identifies a mechanism by which the LECs store, or 'archive', antigens for extended periods of time after antigen challenge, thereby increasing IFNγ/IL-2 production and enhancing protection against infection. These findings therefore have the potential to have an impact on future vaccination strategies and our understanding of the role for persisting antigen in both vaccine and infectious settings.
