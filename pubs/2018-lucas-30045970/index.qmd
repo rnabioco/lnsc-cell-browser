@@ -1,10 +1,9 @@
 ---
 title: Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and Contraction during an Inflammatory Immune Response
-image: /images/2018-lucas.jpg
-subtitle: PMID 30045970
 
+image: /images/2018-lucas-30045970.jpg
+subtitle: 'PMID 30045970'
 date: 'September 15, 2018'
-
 categories: [Project-1, Project-2, Core-B, 2018]
 about:
   id: about

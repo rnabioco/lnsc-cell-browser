@@ -1,10 +1,9 @@
 ---
 title: PD-L1 Reverse Signaling in Dermal Dendritic Cells Promotes Dendritic Cell Migration Required for Skin Immunity
-image: /images/2020-lucas.jpg
-subtitle: PMID 33053342
 
+image: /images/2020-lucas-33053342.jpg
+subtitle: 'PMID 33053342'
 date: 'October 13, 2020'
-
 categories: [Project-2, Core-B, 2020]
 about:
   id: about

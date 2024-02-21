@@ -1,10 +1,9 @@
 ---
 title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of Liver Lymphatic Endothelial Cells
-image: /images/2019-tamburini.jpg
-subtitle: PMID 31156626
 
+image: /images/2019-tamburini-31156626.jpg
+subtitle: 'PMID 31156626'
 date: 'May 15, 2019'
-
 categories: [Project-2, Core-B, Core-C, Core-D, 2019]
 about:
   id: about

@@ -1,10 +1,9 @@
 ---
 title: Chikungunya virus impairs draining lymph node function by inhibiting HEV-mediated lymphocyte recruitment
-image: /images/2018-mccarthy.jpg
-subtitle: PMID 29997290
 
+image: /images/2018-mccarthy-29997290.jpg
+subtitle: 'PMID 29997290'
 date: 'July 12, 2018'
-
 categories: [Project-1, Project-2, Core-B, 2018]
 about:
   id: about

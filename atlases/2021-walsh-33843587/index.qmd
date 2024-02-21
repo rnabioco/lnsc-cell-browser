@@ -1,9 +1,10 @@
 ---
 title: Molecular tracking devices quantify antigen distribution and archiving in the murine lymph node
-image: /images/2021-walsh.jpg
-date: 'April 12, 2021'
 
-categories: [Project-2, Core-B, Core-C, Core-D]
+image: /images/2021-walsh-33843587.jpg
+subtitle: '[Atlas](https://d3898ys7yh3545.cloudfront.net/){.link-box-large}'
+date: 'April 12, 2021'
+categories: [Project-2, Core-B, Core-C, Core-D, 2021]
 about:
   id: about
   template: jolla
@@ -14,9 +15,6 @@ about:
   - text: GitHub
     icon: github
     href: https://github.com/rnabioco/antigen-tracking
-  - text: Atlas
-    icon: compass
-    href: https://d3898ys7yh3545.cloudfront.net/
   - text: NCBI GEO
     href: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150719
 ---

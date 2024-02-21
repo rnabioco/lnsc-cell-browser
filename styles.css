@@ -22,22 +22,47 @@
   margin-bottom: 5px;
 }
 
+.link-box-large {
+  border: 1px solid white; /* Blue border */
+  padding: 0px 8px;        /* Padding inside box around the text */
+  display: inline-block;   /* Ensures the box wraps the content */
+  text-decoration: none;   /* Removes the underline from the link */
+  color: white;            /* Text color */
+  border-radius: 5px;      /* Rounded corners; adjust radius as needed */
+  margin: 1.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .link-box-dark {
-  border: 1px solid #434343; /* Blue border */
+  /* color: #434343; */
+  border: 1px solid #6c757d; /* Blue border */
   padding: 0px 8px;          /* Padding around the text */
   font-size: 0.8rem;
   display: inline-block;     /* Ensures the box wraps the content */
   text-decoration: none;     /* Removes the underline from the link */
-  color: #434343;            /* Text color */
+  color: #6c757d;            /* Text color */
   border-radius: 5px;        /* Rounded corners; adjust radius as needed */
   margin: 1.5px;
 }
 
-/*
-.link-box-dark:hover {
-  color: #434343;
+/* Pub page abstract */
+div.quarto-about-jolla main {
+	text-align: left;
 }
-*/
+
+/* Pub card subtitle */
+.card-subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Pub page subtitle */
+p.subtitle {
+	margin-top: .25em;
+	margin-bottom: .5em;
+	text-align: center;
+}
 
 /* Investigator image and header styles*/
 .investigator-image {

@@ -1,10 +1,9 @@
 ---
 title: Antigen capture and archiving by lymphatic endothelial cells following vaccination or viral infection
-image: /images/2014-tamburini.jpg
-subtitle: PMID 24905362
 
+image: /images/2014-tamburini-24905362.jpg
+subtitle: 'PMID 24905362'
 date: 'June 06, 2014'
-
 categories: [Project-2, Core-B, 2014]
 about:
   id: about

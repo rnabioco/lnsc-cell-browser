@@ -3,9 +3,17 @@
     github: https://github.com/rnabioco/antigen-tracking
     atlas: https://d3898ys7yh3545.cloudfront.net/
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150719
-  key: 2021-walsh
+  project:
+  - project-2
+  - core-b
+  - core-c
+  - core-d
+  fig_number: 7
+  key: 2021-walsh-33843587
   title: Molecular tracking devices quantify antigen distribution and archiving in
     the murine lymph node
+  pmid: PMID 33843587
+  date: April 12, 2021
   year: '2021'
   authors:
   - Shannon Walsh
@@ -32,18 +40,16 @@
     enable new approaches to study dynamic tissue dissemination of antigen-adjuvant
     conjugates and identify new mechanisms of antigen acquisition and retention at
     cellular resolution in vivo.
-  image: /images/2021-walsh.jpg
+  image: /images/2021-walsh-33843587.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/29229919/
   project:
   - project-2
   - core-b
-  - core-c
-  - core-d
-  date: April 12, 2021
-  pmid: PMID 33843587
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/29229919/
-  key: 2017-kedl
+  key: 2017-kedl-29229919
   title: Migratory dendritic cells acquire and present lymphatic endothelial cell-archived
     antigens during lymph node contraction
+  pmid: PMID 29229919
+  date: December 11, 2017
   year: '2017'
   authors:
   - Ross Kedl
@@ -65,19 +71,22 @@
     migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived
     antigens are exchanged with migratory DCs, both directly and through LEC apoptosis,
     to cross-present archived antigens to circulating T cells.
-  image: /images/2017-kedl.jpg
-  project:
-  - project-2
-  - core-b
-  date: December 11, 2017
-  pmid: PMID 29229919
+  image: /images/2017-kedl-29229919.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/34618370/
   links:
     github: https://github.com/rnabioco/morrison-chikv
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
-  key: 2021-carpentier
+  project:
+  - project-1
+  - project-2
+  - core-b
+  - core-c
+  - core-d
+  key: 2021-carpentier-34618370
   title: MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to
     limit viremia and viral dissemination
+  pmid: PMID 34618370
+  date: November 15, 2021
   year: '2021'
   authors:
   - Kathryn Carpentier
@@ -110,19 +119,16 @@
     unrecognized arbovirus-scavenging role for lymphatic endothelial cells and improve
     our mechanistic understanding of viremia control during arthritogenic alphavirus
     infection.
-  image: /images/2021-carpentier.jpg
+  image: /images/2021-carpentier-34618370.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/35505125/
   project:
-  - project-1
   - project-2
   - core-b
-  - core-c
-  - core-d
-  date: November 15, 2021
-  pmid: PMID 34618370
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/35505125/
-  key: 2022-doan
+  key: 2022-doan-35505125
   title: Trafficking and retention of protein antigens across systems and immune cell
     types
+  pmid: PMID 35505125
+  date: May 03, 2022
   year: '2022'
   authors:
   - Thu Doan
@@ -142,16 +148,19 @@
     protective immune responses. Therefore, understanding antigen trafficking and
     retention is necessary to understand the type and magnitude of the immune response
     and essential for the development of novel vaccine and therapeutic targets.
-  image: /images/2022-doan.jpg
+  image: /images/2022-doan-35505125.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/38194268/
   project:
+  - project-1
   - project-2
   - core-b
-  date: May 03, 2022
-  pmid: PMID 35505125
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/38194268/
-  key: 2024-lucas
+  - core-c
+  - core-d
+  key: 2024-lucas-38194268
   title: Chikungunya virus infection disrupts lymph node lymphatic endothelial cell
     composition and function via MARCO
+  pmid: PMID 38194268
+  date: January 09, 2024
   year: '2024'
   authors:
   - Cormac Lucas
@@ -178,18 +187,16 @@
     by infection. Consistent with this idea, we find that antigen acquisition by LECs,
     a key function of LN LECs during infection and immunization, was reduced during
     pathogenic CHIKV infection.
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/29997290/
   project:
   - project-1
   - project-2
   - core-b
-  - core-c
-  - core-d
-  date: January 09, 2024
-  pmid: PMID 38194268
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/29997290/
-  key: 2018-mccarthy
+  key: 2018-mccarthy-29997290
   title: Chikungunya virus impairs draining lymph node function by inhibiting HEV-mediated
     lymphocyte recruitment
+  pmid: PMID 29997290
+  date: July 12, 2018
   year: '2018'
   authors:
   - Mary McCarthy
@@ -216,17 +223,17 @@
     during pathogenic, but not attenuated, CHIKV infection. Our data suggest that
     pathogenic, persistent strains of CHIKV disable the development of adaptive immune
     responses within the dLN.
-  image: /images/2018-mccarthy.jpg
+  image: /images/2018-mccarthy-29997290.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/30045970/
   project:
   - project-1
   - project-2
   - core-b
-  date: July 12, 2018
-  pmid: PMID 29997290
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/30045970/
-  key: 2018-lucas
+  key: 2018-lucas-30045970
   title: Type 1 IFN and PD-L1 Coordinate Lymphatic Endothelial Cell Expansion and
     Contraction during an Inflammatory Immune Response
+  pmid: PMID 30045970
+  date: September 15, 2018
   year: '2018'
   authors:
   - Erin Lucas
@@ -253,17 +260,18 @@
     LEC survival. Together, these data reveal a novel mechanism for the coordination
     of type 1 IFN and PD-L1 in manipulating LEC expansion and survival during an inflammatory
     immune response.
-  image: /images/2018-lucas.jpg
+  image: /images/2018-lucas-30045970.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/31156626/
   project:
-  - project-1
   - project-2
   - core-b
-  date: September 15, 2018
-  pmid: PMID 30045970
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/31156626/
-  key: 2019-tamburini
+  - core-c
+  - core-d
+  key: 2019-tamburini-31156626
   title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of Liver
     Lymphatic Endothelial Cells
+  pmid: PMID 31156626
+  date: May 15, 2019
   year: '2019'
   authors:
   - Beth Tamburini
@@ -296,18 +304,16 @@
     liver, expanding in an attempt to maintain tissue homeostasis. However, when inflammatory
     signals, such as oxidized low density lipoprotein are increased, as in NASH, lymphatic
     function declines and liver homeostasis is impeded.
-  image: /images/2019-tamburini.jpg
+  image: /images/2019-tamburini-31156626.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/33053342/
   project:
   - project-2
   - core-b
-  - core-c
-  - core-d
-  date: May 15, 2019
-  pmid: PMID 31156626
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/33053342/
-  key: 2020-lucas
+  key: 2020-lucas-33053342
   title: PD-L1 Reverse Signaling in Dermal Dendritic Cells Promotes Dendritic Cell
     Migration Required for Skin Immunity
+  pmid: PMID 33053342
+  date: October 13, 2020
   year: '2020'
   authors:
   - Erin Lucas
@@ -328,16 +334,19 @@
     for antigen delivery to the dLN. Finally, the TSS motif is required for chemokine
     receptor signaling downstream of the Gα subunit of the heterotrimeric G protein
     complex, ERK phosphorylation, and actin polymerization in DCs.
-  image: /images/2020-lucas.jpg
+  image: /images/2020-lucas-33053342.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/37841845/
   project:
+  - project-1
   - project-2
   - core-b
-  date: October 13, 2020
-  pmid: PMID 33053342
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/37841845/
-  key: 2023-tamburini
+  - core-c
+  - core-d
+  key: 2023-tamburini-37841845
   title: Vaccine-induced antigen archiving enhances local memory CD8+ T cell responses
     following an unrelated viral infection
+  pmid: PMID 37841845
+  date: September 25, 2023
   year: '2023'
   authors:
   - Beth Tamburini
@@ -361,19 +370,16 @@
     duration that the vaccine antigen was archived. These findings outline a novel
     mechanism by which LNSC archived antigens, in addition to bystander activation,
     can augment memory CD8+ T cell responses during repeated inflammatory insults.
-  image: /images/2023-tamburini.jpg
+  image: /images/2023-tamburini-37841845.jpg
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/38307020/
   project:
   - project-1
-  - project-2
   - core-b
-  - core-c
-  - core-d
-  date: September 25, 2023
-  pmid: PMID 37841845
-- pubmed: https://pubmed.ncbi.nlm.nih.gov/38307020/
-  key: 2024-kim
+  key: 2024-kim-38307020
   title: Anaerobic respiration of host-derived methionine sulfoxide protects intracellular
     Salmonella from the phagocyte NADPH oxidase
+  pmid: PMID 38307020
+  date: January 24, 2024
   year: '2024'
   authors:
   - Ju-Sim Kim
@@ -403,17 +409,16 @@
     Our investigations demonstrate that nontyphoidal Salmonella responding to oxidative
     stress exploits the anaerobic metabolism associated with dmsABC gene products,
     a pathway that has accrued inactivating mutations in human-adapted typhoidal serovars.
-  project:
-  - project-1
-  - core-b
-  date: January 24, 2024
-  pmid: PMID 38307020
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/24905362/
-  key: 2014-tamburini
+  project:
+  - project-2
+  - core-b
+  key: 2014-tamburini-24905362
   title: Antigen capture and archiving by lymphatic endothelial cells following vaccination
     or viral infection
+  pmid: PMID 24905362
   date: June 06, 2014
-  year: 2014.0
+  year: '2014'
   authors:
   - Beth Tamburini
   - Matthew Burchill
@@ -432,8 +437,4 @@
     therefore have the potential to have an impact on future vaccination strategies
     and our understanding of the role for persisting antigen in both vaccine and infectious
     settings.
-  image: /images/2014-tamburini.jpg
-  project:
-  - project-2
-  - core-b
-  pmid: PMID 24905362
+  image: /images/2014-tamburini-24905362.jpg

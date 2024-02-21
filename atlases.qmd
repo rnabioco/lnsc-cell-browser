@@ -2,9 +2,9 @@
 title: "Atlases"
 listing:
   contents: "atlases/*/index.qmd"
-  type: default
+  type: grid
   categories: numbered
   feed: false
-  fields: [image, title]
+  fields: [image, title, subtitle, categories, date]
 page-layout: full
 ---
