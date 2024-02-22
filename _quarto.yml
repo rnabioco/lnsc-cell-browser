@@ -19,7 +19,7 @@ website:
 
 format:
   html:
-    theme: darkly
+    theme: [darkly, theme.scss]
     css: styles.css
     toc: true
     toc-depth: 1
