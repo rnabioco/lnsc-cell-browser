@@ -60,9 +60,18 @@
 	background: var(--primary-background);
 }
 
+.quarto-title-banner h1, .quarto-title-banner .h1, .quarto-title-banner h2, .quarto-title-banner .h2 {
+	color: black;
+}
+
 /* Navbar text and background
 navbar-brand is the larger link on the far left
 original color: #dee2e6; */
+.navbar {
+	background-color: var(--primary-background);
+	color: black;
+}
+
 .navbar-dark .navbar-brand {
 	color: black;
 	background-color: var(--primary-background);
