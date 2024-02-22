@@ -1,10 +1,11 @@
 ---
-title: Lymph Node Stromal Cell Browser
 page-layout: full
 title-block-banner: true
 editor_options: 
   chunk_output_type: console
 ---
+
+# Lymph Node Stromal Cell Browser
 
 ```{r, echo = FALSE, include = FALSE}
 library(markdown)
@@ -55,15 +56,6 @@ text <- proj_yml %>%
   str_c(collapse = "")
 ```
 
-Lymph node stromal cells (LNSC)s are an understudied and untapped source of
-immunomodulatory control. LNSCs are comprised of diverse populations of
-fibroblasts and endothelial cells. LNSCs coordinate lymphocyte entry into the
-lymph node (LN), facilitate lymphocyte trafficking into distinct LN niches,
-regulate lymphocyte survival, and promote LN expansion.
-The goal of this program is to investigate how viral and antigen acquisition by
-LNSCs shape immunity and how LNSCs can be manipulated by pathogens and vaccines
-to guide immune outcomes. This program is composed of three projects
-that will investigate distinct aspects of LNSC biology along with three
-supporting cores.
+Lymph node stromal cells (LNSC)s are an understudied and untapped source of immunomodulatory control. LNSCs are comprised of diverse populations of fibroblasts and endothelial cells. LNSCs coordinate lymphocyte entry into the lymph node (LN), facilitate lymphocyte trafficking into distinct LN niches, regulate lymphocyte survival, and promote LN expansion. The goal of this program is to investigate how viral and antigen acquisition by LNSCs shape immunity and how LNSCs can be manipulated by pathogens and vaccines to guide immune outcomes. This program is composed of three projects that will investigate distinct aspects of LNSC biology along with three supporting cores.
 
 `r text`

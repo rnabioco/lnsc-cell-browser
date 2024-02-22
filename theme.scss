@@ -3,3 +3,22 @@
 // changing navbar hover variables do not seem to work
 $navbar-bg: rgb(215, 215, 215);
 $navbar-fg: black;
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+$font-family: "Atkinson Hyperlegible", sans-serif;
+
+$link-color: #565A5C;
+$hover-color: lighten($link-color, 20%);
+
+a{
+  color: $link-color;
+
+  &:hover{
+    color: $hover-color;
+  }
+  
+}
+
+div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+  font-weight: bold; 
+}
