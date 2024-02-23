@@ -11,7 +11,7 @@ $hover-color: lighten($link-color, 20%);
 a {
   color: $link-color;
 
-  &:hover{
+  &:hover {
     color: $hover-color;
   }
 }
@@ -36,9 +36,13 @@ div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, 
   margin:          1.5px;
   margin-top:      5px;
   margin-bottom:   5px;
+  
+  &:hover {
+    border: 1px solid $hover-color;
+  }
 }
 
-.link-box {
+.link-box { 
   @extend .link-box-large;
   
   font-size: 0.8rem;
@@ -48,7 +52,7 @@ div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, 
   @extend .link-box;
   
   border: 1px solid $link-color;
-  color:  $link-color;
+  color: $link-color;
 }
 
 // Image and header styles

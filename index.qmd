@@ -1,6 +1,7 @@
 ---
 page-layout: full
 title-block-banner: true
+toc: false
 editor_options: 
   chunk_output_type: console
 ---
