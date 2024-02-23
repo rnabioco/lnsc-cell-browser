@@ -1,5 +1,105 @@
 /*-- scss:defaults --*/
-// Nav bar colors
-// changing navbar hover variables do not seem to work
-$navbar-bg: rgb(215, 215, 215);
-$navbar-fg: black;
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+$font-family: "Atkinson Hyperlegible", sans-serif;
+
+$link-color:  #565A5C;
+$hover-color: lighten($link-color, 20%);
+
+/*-- scss:rules --*/
+
+a {
+  color: $link-color;
+
+  &:hover{
+    color: $hover-color;
+  }
+}
+
+div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+  font-weight: bold; 
+}
+
+// Link themes
+.bold-link {
+  text-decoration: none;
+  font-weight:     bold;
+}
+
+.link-box-large {
+  border:          1px solid $link-color;
+  padding:         0px 8px;        // Padding inside box around the text
+  display:         inline-block;   // Ensures the box wraps the content 
+  text-decoration: none;           // Removes the underline from the link
+  color:           $link-color;
+  border-radius:   5px;            // Rounded corners; adjust radius as needed
+  margin:          1.5px;
+  margin-top:      5px;
+  margin-bottom:   5px;
+}
+
+.link-box {
+  @extend .link-box-large;
+  
+  font-size: 0.8rem;
+}
+
+.link-box-dark {
+  @extend .link-box;
+  
+  border: 1px solid $link-color;
+  color:  $link-color;
+}
+
+// Image and header styles
+.investigator-image {
+  position: relative;     // Allows z-index to work
+}
+
+.investigator-image img {
+  float:         left;
+  width:         25%;
+  margin-right:  10px;
+  margin-bottom: 10px;
+  z-index:       1;       // Ensures image is in front
+}
+
+.investigator-image h2 {
+  position: relative;
+  width:    auto;
+  z-index:  -1;           // Ensures header underline
+}
+
+.project-image {
+  @extend .investigator-image;
+}
+
+.project-image img {
+  float:       right;
+  width:       30%;
+  margin-left: 10px;
+}
+
+// Other headers
+h1, .h1 {
+	font-size:  2.5rem;
+	margin-top: 5rem;
+}
+
+// Publication page abstract
+div.quarto-about-jolla main {
+	text-align: left;
+}
+
+// Pub card subtitle
+.card-subtitle {
+  margin-top:    -0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+// Pub page subtitle
+p.subtitle {
+	margin-top:    .25em;
+	margin-bottom: .5em;
+	text-align:    center;
+}

@@ -3,24 +3,27 @@ project:
 
 website:
   title: "LNSC Browser"
+  page-navigation: false
   
-  navbar:
+  sidebar:
+    style: docked
     search: true
-    left:
+    contents:
       - text: Projects
-        file: projects.qmd
-      - atlases.qmd
-      - pubs.qmd
-      - investigators.qmd
+        href: projects.qmd
+      - text: Atlases
+        href: atlases.qmd
+      - text: Publications
+        href: pubs.qmd
+      - text: Investigators
+        href: investigators.qmd
       
-  search:
-    location: navbar
-    type: textbox
-
 format:
   html:
-    theme: [darkly, theme.scss]
-    css: styles.css
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, dark.scss, theme.scss]
+    mainfont: "Atkinson Hyperlegible"
     toc: true
     toc-depth: 1
 

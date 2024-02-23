@@ -73,6 +73,8 @@
   links:
     github: https://github.com/rnabioco/morrison-chikv
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
+    atlas: https://NEED-LINK
+  fig_number: 11
   project:
   - project-1
   - project-2
@@ -144,6 +146,10 @@
     and essential for the development of novel vaccine and therapeutic targets.
   image: /images/2022-doan-35505125.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/38194268/
+  links:
+    github: https://github.com/rnabioco/morrison-lnsc
+    geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243638
+    atlas: https://NEED-LINK
   project:
   - project-1
   - project-2
