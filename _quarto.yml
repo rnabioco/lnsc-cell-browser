@@ -24,7 +24,6 @@ format:
       light: [cosmo, theme.scss]
       dark: [cosmo, dark.scss, theme.scss]
     mainfont: "Atkinson Hyperlegible"
-    css: styles.css
     toc: true
     toc-depth: 1
 
