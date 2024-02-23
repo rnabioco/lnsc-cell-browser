@@ -1,7 +1,7 @@
 ---
 title: Chikungunya virus infection disrupts lymph node lymphatic endothelial cell composition and function via MARCO
 
-subtitle: 'PMID 38194268'
+subtitle: '[Atlas](https://NEED-LINK){.link-box-large}'
 date: 'January 09, 2024'
 categories: [Project-1, Project-2, Core-C, Core-D, 2024]
 about:
@@ -16,9 +16,6 @@ about:
     href: https://github.com/rnabioco/morrison-lnsc
   - text: NCBI GEO
     href: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243638
-  - text: Atlas
-    icon: compass
-    href: https://NEED-LINK
 ---
 
 Cormac Lucas, [Ryan Sheridan](https://orcid.org/0000-0003-4012-3147), Glennys Reynoso, Bennett Davenport, Mary McCarthy, Aspen Martin, [Jay Hesselberth](https://scholar.google.com/citations?user=EnOmNEYAAAAJ), Heather Hickman, [Beth Tamburini](https://orcid.org/0000-0003-1991-231X), [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao)

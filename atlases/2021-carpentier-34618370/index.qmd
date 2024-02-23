@@ -2,7 +2,7 @@
 title: MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination
 
 image: /images/2021-carpentier-34618370.jpg
-subtitle: 'PMID 34618370'
+subtitle: '[Atlas](https://NEED-LINK){.link-box-large}'
 date: 'November 15, 2021'
 categories: [Project-1, Project-2, Core-C, Core-D, 2021]
 about:
@@ -17,9 +17,6 @@ about:
     href: https://github.com/rnabioco/morrison-chikv
   - text: NCBI GEO
     href: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
-  - text: Atlas
-    icon: compass
-    href: https://NEED-LINK
 ---
 
 Kathryn Carpentier, [Ryan Sheridan](https://orcid.org/0000-0003-4012-3147), Cormac Lucas, Bennett Davenport, [Frances Li](https://orcid.org/0000-0001-8798-8290), [Erin Lucas](http://orcid.org/0000-0001-7705-2069), Mary McCarthy, Glennys Reynoso, Nicholas May, [Beth Tamburini](https://orcid.org/0000-0003-1991-231X), [Jay Hesselberth](https://scholar.google.com/citations?user=EnOmNEYAAAAJ), Heather Hickman, [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao)
