@@ -47,7 +47,16 @@ text <- proj_yml %>%
           hyp
         )
         
-        body <- .x$abstract
+        # Bold project tag (e.g. project-1)
+        proj_tag <- .y %>%
+          str_replace_all("-", " ") %>%
+          str_to_title()
+        
+        bld_tag <- proj_tag %>%
+          str_c("<span class='text-bold'>", ., "</span>")
+          
+        body <- .x$abstract %>%
+          str_replace(proj_tag, bld_tag)
         
         # Add image for each project
         if (!is.null(.x$image)) {
@@ -56,7 +65,7 @@ text <- proj_yml %>%
           body <- str_c(
             "<div class='project-image'>\n",
             "  <img src='", img, "'>\n",
-            .x$abstract, "\n\n",
+            body, "\n\n",
             "</div>"
           )
         }

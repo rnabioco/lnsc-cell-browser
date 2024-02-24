@@ -29,7 +29,12 @@ div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, 
   font-weight: bold; 
 }
 
-// Link themes
+// Text themes
+.text-bold {
+  font-weight: bold;
+  color: $link-color;
+}
+
 .link-plain {
   text-decoration: none;
 }

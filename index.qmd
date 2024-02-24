@@ -47,11 +47,21 @@ text <- proj_yml %>%
     .x %>%
       imap(~ {
         ttl_lnk <- .create_project_link(.x$title)
+        
+        proj_tag <- .y %>%
+          str_replace_all("-", " ") %>%
+          str_to_title()
+        
+        bld_tag <- proj_tag %>%
+          str_c("<span class='text-bold'>", ., "</span>")
+          
+        body <- .x$short %>%
+          str_replace(proj_tag, bld_tag)
       
         str_c(
           "* ", ttl_lnk, "  \n",
           links[[.y]],   "  \n",
-          .x$short,      "\n\n"
+          body,          "\n\n"
         )
       }) %>%
       str_c(collapse = "") %>%
