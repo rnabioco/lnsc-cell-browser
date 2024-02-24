@@ -34,9 +34,15 @@ jobs:
         with:
           cache-version: 2
 
-      - name: Install JavaScript packages
+      - name: 🔁 Install Node.js and Yarn
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: 🔁 Install JavaScript packages
         run: yarn install
-          
+
       - name: 🚀 Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
