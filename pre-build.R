@@ -7,12 +7,14 @@ library(yaml)
 library(tidyverse)
 library(here)
 library(cli)
+library(jsonlite)
 library(rvest)
 
 source(here("funs.R"))
 
 # Directories
 pub_yml <- read_yaml("pubs.yml")
+pub_dir <- "pubs"
 img_dir <- here("images")
 
 
@@ -36,7 +38,7 @@ pub_yml_new <- pub_yml[!dup_pubs] %>%
   map(
     .create_pub_page,
     athr_yml_file = "authors.yml",
-    out_dir       = here("pubs"),
+    out_dir       = here(pub_dir),
     img_dir       = img_dir,
     proj_order    = projs
   )
@@ -111,7 +113,7 @@ tl_dat <- pub_yml_new %>%
     tibble(
       key     = .x$key,
       date    = as.Date(str_c(.x$year, "-01-01")),
-      authors = str_c(athrs, collapse = "\n"),
+      authors = str_c(athrs, collapse = ", "),
       pmid    = str_extract(.x$pubmed, "[0-9]+(/|)$")
     )
   })
@@ -120,49 +122,12 @@ tl_dat <- pub_yml_new %>%
 tl_dat <- tl_dat %>%
   mutate(
     pmid = str_remove(pmid, "/$"),
-    pmid = str_c("PMID ", pmid),
+    pmid = str_c("PMID", pmid),
     lab  = str_c(authors, "\n", pmid),
-    year = as.character(year(date))
-  ) %>%
-  group_by(date, year) %>%
-  summarize(lab = str_c(lab, collapse = "\n\n"), .groups = "drop")
-
-# Create publication timeline
-tl <- tl_dat %>%
-  ggplot(aes(date, 0)) +
-  geom_line(
-    linewidth = 3
-  ) +
-  geom_point(
-    size  = 8,
-    fill  = "black"
-  ) +
-  geom_text(
-    aes(y = 0.5, label = year),
-    size  = 24 / .pt,
-    color = "white"
-  ) +
-  geom_text(
-    aes(y = -0.4, label = lab),
-    hjust = 0,
-    vjust = 1,
-    size  = 12 / .pt,
-    color = "white"
-  ) +
-  coord_cartesian(
-    xlim = c(min(tl_dat$date), max(tl_dat$date) + years(1)),
-    ylim = c(-3, 1)
-  ) +
-  theme_void() +
-  theme(
-    plot.background = element_rect(fill = "#303030", color = "#303030")
+    year = as.character(year(date)),
+    url  = file.path(pub_dir, key)
   )
 
-ggsave(
-  tl,
-  filename = here(img_dir, "pub_tl.png"),
-  width    = 18,
-  height   = 4,
-  dpi      = 300,
-  device   = "png"
-)
+# Save as json file
+tl_dat %>%
+  write_json("timeline.json")

@@ -10,6 +10,41 @@ listing:
   feed: false
   fields: [image, title, subtitle, categories, date]
 page-layout: full
-description: |
-  ![](/images/pub_tl.png)
 ---
+
+```{r, echo = FALSE, include = FALSE}
+# Copy timeline.json to _site
+file.copy("timeline.json", "_site")
+```
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+    <script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+</head>
+  
+<body>
+    <div id="timeline"></div>
+    
+    <script>
+        // Load data from JSON file
+        fetch('timeline.json')
+            .then(response => response.json())
+            .then(data => {
+                // Process the loaded data
+                renderMilestones(data);
+            });
+        
+        function renderMilestones(data) {
+            milestones('#timeline')
+                .mapping({
+                    'timestamp': 'year',
+                    'text': 'lab',
+                    'url': 'url'
+                })
+                .parseTime('%Y')
+                .aggregateBy('year')
+                .render(data);
+        }
+    </script>
+</body>
+
