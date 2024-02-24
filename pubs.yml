@@ -73,7 +73,7 @@
   links:
     github: https://github.com/rnabioco/morrison-chikv
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
-    atlas: https://NEED-LINK
+    atlas: https://morrison-lnsc-browser.s3.amazonaws.com/index.html
   fig_number: 11
   project:
   - project-1
@@ -149,7 +149,7 @@
   links:
     github: https://github.com/rnabioco/morrison-lnsc
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243638
-    atlas: https://NEED-LINK
+    atlas: https://morrison-lnsc-browser.s3.amazonaws.com/index.html
   project:
   - project-1
   - project-2
