@@ -1,1 +1,1 @@
-Sitemap: https://rnabioco.github.io/lnsc-cell-browser/sitemap.xml
+Sitemap: https://lnsc-cell-browser.org/sitemap.xml

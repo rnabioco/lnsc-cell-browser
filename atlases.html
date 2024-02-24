@@ -177,14 +177,14 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./atlases.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Atlases</span></a>
+  <a href="./pubs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pubs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publications</span></a>
+  <a href="./atlases.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Atlases</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -229,7 +229,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Project-1,Project-2,Core-C,Core-D,2024" data-listing-date-sort="1704758400000" data-listing-file-modified-sort="1708784864570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="g-col-1" data-index="0" data-categories="Project-1,Project-2,Core-C,Core-D,2024" data-listing-date-sort="1704758400000" data-listing-file-modified-sort="1708801241606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
 <a href="./atlases/2024-lucas-38194268/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./atlases/2024-lucas-38194268/index.html" class="quarto-grid-link">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -238,7 +238,7 @@ window.Quarto = {
 Chikungunya virus infection disrupts lymph node lymphatic endothelial cell composition and function via MARCO
 </h5>
 </a><div class="card-subtitle listing-subtitle"><a href="./atlases/2024-lucas-38194268/index.html" class="quarto-grid-link">
-</a><a href="https://NEED-LINK" class="link-box-large">Atlas</a>
+</a><a href="https://morrison-lnsc-browser.s3.amazonaws.com/index.html" class="link-box-large">Atlas</a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Project-1'); return false;">
@@ -266,7 +266,7 @@ Jan 9, 2024
 </div>
 
 </div>
-<div class="g-col-1" data-index="1" data-categories="Project-1,Project-2,Core-C,Core-D,2021" data-listing-date-sort="1636934400000" data-listing-file-modified-sort="1708784864570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
+<div class="g-col-1" data-index="1" data-categories="Project-1,Project-2,Core-C,Core-D,2021" data-listing-date-sort="1636934400000" data-listing-file-modified-sort="1708801241606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
 <a href="./atlases/2021-carpentier-34618370/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./atlases/2021-carpentier-34618370/index.html" class="quarto-grid-link">
 <p class="card-img-top">
@@ -277,7 +277,7 @@ Jan 9, 2024
 MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination
 </h5>
 </a><div class="card-subtitle listing-subtitle"><a href="./atlases/2021-carpentier-34618370/index.html" class="quarto-grid-link">
-</a><a href="https://NEED-LINK" class="link-box-large">Atlas</a>
+</a><a href="https://morrison-lnsc-browser.s3.amazonaws.com/index.html" class="link-box-large">Atlas</a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Project-1'); return false;">
@@ -305,7 +305,7 @@ Nov 15, 2021
 </div>
 
 </div>
-<div class="g-col-1" data-index="2" data-categories="Project-2,Core-C,Core-D,2021" data-listing-date-sort="1618185600000" data-listing-file-modified-sort="1708784864570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<div class="g-col-1" data-index="2" data-categories="Project-2,Core-C,Core-D,2021" data-listing-date-sort="1618185600000" data-listing-file-modified-sort="1708801241606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
 <a href="./atlases/2021-walsh-33843587/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./atlases/2021-walsh-33843587/index.html" class="quarto-grid-link">
 <p class="card-img-top">
@@ -569,6 +569,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/lnsc-cell-browser\.org");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
