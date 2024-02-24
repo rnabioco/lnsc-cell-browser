@@ -33,6 +33,9 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 2
+
+      - name: Install JavaScript packages
+        run: yarn install
           
       - name: 🚀 Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
