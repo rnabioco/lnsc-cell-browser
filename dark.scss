@@ -1,17 +1,27 @@
 /*-- scss:defaults --*/
 
 // Base document colors
-$body-bg: #181818;
+$body-bg:    #181818;
 $body-color: white;
-$link-color: #CFB87C;
+
+$link-color:  #CFB87C;
 $hover-color: lighten($link-color, 40%);
+
+$link-color-bw:  white;
+$hover-color-bw: darken($link-color-bw, 40%);
+
+$link-color-fade:  darken($link-color-bw, 50%);
+$hover-color-fade: $hover-color;
+
+$tl-color:      #565A5C;
+$tl-text-color: white;
 
 $light: #525252;
 
 // Navigation element colors
-$footer-bg: #181818;
-$navbar-bg: #565A5C;
-$sidebar-bg: #565A5C;
+$footer-bg:         #181818;
+$navbar-bg:         #565A5C;
+$sidebar-bg:        #565A5C;
 $toc-active-border: #CFB87C;
 
 // Code blocks

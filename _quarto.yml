@@ -11,15 +11,16 @@ website:
     contents:
       - text: Projects
         href: projects.qmd
-      - text: Atlases
-        href: atlases.qmd
       - text: Publications
         href: pubs.qmd
+      - text: Atlases
+        href: atlases.qmd
       - text: Investigators
         href: investigators.qmd
       
 format:
   html:
+    link-external-newwindow: true
     theme:
       light: [cosmo, theme.scss]
       dark: [cosmo, dark.scss, theme.scss]

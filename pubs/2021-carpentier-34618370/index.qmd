@@ -19,7 +19,7 @@ about:
     href: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
   - text: Atlas
     icon: compass
-    href: https://NEED-LINK
+    href: https://morrison-lnsc-browser.s3.amazonaws.com/index.html
 ---
 
 Kathryn Carpentier, [Ryan Sheridan](https://orcid.org/0000-0003-4012-3147), Cormac Lucas, Bennett Davenport, [Frances Li](https://orcid.org/0000-0001-8798-8290), [Erin Lucas](http://orcid.org/0000-0001-7705-2069), Mary McCarthy, Glennys Reynoso, Nicholas May, [Beth Tamburini](https://orcid.org/0000-0003-1991-231X), [Jay Hesselberth](https://scholar.google.com/citations?user=EnOmNEYAAAAJ), Heather Hickman, [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao)

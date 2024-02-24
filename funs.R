@@ -60,7 +60,7 @@
 #' 
 #' links to the project page
 .create_project_link <- function(proj_title, lnk_name = proj_title,
-                                 lnk_cls = "{.bold-link}", max_len = 64) {
+                                 lnk_cls = "{.link-bold}", max_len = 64) {
   res <- proj_title %>%
     str_to_lower() %>%
     str_replace_all("( |, )", "-") %>%

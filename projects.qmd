@@ -1,7 +1,5 @@
 ---
-html:
-  toc: false
-  toc-depth: 2
+toc: true
 ---
 
 ```{r, echo = FALSE, include = FALSE}

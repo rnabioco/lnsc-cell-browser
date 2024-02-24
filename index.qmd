@@ -6,7 +6,10 @@ editor_options:
   chunk_output_type: console
 ---
 
-# Lymph Node Stromal Cell Browser
+<h1>
+  <span style="font-weight: 900;">Lymph Node Stromal </span>
+  <span style="font-weight: 100;">Cell Browser</span>
+</h1>
 
 ```{r, echo = FALSE, include = FALSE}
 library(markdown)
@@ -19,7 +22,7 @@ source(here("funs.R"))
 proj_yml <- read_yaml(here("projects.yml"))
 pub_yml  <- read_yaml(here("pubs.yml"))
 athr_yml <- read_yaml(here("authors.yml"))
-lnk_cls  <- "{.link-box}"
+lnk_cls  <- "{.link-box-bw}"
 
 # Create links for each project
 links <- .create_project_links(proj_yml, athr_yml, pub_yml, lnk_cls)
