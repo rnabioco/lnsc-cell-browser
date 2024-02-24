@@ -43,6 +43,9 @@ jobs:
       - name: 🔁 Install JavaScript packages
         run: yarn install
 
+      - name: 📝 Create CNAME file
+        run: echo "lnsc-cell-browser.org" > CNAME
+
       - name: 🚀 Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
