@@ -1,4 +1,4 @@
-#' Create links for a project
+#' Create links for a project section
 #' 
 #' links to atlases, publications, investigators
 .create_project_links <- function(proj_yml, athr_yml, pub_yml, lnk_cls) {
@@ -34,7 +34,8 @@
         
       if (any(pubs)) {
         lnks <- str_c(
-          lnks, " [Publications](pubs.qmd#category=", proj_lnk, ")",
+          lnks, " [<i class='bi bi-file-earmark'></i> Publications]",
+          "(pubs.qmd#category=", proj_lnk, ")",
           lnk_cls
         )
       }
@@ -45,7 +46,8 @@
       
       if (any(atlases)) {
         lnks <- str_c(
-          lnks, " [Atlases](atlases.qmd#category=", proj_lnk, ")",
+          lnks, " [<i class='bi bi-compass'></i> Atlases]",
+          "(atlases.qmd#category=", proj_lnk, ")",
           lnk_cls
         )
       }
@@ -60,15 +62,43 @@
 #' 
 #' links to the project page
 .create_project_link <- function(proj_title, lnk_name = proj_title,
-                                 lnk_cls = "{.link-bold}", max_len = 64) {
+                                 lnk_cls = "{.link-bold}", max_len = 40,
+                                 return_id = FALSE) {
   res <- proj_title %>%
     str_to_lower() %>%
     str_replace_all("( |, )", "-") %>%
     str_trunc(max_len, "right", ellipsis = "") %>%
-    str_remove("-$") %>%
+    str_remove("-$")
+  
+  if (return_id) return(res)
+  
+  res <- res %>%
     str_c("[", lnk_name, "](projects.qmd#", ., ")", lnk_cls)
   
   res
+}
+
+#' Add icon to link
+.icon_key <- list(
+  publications = "bi bi-file-earmark",
+  atlases      = "bi bi-compass",
+  atlas        = "bi bi-compass",
+  email        = "bi bi-envelope",
+  website      = "bi bi-house"
+  # website      = "bi bi-globe"
+)
+
+.add_link_icon <- function(lnk_text, icon_key = .icon_key) {
+  
+  icon <- .icon_key[[lnk_text]]
+  
+  if (!is.null(icon)) icon <- str_c("<i class='", icon, "'></i> ")
+  
+  res <- lnk_text %>%
+    str_to_title() %>%
+    str_c("[", icon, ., "]")
+
+  res  
 }
 
 #' Create publication page
@@ -133,9 +163,10 @@
       return(NULL)
     }
     
-    subttl <- links %>%
-      pluck("atlas") %>%
-      str_c("[Atlas](", ., "){.link-box-large}")
+    subttl <- links %>%   # use double quotes single subtitle will be wrapped
+      pluck("atlas") %>%  # in single quotes
+      str_c(.add_link_icon("atlas"), "(", ., "){.link-box-large}") %>%
+      str_replace_all("'", "\\\"")
     
     links <- links[names(links) != "atlas"]
   }

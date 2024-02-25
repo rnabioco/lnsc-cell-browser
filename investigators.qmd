@@ -1,6 +1,5 @@
 ---
 title: "Investigators"
-toc: true
 ---
 
 ```{r, echo = FALSE, include = FALSE}
@@ -29,12 +28,13 @@ proj_lnks <- proj_yml %>%
   imap(~ .create_project_link(.x$title, str_to_title(.y), "{.link-box-fade}"))
 
 # Create page text
+# unable to include table of contents and have the image inline with heading
 text <- athr_yml %>%
   imap(~ {
     lnks <- .x$links %>%  # links to project pages
-      imap(~ str_c("[", str_to_title(.y), "](", .x, ")", lnk_cls)) %>%
+      imap(~ str_c(.add_link_icon(.y), "(", .x, ")", lnk_cls)) %>%
       str_c(collapse = " ")
-    
+
     lnks <- proj_lnks[.x$project] %>%
       str_c(collapse = " ") %>%
       str_c(lnks, " ", .)
@@ -45,8 +45,8 @@ text <- athr_yml %>%
     
     res <- str_c(
       "<h2>", .y, sfx, "</h2>\n\n",
-      lnks,           "\n\n",
-      .x$bio,         "\n\n"
+      lnks, "\n\n",
+      .x$bio, "\n\n"
     )
     
     # Add image for each investigator
@@ -58,12 +58,7 @@ text <- athr_yml %>%
         "  <img src='", img, "'>\n"
       )
       
-      html_foot <- "</div>"
-      
-      res <- str_c(
-        html_head, res,
-        html_foot, "\n\n"
-      )
+      res <- str_c(html_head, res, "</div>\n\n")
     }
     
     res

@@ -113,6 +113,7 @@ tl_dat <- pub_yml_new %>%
     tibble(
       key     = .x$key,
       date    = as.Date(str_c(.x$year, "-01-01")),
+      proj    = str_c(str_to_title(.x$project), collapse = ", "),
       authors = str_c(athrs, collapse = ", "),
       pmid    = str_extract(.x$pubmed, "[0-9]+(/|)$")
     )
@@ -123,9 +124,13 @@ tl_dat <- tl_dat %>%
   mutate(
     pmid = str_remove(pmid, "/$"),
     pmid = str_c("PMID", pmid),
-    lab  = str_c(authors, "\n", pmid),
     year = as.character(year(date)),
     url  = file.path(pub_dir, key)
+  ) %>%
+  pivot_longer(c(proj, pmid), values_to = "lab") %>%
+  mutate(
+    style = ifelse(name == "pmid", "bold", "normal"),
+    style = map(style, ~ list(`font-weight` = .x))
   )
 
 # Save as json file

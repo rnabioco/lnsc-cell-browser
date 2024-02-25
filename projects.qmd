@@ -6,7 +6,6 @@ toc: true
 library(yaml)
 library(tidyverse)
 library(here)
-
 source(here("funs.R"))
 
 # Read yamls
@@ -39,15 +38,29 @@ text <- proj_yml %>%
         # Conditional add hypothesis
         hyp <- .x$hypothesis
         
-        if (!is.null(hyp)) hyp <- str_c("*", hyp, "*\n\n")
+        if (!is.null(hyp)) hyp <- str_c("<i>", hyp, "</i>\n\n")
+        
+        # Set heading IDs
+        # need this since the first h2 heading ID after h1 gets mixed up during
+        # rendering
+        id <- .create_project_link(.x$title, return_id = TRUE)
         
         res <- str_c(
-          "<h2>", .x$title, "</h2>\n\n",
+          "<h2 id=", id, ">", .x$title, "</h2>\n\n",
           links[[.y]], "\n\n",
           hyp
         )
         
-        body <- .x$abstract
+        # Bold project tag (e.g. project-1)
+        proj_tag <- .y %>%
+          str_replace_all("-", " ") %>%
+          str_to_title()
+        
+        bld_tag <- proj_tag %>%
+          str_c("<span class='text-bold'>", ., "</span>")
+          
+        body <- .x$abstract %>%
+          str_replace(proj_tag, bld_tag)
         
         # Add image for each project
         if (!is.null(.x$image)) {
@@ -56,7 +69,7 @@ text <- proj_yml %>%
           body <- str_c(
             "<div class='project-image'>\n",
             "  <img src='", img, "'>\n",
-            .x$abstract, "\n\n",
+            body, "\n",
             "</div>"
           )
         }
