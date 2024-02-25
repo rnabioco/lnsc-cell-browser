@@ -55,12 +55,12 @@ div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, 
 }
 
 .link-box-large {
-  display:         inline-block;   // Ensures the box wraps the content 
-  text-decoration: none;           // Removes the underline from the link
+  display:         inline-block;      // Ensures the box wraps the content 
+  text-decoration: none;              // Removes the underline from the link
   color:           $link-color;
   border:          1px solid $link-color;
-  border-radius:   5px;            // Rounded corners; adjust radius as needed
-  padding:         0px 8px;        // Padding inside box around the text
+  border-radius:   7px;               // Rounded corners; adjust radius as needed
+  padding:         0.125rem 0.25rem;  // Padding inside box around the text
   margin:          1.5px;
   margin-top:      5px;
   margin-bottom:   5px;
@@ -74,6 +74,7 @@ div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, 
 .link-box { 
   @extend .link-box-large;
   font-size: 0.8rem;
+  border-radius: 0.25rem;
 }
 
 .link-box-fade {
@@ -153,7 +154,7 @@ p.subtitle {
 
 // Timeline
 #timeline {
-  margin-right:  80px;
+  margin-right:  100px;
   margin-bottom: 50px;
 }
 
@@ -180,5 +181,5 @@ p.subtitle {
 
 .milestones-label.milestones-link-label {
   @extend .link-bw;
-  font-size: 0.75rem !important;
+  font-size: 0.65rem !important;
 }

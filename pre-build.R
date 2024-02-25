@@ -124,9 +124,13 @@ tl_dat <- tl_dat %>%
   mutate(
     pmid = str_remove(pmid, "/$"),
     pmid = str_c("PMID", pmid),
-    lab  = str_c(proj, "\n", pmid),
     year = as.character(year(date)),
     url  = file.path(pub_dir, key)
+  ) %>%
+  pivot_longer(c(proj, pmid), values_to = "lab") %>%
+  mutate(
+    style = ifelse(name == "pmid", "bold", "normal"),
+    style = map(style, ~ list(`font-weight` = .x))
   )
 
 # Save as json file

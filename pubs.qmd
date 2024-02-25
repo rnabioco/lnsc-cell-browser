@@ -39,7 +39,8 @@ file.copy("timeline.json", "_site")
                 .mapping({
                     'timestamp': 'year',
                     'text': 'lab',
-                    'url': 'url'
+                    'url': 'url',
+                    'textStyle': 'style'
                 })
                 .parseTime('%Y')
                 .aggregateBy('year')
