@@ -115,6 +115,7 @@
 #' @param out_dir directory to save publication page
 #' @param template name of quarto about page template to use
 #' @param img_dir directory to save images
+#' @param pdf_dir directory to save pdfs
 #' @param proj_order order of projects, used to order page categories
 #' @param atlas should page links be configured for an atlas page, e.g. put
 #' atlas link at the top of the page instead of the bottom
@@ -123,8 +124,9 @@
 #' @return named list with updated publication information
 .create_pub_page <- function(pub_info, athr_yml_file = "authors.yml",
                              out_dir = "pubs", template = "jolla",
-                             img_dir = "images", proj_order = NULL,
-                             atlas = FALSE, overwrite = FALSE) {
+                             img_dir = "images", pdf_dir = "docs",
+                             proj_order = NULL, atlas = FALSE,
+                             overwrite = FALSE) {
   
   # Create directory to save publication page
   if (!dir.exists(out_dir)) dir.create(out_dir)
@@ -135,7 +137,7 @@
   # Scrape missing info from pubmed
   pub_attrs <- c(
     "key", "title", "pmid", "date", "year",
-    "authors", "abstract", "image"
+    "authors", "abstract", "image", "pdf"
   )
   
   if (any(!pub_attrs %in% names(pub_info)) || overwrite) {
@@ -144,16 +146,33 @@
     new_info <- .scrape_pubmed(pub_info$pubmed, pub_attrs, pub_info$fig_number)
     pub_info <- append(pub_info[!names(pub_info) %in% pub_attrs], new_info)
   }
+  
+  # Download pdf
+  # path must be relative to site
+  pdf <- pub_info$pdf
+  
+  if (!is.null(pdf) && grepl("\\.pdf$", pdf)) {
+    pdf_dwnld <- pub_info$pdf
+    pdf       <- here(pdf_dir, str_c(pub_info$key, ".pdf"))
+    
+    if (!file.exists(pdf)) download.file(pdf_dwnld, pdf)
+    
+    pdf <- str_remove(pdf, here())
+  }
 
   # Set link icons and text
   link_info <- list(
-    pubmed = list(text = "Publication", icon = "file-earmark"),
-    atlas  = list(text = "Atlas",       icon = "compass"),
-    github = list(text = "GitHub",      icon = "github"),
+    pubmed = list(text = "Pubmed",   icon = "file-earmark"),
+    pdf    = list(text = "PDF",      icon = "filetype-pdf"),
+    atlas  = list(text = "Atlas",    icon = "compass"),
+    github = list(text = "GitHub",   icon = "github"),
     geo    = list(text = "NCBI GEO")
   )
   
-  links  <- append(pub_info["pubmed"], pub_info$links)
+  links     <- pub_info["pubmed"]
+  links$pdf <- pdf
+  links     <- append(links, pub_info$links)
+  
   subttl <- pub_info$pmid
   
   if (atlas) {
@@ -321,6 +340,20 @@
     map_chr(html_text2) %>%
     pluck(4)
   
+  # Scrape pdf link
+  pdf <- html %>%
+    html_element("a.id-link") %>%
+    html_attr("href")
+  
+  base_url <- pdf %>%
+    str_remove("/[^\\.]+$")
+  
+  pdf <- pdf %>%
+    read_html() %>%
+    html_element("a.int-view") %>%
+    html_attr("href") %>%
+    str_c(base_url, .)
+  
   # Scrape image link
   fig_number <- fig_number %||% 1
   
@@ -364,6 +397,7 @@
     abstract = abst
   )
   
+  if (!is.na(pdf))   res$pdf <- pdf
   if (!is.null(img)) res$image <- img
   
   if (!is.null(attrs)) {

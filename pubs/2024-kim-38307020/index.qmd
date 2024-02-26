@@ -8,7 +8,7 @@ about:
   id: about
   template: jolla
   links:
-  - text: Publication
+  - text: Pubmed
     icon: file-earmark
     href: https://pubmed.ncbi.nlm.nih.gov/38307020/
 ---

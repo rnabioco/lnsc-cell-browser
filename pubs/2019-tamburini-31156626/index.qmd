@@ -9,9 +9,12 @@ about:
   id: about
   template: jolla
   links:
-  - text: Publication
+  - text: Pubmed
     icon: file-earmark
     href: https://pubmed.ncbi.nlm.nih.gov/31156626/
+  - text: PDF
+    icon: filetype-pdf
+    href: /docs/2019-tamburini-31156626.pdf
 ---
 
 [Beth Tamburini](https://orcid.org/0000-0003-1991-231X), Jeffrey Finlon, Austin Gillen, Michael Kriss, Kent Riemondy, Rui Fu, Ronald Schuyler, [Jay Hesselberth](https://scholar.google.com/citations?user=EnOmNEYAAAAJ), Hugo Rosen, Matthew Burchill

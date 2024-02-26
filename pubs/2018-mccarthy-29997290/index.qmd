@@ -9,9 +9,12 @@ about:
   id: about
   template: jolla
   links:
-  - text: Publication
+  - text: Pubmed
     icon: file-earmark
     href: https://pubmed.ncbi.nlm.nih.gov/29997290/
+  - text: PDF
+    icon: filetype-pdf
+    href: /docs/2018-mccarthy-29997290.pdf
 ---
 
 Mary McCarthy, Bennett Davenport, Glennys Reynoso, [Erin Lucas](http://orcid.org/0000-0001-7705-2069), Nicholas May, Susan Elmore, [Beth Tamburini](https://orcid.org/0000-0003-1991-231X), Heather Hickman, [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao)

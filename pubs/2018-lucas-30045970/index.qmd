@@ -9,9 +9,12 @@ about:
   id: about
   template: jolla
   links:
-  - text: Publication
+  - text: Pubmed
     icon: file-earmark
     href: https://pubmed.ncbi.nlm.nih.gov/30045970/
+  - text: PDF
+    icon: filetype-pdf
+    href: /docs/2018-lucas-30045970.pdf
 ---
 
 [Erin Lucas](http://orcid.org/0000-0001-7705-2069), Jeffrey Finlon, Matthew Burchill, Mary McCarthy, [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao), Tonya Colpitts, [Beth Tamburini](https://orcid.org/0000-0003-1991-231X)

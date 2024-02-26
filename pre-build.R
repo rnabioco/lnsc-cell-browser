@@ -9,13 +9,13 @@ library(here)
 library(cli)
 library(jsonlite)
 library(rvest)
-
 source(here("funs.R"))
 
 # Directories
 pub_yml <- read_yaml("pubs.yml")
 pub_dir <- "pubs"
 img_dir <- here("images")
+pdf_dir <- here("docs")
 
 
 # PUBLICATIONS ----
