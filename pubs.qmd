@@ -15,6 +15,9 @@ page-layout: full
 ```{r, echo = FALSE, include = FALSE}
 # Copy timeline.json to _site
 file.copy("timeline.json", "_site")
+
+# Copy PDFs to _site
+file.copy("docs", "_site", recursive = TRUE)
 ```
 
 <head>
