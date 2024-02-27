@@ -137,7 +137,7 @@
   # Scrape missing info from pubmed
   pub_attrs <- c(
     "key", "title", "pmid", "date", "year",
-    "authors", "abstract", "image", "pdf"
+    "authors", "abstract", "pdf"
   )
   
   if (any(!pub_attrs %in% names(pub_info)) || overwrite) {
@@ -147,19 +147,6 @@
     pub_info <- append(pub_info[!names(pub_info) %in% pub_attrs], new_info)
   }
   
-  # Download pdf
-  # path must be relative to site
-  pdf <- pub_info$pdf
-  
-  if (!is.null(pdf) && grepl("\\.pdf$", pdf)) {
-    pdf_dwnld <- pub_info$pdf
-    pdf       <- here(pdf_dir, str_c(pub_info$key, ".pdf"))
-    
-    if (!file.exists(pdf)) download.file(pdf_dwnld, pdf)
-    
-    pdf <- str_remove(pdf, here())
-  }
-
   # Set link icons and text
   link_info <- list(
     pubmed = list(text = "Pubmed",   icon = "file-earmark"),
@@ -169,10 +156,23 @@
     geo    = list(text = "NCBI GEO")
   )
   
-  links     <- pub_info["pubmed"]
-  links$pdf <- pdf
-  links     <- append(links, pub_info$links)
+  links <- pub_info["pubmed"]
   
+  # Download pdf
+  pdf <- pub_info$pdf
+  
+  if (!is.null(pdf) && grepl("\\.pdf$", pdf)) {
+    pdf_dwnld <- pub_info$pdf
+    pdf       <- here(pdf_dir, str_c(pub_info$key, ".pdf"))
+    
+    if (!file.exists(pdf)) download.file(pdf_dwnld, pdf)
+    
+    links$pdf <- str_remove(pdf, here())
+  }
+  
+  links <- append(links, pub_info$links)
+  
+  # Adjust links for atlas
   subttl <- pub_info$pmid
   
   if (atlas) {
@@ -203,18 +203,25 @@
   if (!dir.exists(pub)) dir.create(pub)
   
   # Pull image
-  # * If no image field in pubs.yml, search for image with matching name
+  # * If no image field in pubs.yml, create image from pdf
   # * If image field, check if file exists
   # * If file doesn't exist, treat string as URL and try to download
-  if (is.null(pub_info$image)) {
-    img <- dir(img_dir, str_c("^", pub_info$key, "\\."), full.names = TRUE)
+  img <- NULL
+  
+  if (is.null(pub_info$image) && !is.null(pdf)) {
+    img <- here(img_dir, str_c(pub_info$key, ".jpg"))
     
-    if (length(img) > 1) img <- img[[1]]
+    gc()  # kept getting dynamic elf header error, this fixed it
     
-  } else if (file.exists(str_remove(pub_info$image, "^/"))) {
+    pdf %>%
+      image_read_pdf(pages = 1:5) %>%
+      image_append() %>%
+      image_write(path = img, format = "jpg")
+    
+  } else if (!is.null(pub_info$image) && file.exists(str_remove(pub_info$image, "^/"))) {
     img <- pub_info$image
     
-  } else {
+  } else if (!is.null(pub_info$image)) {
     img_dwnld <- pub_info$image
     ext       <- str_extract(img_dwnld, "\\.[a-zA-Z]+$")
     img       <- here(img_dir, str_c(pub_info$key, ext))
@@ -312,6 +319,7 @@
 
 #' Scrape pubmed for publication info
 .scrape_pubmed <- function(url, attrs = NULL, fig_number = NULL) {
+  
   html <- read_html(url)
   
   # Pull PMID from url
@@ -341,6 +349,7 @@
     pluck(4)
   
   # Scrape pdf link
+  # need to check for PMC link
   pdf <- html %>%
     html_element("a.id-link") %>%
     html_attr("href")
@@ -348,20 +357,27 @@
   base_url <- pdf %>%
     str_remove("/[^\\.]+$")
   
-  pdf <- pdf %>%
-    read_html() %>%
-    html_element("a.int-view") %>%
-    html_attr("href") %>%
-    str_c(base_url, .)
+  if (grepl("www\\.ncbi\\.nlm\\.nih\\.gov", base_url)) {
+    pdf <- pdf %>%
+      read_html() %>%
+      html_element("a.int-view") %>%
+      html_attr("href") %>%
+      str_c(base_url, .)
+    
+  } else {
+    pdf <- NA
+  }
   
   # Scrape image link
-  fig_number <- fig_number %||% 1
+  img <- NULL
   
-  img <- html %>%
-    html_elements("a.figure-link") %>%
-    pluck(fig_number)
-  
-  if (!is.null(img)) img <- html_attr(img, "href")
+  if (!is.null(fig_number)) {
+    img <- html %>%
+      html_elements("a.figure-link") %>%
+      pluck(fig_number)
+    
+    if (!is.null(img)) img <- html_attr(img, "href")
+  }
   
   # Set publication key based on first author and key
   # this is used to create page directories
@@ -397,8 +413,9 @@
     abstract = abst
   )
   
-  if (!is.na(pdf))   res$pdf <- pdf
-  if (!is.null(img)) res$image <- img
+  res$image <- img
+  
+  if (!is.na(pdf)) res$pdf <- pdf
   
   if (!is.null(attrs)) {
     attrs <- attrs[attrs %in% names(res)]

@@ -9,6 +9,7 @@ library(here)
 library(cli)
 library(jsonlite)
 library(rvest)
+library(magick)
 source(here("funs.R"))
 
 # Directories
