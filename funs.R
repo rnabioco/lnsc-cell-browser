@@ -211,10 +211,34 @@
   if (is.null(pub_info$image) && !is.null(pdf)) {
     img <- here(img_dir, str_c(pub_info$key, ".jpg"))
     
+    n_pgs <- 5
+    
+    # Identify pages with figures based on text search
+    pdf_txt <- pdf_text(pdf)
+    
+    pgs <- pdf_txt %>%
+      str_count("Figure [0-9]+\\.")
+    
+    if (!any(pgs > 0 & pgs < 3)) pgs <- str_count(pdf_txt, "FIGURE [0-9]+")
+    if (!any(pgs > 0 & pgs < 3)) pgs <- str_count(pdf_txt, "Figure [0-9]+")
+    if (!any(pgs > 0 & pgs < 3)) pgs <- str_count(pdf_txt, "Fig. [0-9]+")
+    if (!any(pgs > 0 & pgs < 3)) pgs <- rep(1, n_pgs)
+    
+    pgs <- set_names(pgs, seq_along(pgs))[-1]
+    pgs <- names(pgs[pgs > 0 & pgs < 3])
+    
+    n_figs  <- length(pgs)
+    pgs     <- pgs[1:(min(n_pgs - 1, n_figs))]
+    pgs     <- as.numeric(c(1, pgs))
+    txt_pgs <- 1:n_pgs
+    txt_pgs <- txt_pgs[!txt_pgs %in% pgs]
+    pgs     <- c(pgs, txt_pgs)[1:n_pgs]
+    
+    # Read pdf and save image
     gc()  # kept getting dynamic elf header error, this fixed it
     
     pdf %>%
-      image_read_pdf(pages = 1:5) %>%
+      image_read_pdf(pages = pgs) %>%
       image_append() %>%
       image_write(path = img, format = "jpg")
     

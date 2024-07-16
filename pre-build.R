@@ -9,6 +9,7 @@ library(here)
 library(cli)
 library(jsonlite)
 library(rvest)
+library(pdftools)
 library(magick)
 source(here("funs.R"))
 

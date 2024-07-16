@@ -190,6 +190,8 @@
     by infection. Consistent with this idea, we find that antigen acquisition by LECs,
     a key function of LN LECs during infection and immunization, was reduced during
     pathogenic CHIKV infection.
+  pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC11143926/pdf/jciinsight-9-176537.pdf
+  image: /images/2024-lucas-38194268.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/29997290/
   project:
   - project-1
@@ -269,6 +271,8 @@
   - project-2
   - core-c
   - core-d
+  links:
+    geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE129933
   key: 2019-tamburini-31156626
   title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of Liver
     Lymphatic Endothelial Cells
