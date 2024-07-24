@@ -1,6 +1,7 @@
 ---
 title: Chikungunya virus infection disrupts lymph node lymphatic endothelial cell composition and function via MARCO
 
+image: /images/2024-lucas-38194268.jpg
 subtitle: '[<i class="bi bi-compass"></i> Atlas](https://morrison-lnsc-browser.s3.amazonaws.com/index.html){.link-box-large}'
 date: 'January 09, 2024'
 categories: [Project-1, Project-2, Core-C, Core-D, 2024]
@@ -11,6 +12,9 @@ about:
   - text: Pubmed
     icon: file-earmark
     href: https://pubmed.ncbi.nlm.nih.gov/38194268/
+  - text: PDF
+    icon: filetype-pdf
+    href: /docs/2024-lucas-38194268.pdf
   - text: GitHub
     icon: github
     href: https://github.com/rnabioco/morrison-lnsc

@@ -139,17 +139,33 @@ div.quarto-about-jolla main {
 	text-align: left;
 }
 
-// Pub card subtitle
-.card-subtitle {
-  margin-top:    -0.25rem;
-  margin-bottom: 0.5rem;
-}
-
 // Pub page subtitle
 p.subtitle {
 	margin-top:    .25em;
 	margin-bottom: .5em;
 	text-align:    center;
+}
+
+// Listing cards
+.card-img, .card-img-top, .card-img-bottom {
+  object-position: left;
+}
+
+div.quarto-about-jolla img.round {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+
+div.quarto-about-jolla .about-image {
+  object-fit: contain;
+  width: 100% !important;
+}
+
+.card-subtitle {
+  margin-top:    -0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 // Timeline

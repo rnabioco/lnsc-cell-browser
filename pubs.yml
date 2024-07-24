@@ -39,8 +39,8 @@
     enable new approaches to study dynamic tissue dissemination of antigen-adjuvant
     conjugates and identify new mechanisms of antigen acquisition and retention at
     cellular resolution in vivo.
-  image: /images/2021-walsh-33843587.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC8116055/pdf/elife-62781.pdf
+  image: /images/2021-walsh-33843587.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/29229919/
   project: project-2
   key: 2017-kedl-29229919
@@ -69,8 +69,8 @@
     migratory DCs potentially acquiring apoptotic LECs. In conclusion, LEC-archived
     antigens are exchanged with migratory DCs, both directly and through LEC apoptosis,
     to cross-present archived antigens to circulating T cells.
-  image: /images/2017-kedl-29229919.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5725486/pdf/41467_2017_Article_2247.pdf
+  image: /images/2017-kedl-29229919.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/34618370/
   links:
     github: https://github.com/rnabioco/morrison-chikv
@@ -119,8 +119,8 @@
     unrecognized arbovirus-scavenging role for lymphatic endothelial cells and improve
     our mechanistic understanding of viremia control during arthritogenic alphavirus
     infection.
-  image: /images/2021-carpentier-34618370.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC8591538/pdf/EMBJ-40-e108966.pdf
+  image: /images/2021-carpentier-34618370.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/35505125/
   project: project-2
   key: 2022-doan-35505125
@@ -147,8 +147,8 @@
     protective immune responses. Therefore, understanding antigen trafficking and
     retention is necessary to understand the type and magnitude of the immune response
     and essential for the development of novel vaccine and therapeutic targets.
-  image: /images/2022-doan-35505125.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC9063628/pdf/18_2022_Article_4303.pdf
+  image: /images/2022-doan-35505125.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/38194268/
   links:
     github: https://github.com/rnabioco/morrison-lnsc
@@ -190,6 +190,8 @@
     by infection. Consistent with this idea, we find that antigen acquisition by LECs,
     a key function of LN LECs during infection and immunization, was reduced during
     pathogenic CHIKV infection.
+  pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC11143926/pdf/jciinsight-9-176537.pdf
+  image: /images/2024-lucas-38194268.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/29997290/
   project:
   - project-1
@@ -225,8 +227,8 @@
     during pathogenic, but not attenuated, CHIKV infection. Our data suggest that
     pathogenic, persistent strains of CHIKV disable the development of adaptive immune
     responses within the dLN.
-  image: /images/2018-mccarthy-29997290.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6124534/pdf/jciinsight-3-121100.pdf
+  image: /images/2018-mccarthy-29997290.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/30045970/
   project:
   - project-1
@@ -262,13 +264,15 @@
     LEC survival. Together, these data reveal a novel mechanism for the coordination
     of type 1 IFN and PD-L1 in manipulating LEC expansion and survival during an inflammatory
     immune response.
-  image: /images/2018-lucas-30045970.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6125167/pdf/nihms-981547.pdf
+  image: /images/2018-lucas-30045970.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/31156626/
   project:
   - project-2
   - core-c
   - core-d
+  links:
+    geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE129933
   key: 2019-tamburini-31156626
   title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of Liver
     Lymphatic Endothelial Cells
@@ -306,8 +310,8 @@
     liver, expanding in an attempt to maintain tissue homeostasis. However, when inflammatory
     signals, such as oxidized low density lipoprotein are increased, as in NASH, lymphatic
     function declines and liver homeostasis is impeded.
-  image: /images/2019-tamburini-31156626.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6530422/pdf/fimmu-10-01036.pdf
+  image: /images/2019-tamburini-31156626.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/33053342/
   project:
   - project-2
@@ -337,8 +341,8 @@
     for antigen delivery to the dLN. Finally, the TSS motif is required for chemokine
     receptor signaling downstream of the Gα subunit of the heterotrimeric G protein
     complex, ERK phosphorylation, and actin polymerization in DCs.
-  image: /images/2020-lucas-33053342.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC7688291/pdf/nihms-1638448.pdf
+  image: /images/2020-lucas-33053342.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/37841845/
   project:
   - project-1
@@ -373,8 +377,8 @@
     duration that the vaccine antigen was archived. These findings outline a novel
     mechanism by which LNSC archived antigens, in addition to bystander activation,
     can augment memory CD8+ T cell responses during repeated inflammatory insults.
-  image: /images/2023-tamburini-37841845.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC10571600/pdf/nihpp-rs3307809v1.pdf
+  image: /images/2023-tamburini-37841845.jpg
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/38307020/
   project:
   - project-1
@@ -439,5 +443,5 @@
     therefore have the potential to have an impact on future vaccination strategies
     and our understanding of the role for persisting antigen in both vaccine and infectious
     settings.
-  image: /images/2014-tamburini-24905362.jpg
   pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073648/pdf/nihms591068.pdf
+  image: /images/2014-tamburini-24905362.jpg

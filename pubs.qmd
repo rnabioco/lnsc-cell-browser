@@ -10,6 +10,8 @@ listing:
   feed: false
   fields: [image, title, subtitle, categories, date]
 page-layout: full
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, echo = FALSE, include = FALSE}
