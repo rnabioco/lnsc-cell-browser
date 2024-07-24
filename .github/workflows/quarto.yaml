@@ -29,6 +29,7 @@ jobs:
         run: |
           sudo apt-get install libcurl4-openssl-dev
           sudo apt-get install libmagick++-dev
+          sudo apt-get install libpoppler-cpp-dev
           
       - name: 🔁 Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
