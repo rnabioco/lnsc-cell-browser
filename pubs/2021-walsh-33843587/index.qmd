@@ -4,7 +4,7 @@ title: Molecular tracking devices quantify antigen distribution and archiving in
 image: /images/2021-walsh-33843587.jpg
 subtitle: 'PMID 33843587'
 date: 'April 12, 2021'
-categories: [Project-2, Core-C, Core-D, 2021]
+categories: [Project-2, Project-3, Core-C, 2021]
 about:
   id: about
   template: jolla

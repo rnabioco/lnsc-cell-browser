@@ -4,7 +4,7 @@ title: Vaccine-induced antigen archiving enhances local memory CD8+ T cell respo
 image: /images/2023-tamburini-37841845.jpg
 subtitle: 'PMID 37841845'
 date: 'September 25, 2023'
-categories: [Project-1, Project-2, Core-C, Core-D, 2023]
+categories: [Project-1, Project-2, Project-3, Core-C, 2023]
 about:
   id: about
   template: jolla

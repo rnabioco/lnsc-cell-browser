@@ -44,36 +44,6 @@ Beth Tamburini:
     to be well suited for the training and success of the graduate students and post-docs
     in my laboratory.
   image: /images/beth-tamburini.jpg
-Jenna Guthmiller:
-  suffix: PhD
-  links:
-    publications: https://scholar.google.com/citations?user=4arwbfMAAAAJ&hl=en&oi=ao
-    website: https://guthmillerlab.weebly.com/
-    email: mailto:jenna.guthmiller@cuanschutz.edu
-  project: project-3
-  bio: My long-term scientific goals are to understand the complex interactions between
-    pathogens and the immune response mounted against them, with the objective of
-    identifying and developing interventions to limit global infectious disease burdens.
-    Fitting within these goals, my independent laboratory studies how preexisting
-    immunity influences future immune responses against rapidly evolving viruses.
-    My major contributions to science are understanding how protective humoral immunity
-    is generated following infection and vaccination and how vaccination can harness
-    broadly protective humoral immunity. During my postdoctoral studies, I investigated
-    how preexisting immunity against influenza viruses shapes the recall of memory
-    B cells in humans. I found that in the absence of preexisting immunity against
-    the variable epitopes of the hemagglutinin (HA) head domain, humans could recall
-    memory B cells against broadly protective epitopes of HA. These studies identified
-    several novel classes of broadly neutralizing antibodies and a new highly conserved
-    epitope where HA 'anchors' itself into the viral membrane. My research also identified
-    that the first in-human universal influenza vaccine, which is intended to circumvent
-    preexisting antibodies, robustly induced antibodies against broadly protective
-    epitopes, including the anchor epitope. Lastly, I identified influenza vaccination
-    and infection in humans differentially recalled discrete memory B cell specificities,
-    with infection recalling memory B cells primed during childhood against highly
-    conserved, albeit non-protective antigens. Together, these studies highlight the
-    importance of understanding how preexisting antibodies influence the generation
-    of broadly protective immunity.
-  image: /images/jenna-guthmiller.jpeg
 Jay Hesselberth:
   suffix: PhD
   links:
@@ -81,8 +51,8 @@ Jay Hesselberth:
     website: https://hesselberthlab.org/
     email: mailto:jay.hesselberth@cuanschutz.edu
   project:
+  - project-3
   - core-c
-  - core-d
   bio: I am an RNA biochemist and computational biologist with extensive experience
     in developing new high- throughput methods and associated bioinformatic analysis
     software. My RNA biology program spans classical and modern approaches to address
@@ -102,7 +72,7 @@ Ryan Sheridan:
     publications: https://orcid.org/0000-0003-4012-3147
     website: https://github.com/sheridar
     email: mailto:ryan.sheridan@cuanschutz.edu
-  project: core-d
+  project: core-c
 Jennifer Matsuda:
   suffix: PhD
   links:

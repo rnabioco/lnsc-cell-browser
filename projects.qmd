@@ -31,7 +31,7 @@ proj_yml <- proj_yml %>%
 # Create page text
 text <- proj_yml %>%
   imap(~ {
-    ttl <- str_c("# ", .y, "\n\n")
+    ttl <- str_c("\n\n# ", .y, "\n\n")
     
     .x %>%
       imap(~ {

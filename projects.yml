@@ -43,26 +43,11 @@ project-2:
     infection of LNSCs to vaccine immunity."
 
 project-3:
-  title: Investigate the role of immune complexes in antigen acquisition and
-    retention by LNSCs to modulate cellular and humoral immunity
-  short: "Project 3 will use stabilized DNA conjugates to track antibody:antigen
-    complexes to determine the spatial and cellular localization of immune
-    complexes"
-  hypothesis: We hypothesize that antibody isotype in an IC regulates protective
-    immunity by determining which LNSC populations acquire and retain antigen
-    via isotype-specific interactions with complement and Fc receptors (FcRs)
-  image: /images/project-3.png
-  abstract: "Project 3 will engineer monoclonal antibodies (mAbs) with fixed
-    antigen specificity on discrete antibody isotypes and subclasses. Using
-    stabilized DNA conjugates, Projects 2 and 3 will track antibody:antigen
-    complexes to determine the spatial and cellular localization of ICs in
-    comparison with free antigen. Project 3 also investigates how FcR expression
-    by LNSCs impacts IC acquisition and will work with Project 1 to determine
-    viral antigen retention and define consequences to protective humoral and
-    cellular immunity. This project will use mouse models engineered to
-    manipulate complement receptor and FcR expression by discrete LNSC
-    populations and will define how different LNSC populations use antibody to
-    determine antigen uptake and localization."
+  title: TBD
+  short: "Project 3 will..."
+  hypothesis: We hypothesize...
+  image:
+  abstract: "Project 3 will..."
 
 core-b:
   title: Mouse transgenics and tissue characterization
@@ -77,29 +62,16 @@ core-b:
     mouse LNSCs and lymphoid tissues"
 
 core-c:
-  title: Molecular technologies
-  short: "Core C will apply new molecular tools to
-    understand the contributions of lymph node stromal cells to immune responses"
-  abstract: "Core C will apply new molecular tools to
-    understand the contributions of lymph node stromal cells to immune
+  title: Molecular technologies and informatics
+  short: "Core C will develop and apply new molecular tools and bioinformatic
+    approaches to probe LNSC and immune cell biology"
+  abstract: "Core C will apply new molecular tools and bioinformatic approaches
+    to understand the contributions of lymph node stromal cells to immune
     responses, this includes the following tasks.\n\n
-    **Task 1.** Generate validated reagents for and execute single-cell and
-    spatial transcriptomic experiments to probe LNSC biology\n\n
-    **Task 2.** Production of customized lipid nanoparticles with mRNA and siRNA
-    cargo\n\n
-    **Task 3.** Expression and purification of antibodies, antigens, and immune
-    complexes"
-
-core-d:
-  title: Bioinformatics
-  short: "Core D will apply new informatics approaches to
-    understand the contributions of LNSCs to immune responses"
-  abstract: "Core D will apply new informatics approaches to
-    understand the contributions of LNSCs to immune responses, this includes the
-    following tasks.\n\n
-    **Task 1.** Provide a bioinformatics resource for rigorous and reproducible
+    **Task 1.** Generate and supply validated reagents for single-cell and
+    spatial transcriptomic experiments to evaluate LNSC contributions to
+    immunity and infection\n\n
+    **Task 2.** Provide a bioinformatics resource for rigorous and reproducible
     analysis of sequencing experiments\n\n
-    **Task 2.** Develop pipelines for large scale meta-analysis of single-cell
-    and spatial transcriptomic data\n\n
-    **Task 3.** Curate a public-facing LNSC atlas to allow for interactive
-    exploration of published datasets"
+    **Task 3.** Develop pipelines for large scale meta-analysis of single-cell
+    and spatial transcriptomic data"
