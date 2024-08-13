@@ -1,15 +1,8 @@
 [
   {
-    "listing": "/atlases.html",
-    "items": [
-      "/atlases/2024-lucas-38194268/index.html",
-      "/atlases/2021-carpentier-34618370/index.html",
-      "/atlases/2021-walsh-33843587/index.html"
-    ]
-  },
-  {
     "listing": "/pubs.html",
     "items": [
+      "/pubs/2024-sheridan-38617225/index.html",
       "/pubs/2024-kim-38307020/index.html",
       "/pubs/2024-lucas-38194268/index.html",
       "/pubs/2023-tamburini-37841845/index.html",
@@ -22,6 +15,14 @@
       "/pubs/2018-mccarthy-29997290/index.html",
       "/pubs/2017-kedl-29229919/index.html",
       "/pubs/2014-tamburini-24905362/index.html"
+    ]
+  },
+  {
+    "listing": "/atlases.html",
+    "items": [
+      "/atlases/2024-lucas-38194268/index.html",
+      "/atlases/2021-carpentier-34618370/index.html",
+      "/atlases/2021-walsh-33843587/index.html"
     ]
   }
 ]
