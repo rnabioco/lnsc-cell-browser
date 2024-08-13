@@ -4,7 +4,7 @@ title: Chronic Liver Disease in Humans Causes Expansion and Differentiation of L
 image: /images/2019-tamburini-31156626.jpg
 subtitle: 'PMID 31156626'
 date: 'May 15, 2019'
-categories: [Project-2, Core-C, Core-D, 2019]
+categories: [Project-2, Project-3, Core-C, 2019]
 about:
   id: about
   template: jolla

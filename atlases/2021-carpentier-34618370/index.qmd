@@ -2,9 +2,9 @@
 title: MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to limit viremia and viral dissemination
 
 image: /images/2021-carpentier-34618370.jpg
-subtitle: '[<i class="bi bi-compass"></i> Atlas](https://morrison-lnsc-browser.s3.amazonaws.com/index.html){.link-box-large}'
+subtitle: '[<i class="bi bi-compass"></i> Atlas](http://morrison-lnsc-browser.s3-website-us-east-1.amazonaws.com){.link-box-large}'
 date: 'November 15, 2021'
-categories: [Project-1, Project-2, Core-C, Core-D, 2021]
+categories: [Project-1, Project-2, Project-3, Core-C, 2021]
 about:
   id: about
   template: jolla

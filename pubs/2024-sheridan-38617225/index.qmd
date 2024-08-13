@@ -1,0 +1,22 @@
+---
+title: A specific and portable gene expression program underlies antigen archiving by lymphatic endothelial cells
+
+image: /images/2024-sheridan-38617225.jpg
+subtitle: 'PMID 38617225'
+date: 'April 02, 2024'
+categories: [Project-1, Project-2, Project-3, Core-C, 2024]
+about:
+  id: about
+  template: jolla
+  links:
+  - text: Pubmed
+    icon: file-earmark
+    href: https://pubmed.ncbi.nlm.nih.gov/38617225/
+  - text: PDF
+    icon: filetype-pdf
+    href: /docs/2024-sheridan-38617225.pdf
+---
+
+[Ryan Sheridan](https://orcid.org/0000-0003-4012-3147), Thu Doan, Cormac Lucas, Tadg Forward, Aspen Uecker-Martin, [Thomas Morrison](https://scholar.google.com/citations?user=ljkm0eMAAAAJ&hl=en&oi=ao), [Jay Hesselberth](https://scholar.google.com/citations?user=EnOmNEYAAAAJ), [Beth Tamburini](https://orcid.org/0000-0003-1991-231X)
+
+Antigens from protein subunit vaccination traffic from the tissue to the draining lymph node, either passively via the lymph or carried by dendritic cells at the local injection site. Lymph node (LN) lymphatic endothelial cells (LEC) actively acquire and archive foreign antigens, and archived antigen can be released during subsequent inflammatory stimulus to improve immune responses. Here, we answer questions about how LECs achieve durable antigen archiving and whether there are transcriptional signatures associated with LECs containing high levels of antigen. We used single cell sequencing in dissociated LN tissue to quantify antigen levels in LEC and dendritic cell populations at multiple timepoints after immunization, and used machine learning to define a unique transcriptional program within archiving LECs that can predict LEC archiving capacity in independent data sets. Finally, we validated this modeling, showing we could predict antigen archiving from a transcriptional dataset of CHIKV infected mice and demonstrated in vivo the accuracy of our prediction. Collectively, our findings establish a unique transcriptional program in LECs that promotes antigen archiving that can be translated to other systems.

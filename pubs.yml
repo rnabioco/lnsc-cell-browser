@@ -1,3 +1,42 @@
+- pubmed: https://pubmed.ncbi.nlm.nih.gov/38617225/
+  key: 2024-sheridan-38617225
+  title: A specific and portable gene expression program underlies antigen archiving
+    by lymphatic endothelial cells
+  pmid: PMID 38617225
+  date: April 02, 2024
+  year: '2024'
+  authors:
+  - Ryan Sheridan
+  - Thu Doan
+  - Cormac Lucas
+  - Tadg Forward
+  - Aspen Uecker-Martin
+  - Thomas Morrison
+  - Jay Hesselberth
+  - Beth Tamburini
+  abstract: Antigens from protein subunit vaccination traffic from the tissue to the
+    draining lymph node, either passively via the lymph or carried by dendritic cells
+    at the local injection site. Lymph node (LN) lymphatic endothelial cells (LEC)
+    actively acquire and archive foreign antigens, and archived antigen can be released
+    during subsequent inflammatory stimulus to improve immune responses. Here, we
+    answer questions about how LECs achieve durable antigen archiving and whether
+    there are transcriptional signatures associated with LECs containing high levels
+    of antigen. We used single cell sequencing in dissociated LN tissue to quantify
+    antigen levels in LEC and dendritic cell populations at multiple timepoints after
+    immunization, and used machine learning to define a unique transcriptional program
+    within archiving LECs that can predict LEC archiving capacity in independent data
+    sets. Finally, we validated this modeling, showing we could predict antigen archiving
+    from a transcriptional dataset of CHIKV infected mice and demonstrated in vivo
+    the accuracy of our prediction. Collectively, our findings establish a unique
+    transcriptional program in LECs that promotes antigen archiving that can be translated
+    to other systems.
+  pdf: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC11014631/pdf/nihpp-2024.04.01.587647v1.pdf
+  image: /images/2024-sheridan-38617225.jpg
+  project:
+  - project-1
+  - project-2
+  - project-3
+  - core-c
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/33843587/
   links:
     github: https://github.com/rnabioco/antigen-tracking
@@ -5,8 +44,8 @@
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150719
   project:
   - project-2
+  - project-3
   - core-c
-  - core-d
   fig_number: 7
   key: 2021-walsh-33843587
   title: Molecular tracking devices quantify antigen distribution and archiving in
@@ -75,13 +114,13 @@
   links:
     github: https://github.com/rnabioco/morrison-chikv
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174667
-    atlas: https://morrison-lnsc-browser.s3.amazonaws.com/index.html
+    atlas: http://morrison-lnsc-browser.s3-website-us-east-1.amazonaws.com
   fig_number: 11
   project:
   - project-1
   - project-2
+  - project-3
   - core-c
-  - core-d
   key: 2021-carpentier-34618370
   title: MARCO+ lymphatic endothelial cells sequester arthritogenic alphaviruses to
     limit viremia and viral dissemination
@@ -153,12 +192,12 @@
   links:
     github: https://github.com/rnabioco/morrison-lnsc
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243638
-    atlas: https://morrison-lnsc-browser.s3.amazonaws.com/index.html
+    atlas: http://morrison-lnsc-browser.s3-website-us-east-1.amazonaws.com
   project:
   - project-1
   - project-2
+  - project-3
   - core-c
-  - core-d
   key: 2024-lucas-38194268
   title: Chikungunya virus infection disrupts lymph node lymphatic endothelial cell
     composition and function via MARCO
@@ -269,8 +308,8 @@
 - pubmed: https://pubmed.ncbi.nlm.nih.gov/31156626/
   project:
   - project-2
+  - project-3
   - core-c
-  - core-d
   links:
     geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE129933
   key: 2019-tamburini-31156626
@@ -347,8 +386,8 @@
   project:
   - project-1
   - project-2
+  - project-3
   - core-c
-  - core-d
   key: 2023-tamburini-37841845
   title: Vaccine-induced antigen archiving enhances local memory CD8+ T cell responses
     following an unrelated viral infection
