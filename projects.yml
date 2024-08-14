@@ -43,11 +43,19 @@ project-2:
     infection of LNSCs to vaccine immunity."
 
 project-3:
-  title: TBD
-  short: "Project 3 will..."
-  hypothesis: We hypothesize...
-  image:
-  abstract: "Project 3 will..."
+  title: Cell and molecular mechanisms of antigen archiving by lymphatic
+    endothelial cells
+  short: "Project 3 will define cellular and molecular mechanisms promoting
+    stable retention of protein and RNA in LECs"
+  hypothesis: We hypothesize that antigen archiving is achieved by stable
+    compartmentalization of acquired material in endosomes.
+  image: /images/project-3.png
+  abstract: "Project 3 will define cellular and molecular mechanisms promoting
+    stable retention of protein and RNA in LECs. Project 3 will determine how
+    LECs stably retain ntigens and how this process is regulated by
+    compartmentalization in endosomes. 
+    This project will develop and use innovative probes of cellular localization in vivo,
+    to evaluate antigen levels within LECs and immune cells."
 
 core-b:
   title: Mouse transgenics and tissue characterization
